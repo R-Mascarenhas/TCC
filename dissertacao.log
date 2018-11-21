@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  21 NOV 2018 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  21 NOV 2018 20:06
 entering extended mode
 **./dissertacao.tex
 (dissertacao.tex
@@ -934,7 +934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 \openout2 = `./pretextuais/resumo.aux'.
 
  (pretextuais/resumo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
@@ -1392,7 +1392,7 @@ Here is how much of TeX's memory you used:
  10507 multiletter control sequences out of 15000+200000
  29128 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,41p,2410b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,41p,1463b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbxsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
@@ -1408,7 +1408,7 @@ blic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertacao.pdf (36 pages, 2891146 bytes).
+Output written on dissertacao.pdf (36 pages, 2885353 bytes).
 PDF statistics:
  314 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
