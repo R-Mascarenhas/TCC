@@ -1,0 +1,68 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Biba et al. 2007]{biba2007unsupervised}
+\abntrefinfo{Biba et al.}{BIBA et al.}{2007}
+{BIBA, M. et al. Unsupervised discretization using kernel density estimation.
+  In:  \emph{IJCAI}. [S.l.: s.n.], 2007. p. 696--701.}
+
+\bibitem[CERN 2015]{cernwebabout}
+\abntrefinfo{CERN}{CERN}{2015}
+{CERN. \emph{About CERN}. 2015.
+Dispon{\'\i}vel em: $<$http://home.web.cern.ch/about$>$.}
+
+\bibitem[Fayyad e Irani 1993]{fayyad1993multi}
+\abntrefinfo{Fayyad e Irani}{FAYYAD; IRANI}{1993}
+{FAYYAD, U.; IRANI, K. Multi-interval discretization of continuous-valued
+  attributes for classification learning.
+1993.}
+
+\bibitem[Friedman, Goldszmidt et al. 1996]{friedman1996discretizing}
+\abntrefinfo{Friedman, Goldszmidt et al.}{FRIEDMAN; GOLDSZMIDT et al.}{1996}
+{FRIEDMAN, N.; GOLDSZMIDT, M. et al. Discretizing continuous attributes while
+  learning bayesian networks. In:  \emph{ICML}. [S.l.: s.n.], 1996. p.
+  157--165.}
+
+\bibitem[Gramacki 2017]{gramacki2017nonparametric}
+\abntrefinfo{Gramacki}{GRAMACKI}{2017}
+{GRAMACKI, A. \emph{Nonparametric Kernel Density Estimation and Its
+  Computational Aspects}. [S.l.]: Springer, 2017.}
+
+\bibitem[Jones 1989]{jones1989discretized}
+\abntrefinfo{Jones}{JONES}{1989}
+{JONES, M.~C. Discretized and interpolated kernel density estimates.
+\emph{Journal of the American Statistical Association}, Taylor \& Francis
+  Group, v.~84, n.~407, p. 733--741, 1989.}
+
+\bibitem[Ron 1999]{ron1999art}
+\abntrefinfo{Ron}{RON}{1999}
+{RON, B. \emph{The Art and Science of Digital Compositing}. [S.l.]: Morgan
+  Kaufmann Verlag, 1999.}
+
+\bibitem[Schindler 2012]{schindler2012bandwidth}
+\abntrefinfo{Schindler}{SCHINDLER}{2012}
+{SCHINDLER, A. Bandwidth selection in nonparametric kernel estimation.
+2012.}
+
+\bibitem[Schmidberger e Frank 2005]{schmidberger2005unsupervised}
+\abntrefinfo{Schmidberger e Frank}{SCHMIDBERGER; FRANK}{2005}
+{SCHMIDBERGER, G.; FRANK, E. Unsupervised discretization using tree-based
+  density estimation. In:  SPRINGER. \emph{European Conference on Principles of
+  Data Mining and Knowledge Discovery}. [S.l.], 2005. p. 240--251.}
+
+\bibitem[Vicini e SOUZA 2005]{vicini2005analise}
+\abntrefinfo{Vicini e SOUZA}{VICINI; SOUZA}{2005}
+{VICINI, L.; SOUZA, A.~M. An{\'a}lise multivariada da teoria {\`a} pr{\'a}tica.
+\emph{Santa Maria: UFSM, CCNE}, 2005.}
+
+\bibitem[Zhang et al. 2007]{zhang2007discretization}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2007}
+{ZHANG, X.-H. et al. A discretization algorithm based on gini criterion. In:
+  IEEE. \emph{Machine Learning and Cybernetics, 2007 International Conference
+  on}. [S.l.], 2007. v.~5, p. 2557--2561.}
+
+\end{thebibliography}

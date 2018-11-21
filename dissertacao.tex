@@ -1,0 +1,165 @@
+\documentclass[a4paper,12pt,normaltoc,capchap,capsec,pagestart=firstchapter,tocpage=plain,sumariocompleto]{abnt_ufjf}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               %
+%     Configura\c{c}\~{a}o gerais       %
+%                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%pacotes idioma
+\usepackage[brazil]{babel}          % suporte para os termos na l\'{\i}ngua portuguesa
+\usepackage[T1]{fontenc}          % l\^{e} a codifica\c{c}\~{a}o de fonte T1
+\usepackage[utf8]{inputenc}         % suporte para caracteres especiais
+\usepackage{times}                  % fonte "Times"
+\usepackage{ae}                     % fonte "Almost European"
+%
+%figuras
+\usepackage[dvips]{graphicx}        % para inclus\~{a}o de figuras.
+%\usepackage{subfigure}              % inclus\~{a}o de subfigura.
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{float}
+%\usepackage{rotating}               %rotacionar a figura e a legenda
+\usepackage{psfrag}
+
+
+% pacote matem\'{a}tico
+\usepackage{amsmath}                %pacote matem\'{a}tico da American Mathematical Society.
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{mathrsfs}               %pacote para fontes usadas em transformadas.
+%\usepackage{icomma}                 %nota\c{c}\~{a}o decimal com virgula.
+\usepackage{bm}                     %bold math
+
+\DeclareMathOperator{\sen}{sen}     %declara operador seno.
+\DeclareMathOperator{\inteiro}{int} %declara operador inteiro.
+\DeclareMathOperator{\real}{Re}     %declara operador real.
+\DeclareMathOperator{\imag}{Im}     %declara operador imaginario.
+\DeclareMathOperator{\sign}{sinal}   %sinal
+
+% formata\c{c}\~{a}o
+\usepackage{indentfirst}            % indenta os primeiros par\'{a}grafos.
+\usepackage[printonlyused]{acronym} % pacote para produzir acronimos
+%\usepackage{a4wide}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{pifont}
+
+%tabelas
+\usepackage{multirow}
+
+\geometry{verbose, a4paper, tmargin=3.0cm, bmargin=2.0cm, lmargin=3.0cm, rmargin=2.5cm}
+
+% bibliografia
+\usepackage[alf]{abntcite}          %chamada de referencia alfabetica
+%\usepackage[num]{abntcite}          %chamada de referencia num\'{e}rica
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               %
+%     Dados da disserta\c{c}\~{a}o      %
+%                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcommand{\Titulo}{Modelagem e Controle de Conversores Fonte de Tens\~{a}o Utilizados em Sistemas de Gera\c{c}\~{a}o Fotovoltaicos Conectados \`{a} Rede El\'{e}trica de Distribui\c{c}\~{a}o}
+\newcommand{\TITULO}{Estudo de diferentes métodos de discretização aplicados a estimadores de densidade}
+\newcommand{\Autor}{Rafael Mascarenhas Costa}
+\newcommand{\Orientador}{Rafael Antunes Nóbrega, D.Sc.}
+\newcommand{\Coorientador}{Igor Abritta Costa}
+\newcommand{\Dia}{06 }
+\newcommand{\Mes}{Setembro }
+\newcommand{\Ano}{2018}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               %
+%        Dados da banca         %
+%                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\PrimeiroExaminador}{Prof. \Orientador}
+\newcommand{\InstituicaodoPrimeiroExaminador}{Universidade Federal de Juiz de Fora, UFJF}
+\newcommand{\SegundoExaminador}{Prof. Ernesto Kemp, D.Sc.}
+\newcommand{\InstituicaodoSegundoExaminador}{Universidade Estadual de Campinas, Unicamp}
+\newcommand{\TerceiroExaminador}{Prof. Leandro Rodrigues Manso Silva, D.Sc.}
+\newcommand{\InstituicaodoTerceiroExaminador}{Universidade Federal de Juiz de Fora, UFJF}
+\newcommand{\QuartoExaminador}{Prof. x, D.Sc.}
+\newcommand{\InstituicaodoQuartoExaminador}{Universidade Federal do Rio de Janeiro, UFRJ}
+
+
+%\include{hifenizacao.tex}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               %
+%         Pr\'{e} textuais          %
+%                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{./pretextuais/capa}
+
+\include{./pretextuais/folha_de_rosto}
+
+\include{./pretextuais/ficha_catalografica}
+
+\include{./pretextuais/folha_de_aprovacao}
+
+\include{./pretextuais/dedicatoria}
+
+\include{./pretextuais/agradecimentos}
+
+\include{./pretextuais/epigrafe}
+
+\include{./pretextuais/resumo}
+
+\include{./pretextuais/abstract}
+
+\renewcommand{\listfigurename}{Lista de Ilustra\c{c}\~{o}es}
+\listoffigures
+
+\listoftables
+
+\include{./pretextuais/acronimos}
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               %
+%     Corpo da disserta\c{c}\~{a}o      %
+%                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{./textuais/introducao/introducao}
+\include{./textuais/discretizacao/discretizacao}
+%\include{./textuais/revisaoBibliografica/revBibli}
+%\include{./textuais/metodologia/metodologia}
+\include{./textuais/desenvolvimento/desenvolvimento}
+%\include{./textuais/algoritmo/algoritmo}
+\include{./textuais/resultados/resultados}
+\include{./textuais/conclusao/conclusao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               %
+%         P\'{o}s textuais          %
+%                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bibliographystyle{abnt-alf}	     % Existem ainda: abbrv,acm,alpha,amsalpha e amsplain
+\bibliography{./referencias/bibliografia}  % o nome do arquivo .bib com as refer\^{e}ncias
+
+\appendix
+
+%\include{./postextuais/apendice/apendiceAtlas}
+\include{./postextuais/apendice/apendicePubli}
+
+%\include{./postextuais/apendice/apendiceB}
+%
+%\include{/postextuais/apendice/apendiceC}
+
+\end{document}

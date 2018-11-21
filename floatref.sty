@@ -1,0 +1,98 @@
+% I'm enclosing my hacking result which will meet your
+% request.  There are two new commands;
+% 
+%     \floatpageref{<label>}
+%             Generate "above", "below", "on next page" or
+%             "on page N" according to the relationship of
+%             the page on which <label> defined and the
+%             page on which <label> is referred.
+% 
+%     \floatref{<label>}
+%             Do \ref<label> \ \floatpageref{<label>}
+% 
+% So, if you do;
+% 
+%     See figure \floatref{<label>} ...
+% 
+% You will have;
+% 
+%     See figure X above (or below, on next page, on page N) ...
+% 
+% P% lease note that the keywords "above" etc. are defined as
+% macros, \fr@above, \fr@below, \fr@nextpage and \fr@somepage.
+% If you want to change a keyword, do (for example);
+% 
+%     \def\fr@nextpage{on the following page}
+% 
+% Enjoy!
+% -----------------------------------------------------------------
+% Hiroshi Nakashima (nakasima@kuis.kyoto-u.ac.jp)
+% Dept. of Information Science, Faculty of Engineering, Kyoto Univ.
+% Yoshida Hon-Machi, Sakyo-Ku, Kyoto, 606-01 Japan.    +75-753-5383
+% -----------------------------------------------------------------
+\makeatletter
+
+%\def\fr@above{above}
+%\def\fr@below{below}
+%\def\fr@nextpage{on the next page}
+%\def\fr@somepage#1{on page #1}
+
+\def\fr@above{acima}
+\def\fr@below{abaixo}
+\def\fr@nextpage{na p\'agina seguinte}
+\def\fr@somepage#1{na p\'agina #1}
+
+\newcount\fr@count \fr@count\z@
+
+\def\ref#1{\@ifundefined{r@#1}{{\bf ??}\@warning
+   {Reference `#1' on page \thepage \space 
+    undefined}}{\edef\@tempa{\@nameuse{r@#1}}\expandafter
+    \fr@first\@tempa \@nil\null}}
+
+\def\pageref#1{\@ifundefined{r@#1}{{\bf ??}\@warning
+   {Reference `#1' on page \thepage \space 
+    undefined}}{\edef\@tempa{\@nameuse{r@#1}}\expandafter
+    \fr@second\@tempa\@nil\null}}
+
+\def\fr@first#1#2#3\@nil{#1}
+\def\fr@second#1#2#3\@nil{#2}
+
+\def\label#1{\@bsphack\if@filesw {\let\thepage\relax \let\fr@thepage\relax
+   \def\protect{\noexpand\noexpand\noexpand}%
+\xdef\@gtempa{\write\@auxout{\string
+      \newlabel{#1}{{\@currentlabel}{\thepage}{\fr@thepage}}}}}\@gtempa
+   \if@nobreak \ifvmode\nobreak\fi\fi\fi\@esphack}
+
+\def\fr@thepage{\number\c@page}
+
+\def\floatref{\let\fr@temp\fr@ref \fr@floatref}
+\def\floatpageref{\let\fr@temp\relax \fr@floatref}
+
+\def\fr@floatref#1{\global\advance\fr@count\@ne
+      \@ifundefined{r@#1}{{\bf ??}\@warning
+      {Reference `#1' on page \thepage\space undefined}}{\fr@ifloatref{#1}}%
+ \if@filesw {\let\fr@thepage\relax
+              \def\protect{\noexpand\noexpand\noexpand}%
+              \xdef\@gtempa{\write\@auxout{\string\newfloatref
+                      {#1}{\number\fr@count}{\fr@thepage}}}}\@gtempa
+      \if@nobreak\ifvmode\nobreak\fi\fi\fi}
+\def\fr@thepage{\number\c@page}
+
+\def\fr@ifloatref#1{\@ifundefined{r@fr@#1@\number\fr@count}{{\bf ??}\@warning
+      {Page of the reference #1 is not fixed}}{\fr@iifloatref{#1}}}
+\def\fr@iifloatref#1{\edef\@tempa{\@nameuse{r@#1}}\fr@temp
+      \expandafter\fr@iiifloatref\@tempa{#1}\@nil}
+\def\fr@iiifloatref#1#2#3#4\@nil{%
+      \edef\@tempa{\@nameuse{r@fr@#4@\number\fr@count}}%
+      \expandafter\fr@ivfloatref\@tempa{#3}{#2}}
+\def\fr@ivfloatref#1#2#3#4{\@tempcnta#2\@tempcntb#3\relax
+      \ifnum\@tempcnta=\@tempcntb
+              \if#1a\relax\fr@above\else\fr@below\fi
+      \else\advance\@tempcnta\@ne\ifnum\@tempcnta=\@tempcntb\fr@nextpage
+              \else\fr@somepage{#4}\fi\fi}
+
+\def\fr@ref{\expandafter\fr@first\@tempa\@nil\ }
+
+\def\newfloatref#1#2#3{\@ifundefined{r@#1}%
+      {\global\@namedef{r@fr@#1@#2}{{b}{#3}}}%
+      {\global\@namedef{r@fr@#1@#2}{{a}{#3}}}}

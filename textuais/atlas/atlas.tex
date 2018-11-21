@@ -1,0 +1,427 @@
+\chapter{ATLAS}\label{cap:atlas}
+
+O detector ATLAS \cite{aad2008atlas} é um dispositivo de formato cilíndrico com 44 metros de comprimento e 25 metros de altura, como mostrado na Figura~\ref{fig:3T02}. Sua posição em relação ao LHC pode ser vista na Figura~\ref{fig:3T01}. O ATLAS é um detector de uso geral. Portanto, precisa ser capaz de identificar diversos tipos de partículas, que são subprodutos das colisões próton-próton.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/fig1.pdf}\\
+	\caption{Modelo computacional do Detector ATLAS. Extraído de (www.atlas.ch).}
+	\label{fig:3T02}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm]{./textuais/atlas/figuras/fig2.pdf}\\
+	\caption{Vista subterrânea do detector ATLAS . Extraído de (www.atlas.ch).}
+	\label{fig:3T01}
+\end{figure}
+
+	Para a reconstrução e identificação da energia depositada pelas partículas e sua respectiva trajetória, o ATLAS é dividido em vários subdetectores independentes (com características diversas), no qual, o conjunto das informações fornecidas pelo sistema de aquisição de dados dos subdetectores nos permite conhecer o perfil de cada partícula.
+
+	Na parte mais interna, encontramos o detector Interno.  Ao seu redor, o calorímetro eletromagnético. Logo após, o calorímetro hadrônico seguido dos solenoides.  Por fim, as câmaras de múons.
+
+\section{Sistema de Coordenadas}
+
+Como visto na Figura~\ref{fig:3T02}, o \ac{ATLAS} tem  formato cilíndrico, e para a identificação da posição das partículas no detector, utiliza-se o sistema de coordenadas \cite{aad2008atlas} apresentado na Figura~\ref{fig:3T17}.
+As principais coordenadas do ATLAS são $\eta$ e $\phi$. A figura abaixo apresenta as direções de cada uma delas.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/sistema_de_coordenadas.pdf}\\
+	\caption{Sistema de coordenadas do Detector ATLAS. Extraído de \cite{dos2006sistema}.}
+	\label{fig:3T17}
+\end{figure}
+
+\section{Detector Interno}
+
+O \ac{ID} \cite{atlasatlas} é constituído por três tipos de detectores:
+
+\begin{itemize}
+\item Detector de Pixels  (\ac{SPD});
+\item Detector de Traços baseado em semicondutores (\ac{SCT};
+\item Detector de Radiação de Transição (\ac{TRT}.
+\end{itemize}
+
+	Esses detectores permitem a medição da trajetória de partículas carregadas e estão contidos em um solenoide central, que fornece um campo nominal de 2T.
+
+	O detector de Pixels feito de silício contribui principalmente para medição precisa dos vértices. O \ac{SCT}  mede com precisão o momento das partículas. O TRT facilita o reconhecimento de padrões, auxiliando na identificação de elétrons.
+
+Na Tabela~\ref{tab:01} temos uma visão geral sobre a posição, cobertura em $\eta$, número de camadas, \emph{hits} e resolução de todos os detectores do ID.
+
+\begin{table}
+  \centering
+  \caption{Parâmetros principais do ID. Extraído de \cite{peeters2003atlas}}\label{tab:01}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    System	&	Position	&	$\eta$-coverage	&	Layers	&	Hits	&	Resolution ($\mu$m)	\\ 	\hline	\hline
+\multirow{3}{*}{Pixel}	&	B-layer	&	$\pm$ 2.5	&	1	&	1	&	R$\phi$ = 12, z = 66	\\ 	
+	&	barrel layers	&	$\pm$ 1.7	&	2	&	2	&	R$\phi$ = 12, z = 66	\\ 		
+	&	end-cap discs	&	1.7 - 2.5	&	3	&	3	&	R$\phi$ = 12, R = 77	\\ 	\hline	
+\multirow{2}{*}{SCT}	&	barrel layers	&	$\pm$ 1.4	&	4	&	4	&	R$\phi$ = 23, z = 580	\\ 		
+	&	end-cap discs	&	1.4 - 2.5	&	9	&	4	&	R$\phi$ = 20-26, R = 580	\\ \hline 		
+\multirow{2}{*}{TRT}	&	barrel straws (axial)	&	$\pm$ 0.7	&	73	&	36	&	R$\phi$ = 170	\\ 		
+	&	end-cap straws (radial)	&	0.7 - 2.5	&	224	&	36	&	R$\phi$ = 170	\\ 		
+
+    \hline
+  \end{tabular}
+\end{table}
+
+
+A Figura~\ref{fig:3T05} mostra a disposição dos detectores e a Figura~\ref{fig:3T06} mostra um corte transversal do ID.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/ID1.pdf}\\
+	\caption{Modelo computacional do ID. Extraído de (cds.cern.ch).}
+	\label{fig:3T05}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/ID2.pdf}\\
+	\caption{Modelo computacional do ID - corte transversal. Extraído de (cds.cern.ch).}
+	\label{fig:3T06}
+\end{figure}
+
+\subsection{Detector de Pixels}
+
+O detector de pixels \cite{aad2008atlas2} tem um comprimento de aproximadamente 1,3 metros. Possui três camadas no barril, onde uma delas está em volta do tubo de feixe, com raio = 50,5 mm. As outras duas possuem raio = 88,5 mm e 122,5 mm, respectivamente. Como mostrado na Figura~\ref{fig:3T06}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/Detector_Pixels.pdf}\\
+	\caption{Modelo computacional do detector de Pixels do ID. Extraído de (cds.cern.ch).}
+	\label{fig:3T04}
+\end{figure}
+
+Possui três discos em cada lado do barril (Figura~\ref{fig:3T04}).  Esta disposição proporciona três detecções na trajetória da partícula em $|\eta|$ < 2,5. Como o ID fica próximo ao tubo de feixe, é necessário ser bastante resistente à radiação.
+
+Os principais componentes são aproximadamente 1700 módulos idênticos, que consistem de um pacote composto de sensores e chips de leitura, correspondente a 80 milhões de pixels. Essa fina granularidade possibilita grande precisão na identificação do início da trajetória de partículas, dando capacidade ao ID de encontrar partículas de vida curta.
+
+Em 2014, foi instalada uma camada adicional no interior da primeira camada  denominada \ac{IBL}. Essa camada manterá o rastreamento da trajetória mais robusto contribuindo para uma melhor precisão na posição do vértice, apesar dos efeito da radiação, vida útil do hardware e luminosidade.
+
+
+\subsection{Detector de Traços baseado em Semicondutores }
+
+O SCT \cite{collaboration2014operation} possui 5,6 m de comprimento e 1 m de diâmetro. É composto por 4.088 módulos de detectores de silício e 6 milhões de canais individuais de leitura dispostos em barril (Figura~\ref{fig:3T12}) e tampa.
+
+O barril possui quatro camadas e cada tampa possui nove discos.  Desta forma, o SCT fornece quatro pontos de precisão por trajetória na região do barril, sendo projetado para  fornecer oito medições de precisão por trajetória.
+
+As medidas do SCT contribuem na medição do momento, parâmetro de impacto e vértice da partícula.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/SCT.pdf}\\
+	\caption{Foto do barril do SCT. Extraído de (cds.cern.ch)}
+	\label{fig:3T12}
+\end{figure}
+
+\subsection{Detector de Radiação de Transição}
+
+O TRT \cite{abat2008atlas} é o componente mais externo do ID e também é dividido em barril (Figura~\ref{fig:3T13}) e tampa. Possui 6,8 m de comprimento e 2,2 m de diâmetro.
+	
+Baseia-se na  utilização de detectores de traços em microtubos (do inglês Straw Tube Tracker), o barril e a tampa contêm 50 mil e 320 mil microtubos, respectivamente,  que podem operar em altas taxas devido ao seu pequeno diâmetro e isolamento do fio condutor por um gás individual.
+
+No TRT, o aumento na capacidade de identificação de elétrons  é devido a utilização de Gás Xenônio, para detectar radiações de transição de fótons.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/TRT.pdf}\\
+	\caption{Foto do barril do TRT. Extraído de (cds.cern.ch)}
+	\label{fig:3T13}
+\end{figure}
+
+\section{Calorimetria Básica}
+
+Os calorímetros exercem um papel fundamental na identificação de elétrons. Saber como ocorre a interação destas partículas com o calorímetro irá nos auxiliar futuramente, no entendimento de como as variáveis discriminantes baseadas no formato dos chuveiros (Seção~\ref{sec:chuveiros}) exibem uma grande influência na diferenciação entre elétrons e hádrons.
+
+Conceitualmente, em física de partículas, calorímetros são blocos de matéria com espessura suficiente para absorver completamente a energia de uma partícula \cite{wigmans2000calorimetry}.
+
+A interação da partícula incidente com o calorímetro é um processo em cascata, em que um número muito grande de partículas secundárias é produzido ao longo do detector. Uma pequena fração da energia é depositada na forma de luz de cintilação ou Čerenkov, cuja intensidade é proporcional à energia incidente. Esse processo produz um sinal detectável.
+
+O parâmetro que define a qualidade do calorímetro é a resolução em energia, que é governada pelas flutuações intrínsecas no desenvolvimento da cascata. A medida da energia depositada é feita por amostragem ao longo do calorímetro.
+
+As características gerais dos calorímetros são:
+\begin{itemize}
+\item sensibilidade tanto para partículas neutras como para carregadas;
+\item a resposta é diferente para elétrons, múons e hádrons, o que permite sua utilização para identificação de partículas;
+\item o tempo de resposta é rápido, o que os torna adequados para seleção on-line de eventos em regimes de altas taxas;
+\item a segmentação permite medir a posição e o ângulo de incidência da partícula.
+\end{itemize}
+
+\subsection{Chuveiros}\label{sec:chuveiros}
+
+Há dois tipos de cascatas (ou chuveiros) \cite{wigmans2000calorimetry}: os iniciados por elétrons e fótons, chamados de chuveiros eletromagnéticos; e os iniciados por hádrons, que são os chuveiros hadrônicos. Cada um possui características peculiares, que determinam o modelo dos calorímetros.
+
+\subsubsection{Chuveiros Eletromagnéticos e Hadrônicos}
+
+Elétrons e fótons com alta energia, ao passar por um absorvedor denso e espesso, dão início a um chuveiro eletromagnético, como ilustrado na Figura~\ref{fig:3T08}. Partículas carregadas podem sofrer interações de diversos tipos, criando fótons. Estes se convertem em pares elétron-pósitron. O número de partículas se multiplica até a energia dos elétrons ficar menor que a energia crítica, quando a perda por ionização passa a ser dominante, diminuindo o chuveiro eletromagnético.
+
+Os chuveiros hadrônicos (Figura~\ref{fig:3T09}) são governados pelo comprimento de interação nuclear, em geral, são muito maiores que os chuveiros eletromagnéticos. Por essa razão, os calorímetros hadrônicos são muito maiores  que os eletromagnéticos, e não são apenas mais extensos, mas também, mais largos.
+
+Enquanto no chuveiro eletromagnético o desenvolvimento lateral é ditado pelo espalhamento Coulombiano múltiplo, nos chuveiros hadrônicos o desenvolvimento lateral é causado pela grande transferência de momento típica de interações nucleares.
+
+O chuveiro eletromagnético é composto por elétrons e pósitrons produzidos por dissociação de fótons, e por fótons originados de bremsstrahlung. Os chuveiros hadrônicos são compostos basicamente por píons.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm]{./textuais/atlas/figuras/photon.pdf}\\
+	\caption{Simulação computacional utilizando algoritmo Corsika do Chuveiro Eletromagnético (100GeV), (a) vista lateral e (b) vista frontal.}
+	\label{fig:3T08}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm]{./textuais/atlas/figuras/proton.pdf}\\
+	\caption{Simulação computacional utilizando algoritmo Corsika do Chuveiro Hadrônico (100GeV), (a) vista lateral e (b) vista frontal.}
+	\label{fig:3T09}
+\end{figure}
+
+\subsection{Calorímetro Eletromagnético}
+
+O \ac{EM} \cite{calorimeter2008construction} é a parte mais interna do sistema de calorimetria do ATLAS e cobre a região de $|\eta| < 3,2$.
+
+É dividido em três camadas, com segmentações distintas.  A primeira camada é a mais segmentada, permitindo a localização precisa da partícula; a segunda camada é a mais profunda e a terceira é a menos segmentada, com o intuito de absorver toda energia da partícula incidente, como pode ser visto na Figura~\ref{fig:3T07}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/liquidargon_segmentation.pdf}\\
+	\caption{Modelo computacional do Calorímetro Eletromagnético. Extraído de \cite{francavilla2012atlas}.}
+	\label{fig:3T07}
+\end{figure}
+
+O calorímetro EM também possui um pré-irradiador (do inglês, \emph{pre-sampler}), que funciona como um calorímetro muito fino, posicionado na parte mais interna do calorímetro EM que tem como função recuperar a informação perdida no material morto da seção EM (ou seja, fios, encapamentos, etc).
+		
+O calorímetro Eletromagnético é baseado em absorvedores de chumbo e utiliza Argônio líquido como material ativo, e sua concepção física foi feita para promover uma cobertura completa em $\phi$. Estando sujeitas a um forte campo elétrico, as placas de chumbo estão imersas em um tanque de argônio líquido e são cobertas por finos eletrodos de cobre.
+
+Quando o chuveiro eletromagnético chega ao Argônio, elétrons são arrancados dos átomos de Argônio.  Esses elétrons livres, sujeitos a um forte campo elétrico, migram rapidamente para o lado positivo do campo, fazendo com que os íons migrem para o lado negativo. Esse processo gera uma corrente elétrica detectável em um circuito externo conectado ao calorímetro.
+
+
+\subsection{Calorímetro Hadrônico}
+
+O barril e tampas (Figura~\ref{fig:3T10}) do \ac{HAD} \cite{aad2010readiness} também são divididos em 3 camadas de diferentes segmentações (Figura~\ref{fig:3T14}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/TileCal.pdf}\\
+	\caption{Modelo computacional do HAD e do EM. Extraído de (cds.cern.ch)}
+	\label{fig:3T10}
+\end{figure}
+
+Ele é composto por módulos que possuem em sua construção placas de cintiladores alternadas com placas de aço.
+
+Esses cintiladores ao serem "excitados" por partículas do chuveiro hadrônico, que ao incidirem no material cintilante, fazem com que estes emitam luz, que é conduzida por fibras óticas até cada \ac{PMT}.
+
+Os Tubos Fotomultiplicadores, por um efeito em cascata, multiplicam os elétrons arrancados de seus dinodos, gerando então um sinal elétrico. Este sinal é então processado pela eletrônica do detector.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{./textuais/atlas/figuras/tile_segmentation.pdf}\\
+	\caption{Modelo computacional do HAD e do EM. Extraído de (cds.cern.ch)}
+	\label{fig:3T14}
+\end{figure}
+
+
+
+\section{Câmara de Múons}
+
+A câmara de Múons é constituída por milhares de sensores de partículas carregadas, colocados em um campo magnético, produzido por grandes bobinas toroidais supercondutoras. Os sensores são semelhantes aos descritos no TRT do ID, mas com os diâmetros dos tubos maiores.
+
+Múons são partículas como os elétrons, mas, 200 vezes mais pesados. Eles são as únicas partículas detectáveis que podem atravessar todos os absorvedores dos calorímetros. O espectrômetro de múons \cite{atlas2010commissioning} rodeia o calorímetro e mede trajetos dos múons para determinar os seus momentos com alta precisão, como visto em azul na Figura~\ref{fig:3T03}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/Camara_Muon.pdf}\\
+	\caption{Modelo computacional da Câmara de Muons do detector ATLAS. Extraído de (cds.cern.ch).}
+	\label{fig:3T03}
+\end{figure}
+
+\section{Perfil dos Eventos do ATLAS}
+
+Após conhecermos os principais detectores do ATLAS, é possível entender como  é o perfil de alguns eventos neste detector.
+	
+Partículas carregadas como múons, prótons e elétrons,  deixam sinal no detector de traço. O fóton e o elétron são completamente absorvidos no calorímetro eletromagnético. O próton deixa sinal no calorímetro eletromagnético e no hadrônico. O nêutron, deixa sinal apenas no calorímetro hadrônico e não deflete no campo eletromagnético no detector.  Múons deixam sinal em todo detector.
+	
+Essas são características distintas que possibilitam perceber diferentes assinaturas para cada partícula. Essas assinaturas são mostradas na Figura~\ref{fig:3T16}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{./textuais/atlas/figuras/assinatura_particulas_atlas.pdf}\\
+	\caption{Modelo computacional da assinatura das partículas no detector ATLAS. Extraído de (cds.cern.ch).}
+	\label{fig:3T16}
+\end{figure}
+
+
+\section{Sistema de Filtragem do ATLAS}
+
+Como o experimento ATLAS gera informações na ordem de 60 Tbytes por segundo, onde grande parte dos eventos são descartáveis \cite{1352047}, é essencial que se tenha um sistema de filtragem capaz de selecionar "durante" a colisão (\emph{online}) os eventos relevantes, e um sistema para análise futura (\emph{offline}) que através de algoritmos mais complexos podem identificar de uma forma mais criteriosa os eventos a serem utilizados na análise física.
+
+\subsection{Filtragem Online}
+
+O Sistema de Filtragem \emph{Online} é baseado em níveis hierárquicos em cascata, onde o evento rejeitado em cada nível anterior não será avaliado pelo nível posterior. É interessante notar que, como o nível anterior está exposto a uma taxa muito maior de eventos do que um nível posterior, sua complexidade aumenta a cada nível “vencido” pelo evento.
+
+O sistema \emph{online} pode ser dividido em \ac{L1} \cite{achenbach3atlas} e \ac{HLT} \cite{torres2010sistema}, onde a Filtragem de Alto Nível é subdividida em Filtragem de \ac{L2} e \ac{EF}. Veja na Figura~\ref{fig:3T15} o diagrama de blocos do Sistema de Filtragem \emph{Online} do ATLAS:
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{./textuais/atlas/figuras/sistema_de_filtragem.pdf}\\
+	\caption{Fluxograma do sistema de Trigger Online do ATLAS. Extraído de \cite{dos2006sistema}.}
+	\label{fig:3T15}
+\end{figure}
+
+O L1 é responsável pela seleção inicial de eventos e utiliza para seleção informações dos calorímetros e detectores de múons. Nessa etapa, a decisão precisa ser bem rápida. Portanto, a quantidade de informação a ser processada precisa ser bastante reduzida, somando-se células dos detectores para reduzir a granularidade utilizada.
+
+Este nível de Trigger (L1) é feito em \emph{hardware}, devido ao tempo de latência ser muito curto ($\sim$2$\mu$s) e a taxa de eventos ser bastante elevada, e só descarta eventos com características bem distintas dos canais de interesse.
+
+O HLT é formado pelo L2 e EF, e tem um tempo conjunto ($\sim$40ms) de latência e é implementado em \emph{Software}.
+
+Utilizando uma granularidade maior, os eventos selecionados pelo L2 serão avaliados pelo EF e por fim, teremos uma taxa de aproximadamente 200Hz e estes eventos serão armazenados em mídias permanentes para uma análise futura.
+
+Essa é uma visão geral da filtragem \emph{online} do ATLAS, na Seção~\ref{sec:rec_ele} veremos como acontece a filtragem especificamente para o elétron.
+
+
+\subsection{Filtragem \emph{Offline}}
+
+Como explicado anteriormente, para um sistema \emph{online}, os eventos que foram rejeitados não podem ser mais utilizados. Por isso, na filtragem \emph{online}, a eficiência deve ser grande, visto que não é desejado se perder nenhum evento físico relevante para análise posterior. Com isso, o falso alarme nesta etapa fica prejudicado \cite{torres2010sistema} .
+
+Como consequência, ao final de um processo \emph{online} de filtragem, um considerável ruído de fundo é encontrado nos canais de interesse. Esses dados, após armazenados, serão destinados aos diversos estudos vigentes no ATLAS.
+
+Com o intuito de munir esses estudos, sistemas de filtragem \emph{offline} são empregados. Neste sistema, como o tempo de latência não é um fator determinante, algoritmos bastante complexos são empregados. E, nesta etapa, pode-se equilibrar a eficiência e o falso alarme, de modo a obter-se uma melhor reconstrução do perfil dos eventos.
+
+\section{Conjunto de Dados}
+
+Neste trabalho usaremos dois tipos de banco de dados: Simulação \ac{MC} e Dados Reais.	Esses bancos de dados são do ano de 2012 e possuem energia de 8 TeV. 	
+
+\subsection{Monte Carlo}\label{sec:mc_data}
+É comum, na colaboração ATLAS, durante o desenvolvimento de algoritmos de classificação de eventos, a utilização de dados de simulação. Os algoritmos geradores de eventos de Monte Carlo descrevem, com a maior precisão possível, as características experimentais dos processos físicos de interesse \cite{sjostrand1991monte}.
+	
+As principais vantagens da utilização do MC são:
+
+\begin{itemize}
+\item Dar aos físicos uma estimativa de qual tipo de evento espera-se encontrar, e em qual taxa;
+\item Ajudar no planejamento dos detectores, de forma que o desempenho desses seja otimizado, delimitando as restrições para o cenário físico de interesse;
+\item Ser utilizado como ferramenta para elaboração de estratégias das análise que devem ser utilizadas em dados reais, melhorando as relações sinal-ruído;
+\item Estimar as correções de aceitação do detector que devem ser aplicadas nos dados reais, a fim de extrair um sinal físico "verdadeiro";
+\item Ser uma estrutura conveniente para o físico interpretar o significado de fenômenos em termos de uma teoria mais fundamental (normalmente o Modelo Padrão).
+\end{itemize}
+
+	Os dados MC utilizados estão listados abaixo, e seu perfil pode ser visto na Figura~\ref{fig:3T20}.
+
+\begin{itemize}
+\item Dados de sinal(Zee MC):
+
+    mc12\_8TeV.147806.PowhegPythia8\_AU2CT10\_Zee.merge.NTUP\\ \_PHOTON.e1169\_s1469\_s1470\_r3542\_r3549\_p1344/
+\item Dados de ruído de fundo(JF17 MC):
+
+    mc12\_8TeV.129160.Pythia8\_AU2CTEQ6L1\_perf\_JF17.merge.NTUP\\ \_EGAMMA.e1130\_s1468\_s1470\_r3542\_r3549\_p1032/
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{./textuais/atlas/figuras/baidu_mc.pdf}\\
+	\caption{Perfil dos eventos de dados MC. (Esquerda) Gráfico de eventos por E${_t}$, (Centro) Gráfico de eventos por $\eta$ e (Direita) Gráfico de eventos por NVTX.}
+	\label{fig:3T20}
+\end{figure}
+
+\subsection{Dados Reais}\label{sec:real_data}
+
+A etapa subsequente ao desenvolvimento dos algoritmos com dados de simulação MC é a aplicação em dados reais. Esse tipo de análise difere-se construtivamente da anterior logo na etapa inicial, pois ainda não sabemos qual é nosso conjunto de sinal e de ruído.
+	
+Nos dados MC sabemos exatamente qual a identidade das partículas (através da variável el\_truth\_type) e de qual decaimento ela provém (variável el\_truth\_mothertype). Com isso, é fácil separarmos um conjunto de elétrons que decaiu de uma partícula de interesse e o ruído de fundo, constituído de elétrons de conversões de fótons, de decaimentos semi-leptônicos e hádrons, como será abordado na seção ~\ref{cap:identificacao}.
+	
+Na análise com dados reais, essa separação é feita através de um algoritmo chamado \ac{TaP}, que será explicado na seção posterior.
+	
+O conjunto de dados reais utilizados está listado abaixo e o perfil dos dados é mostrado na Figura~\ref{fig:3T19}
+
+data12\_8TeV.00216399.physics\_Egamma.merge.NTUP\_PHOTON.r5203\_p1644\\ \_p1364
+
+data12\_8TeV.00216416.physics\_Egamma.merge.NTUP\_PHOTON.r5203\_p1644\\ \_p1364
+
+data12\_8TeV.00216432.physics\_Egamma.merge.NTUP\_PHOTON.r5203\_p1644\\ \_p1364
+
+data12\_8TeV.00214680.physics\_Egamma.merge.NTUP\_PHOTON.f489\_m1261\\ \_p1344\_p1345
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{./textuais/atlas/figuras/baidu_real.pdf}\\
+	\caption{Perfil dos eventos de dados reais. (Esquerda) Gráfico de eventos por E${_t}$, (Centro) Gráfico de eventos por $\eta$ e (Direita) Gráfico de eventos por NVTX.}
+	\label{fig:3T19}
+\end{figure}
+
+\subsubsection{\emph{Tag and Probe}}\label{sec:tap}
+
+Este método é utilizado para a identificação de elétrons que decaíram de uma partícula de interesse, em nosso caso, do bóson Z, Figura~\ref{fig:3T18}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm]{./textuais/atlas/figuras/tag_and_probe.pdf}\\
+	\caption{Ilustração do decaimento de Z.}
+	\label{fig:3T18}
+\end{figure}
+	
+Sabe-se que uma partícula reconstruída é identificada através da medida de sua massa invariante, pela combinação de partículas identificadas em seu estado final \cite{sundaresan2001handbook}.
+	
+O \emph{Tag and Probe} \cite{aad2012electron} utiliza esse artifício para reforçar a identificação de elétrons considerados sinal. Para isto, o conjunto de dados é submetido a alguns cortes, restando eventos que serão divididos em dois conjuntos: \emph{tag} e \emph{probe}.
+	
+Para um evento ser considerado tag, ele precisa passar pelos seguintes critérios:
+
+\begin{itemize}
+  \item Tipo de partícula: Author 1 ou 3; (usado para excluir elétrons \emph{forward})
+  \item Qualidade de Traço: número mínimo de hits no detector de \emph{Pixels} e SCT;
+  \item Regiões do Detector: Todo detector excluindo o \emph{crack};
+  \item Aprovado pelo critério do isEM++: Tight++;
+  \item Energia transversa: E${_t}$ $>$20 GeV;
+  \item Aprovador pelo canal de trigger: EF$\underline{\hspace{.05in}}$e24vh$\underline{\hspace{.05in}}$loose1 trigger;
+  \item No mínimo 1 vértice primário com 3 traços associados a ele.
+\end{itemize}
+
+Para um evento ser considerado probe, ele precisa passar pelos seguintes  critérios:
+
+\begin{itemize}
+  \item Tipo de partícula: Author 1 ou 3; (usado para excluir excluir elétrons \emph{forward})
+  \item Qualidade de Traço: número mínimo de hits no detector de \emph{Pixels} e SCT;
+  \item Regiões do Detector: Todo detector excluindo o \emph{crack};
+  \item Energia transversa: E${_tcone20}$  $<$ 6 GeV;
+  \item Aprovador pelo canal de trigger: EF$\underline{\hspace{.05in}}$e24vh$\underline{\hspace{.05in}}$loose1 trigger;
+  \item No mínimo 1 vértice primário com 3 traços associados a ele.
+\end{itemize}
+
+	* O significado dessas variáveis pode ser encontrado no site ntuple D3PD variables \cite{ntupleanalysis}.
+
+	
+Agora, podemos combinar um evento do conjunto \emph{tag} com outro do \emph{probe}, que ocorreram na mesma colisão, fazendo o cálculo da massa invariante. Dado pela Equação~\ref{eq:43}.
+
+\begin{equation}\label{eq:43}
+  IM = \sqrt {\left( {\sum {{E^2} - \sum {{p^2}} } } \right)}
+\end{equation}
+
+Onde, \emph{IM} é a massa invariante. \emph{E} é a energia e \emph{p} é o momento.
+
+Como os momentos são dados nas coordenadas \emph{x}, \emph{y} e \emph{z} o cálculo é feito da seguinte forma:
+
+\begin{equation}\label{eq:44}
+  {m_e} = 511*{10^{ - 3}}
+\end{equation}
+
+\begin{equation}\label{eq:45}
+  {E_{tag}} = \sqrt {{m_e} + p{x_{tag}} + p{y_{tag}} + p{z_{tag}}}
+\end{equation}
+
+\begin{equation}\label{eq:46}
+  {E_{probe}} = \sqrt {{m_e} + p{x_{probe}} + p{y_{probe}} + p{z_{probe}}}
+\end{equation}
+
+\begin{equation}\label{eq:47}
+  {E_{sum}} = {E_{tag}} + {E_{probe}}
+\end{equation}
+
+\begin{equation}\label{eq:48}
+  IM = \sqrt {{E_{sum}} - [{{\left( {p{x_{tag}} + p{x_{probe}}} \right)}^2} + {{\left( {p{y_{tag}} + p{y_{probe}}} \right)}^2} + {(p{z_{tag}} + p{z_{probe}})^2}}
+\end{equation}
+
+Onde, m${_e}$ é a massa do elétron em MeV. E${_{tag}}$ é a energia do \emph{tag}. E${_{probe}}$ é a energia do \emph{probe}. E${_{sum}}$ é a soma das energias do \emph{tag} e \emph{probe}. E \emph{px}, \emph{py} e \emph{pz} são os momentos em \emph{x}, \emph{y} e \emph{z} de cada partícula.
+	
+Após fazermos esse cálculo em todo conjunto, um corte de 80 a 100 GeV é feito na massa invariante, restando apenas alguns pares dentro desta faixa.  Destes pares, iremos selecionar todos os eventos do conjunto \emph{probe} como sendo o nosso sinal, devido ao conjunto ser menos polarizado em relação ao \emph{tag}. Os eventos que sobraram serão considerados ruído de fundo.
+
+

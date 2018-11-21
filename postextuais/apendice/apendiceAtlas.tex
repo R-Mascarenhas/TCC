@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Ap\^{e}ndice - ATLAS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Detector ATLAS}\label{sec:apendiceAtlas}
+
+Este apêndice é dedicado a ambientar e dar uma visão geral sobre onde este estudo é realizado, ou seja, será feita uma breve explicação sobre o detector ATLAS, que é o maior detector de partículas já construído. Ele se situa em uma caverna a 100 metros de profundidade perto do prédio principal do CERN \cite{cernwebAtlas}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=8cm]{./figuras/fig1.png}\\
+	\caption{Modelo computacional do Detector ATLAS. Extraído de (www.atlas.ch).}
+	\label{fig:2T05}
+\end{figure}
+
+No ponto central do detector ATLAS, feixes de partículas acelerados pelo \ac{LHC} colidem, o produto dessas colisões são novas partículas, que se espalham em todas as direções, interagindo com os sensores do detector. Estes são capazes de extrair diferentes informações (trajetórias, momentos e energias das partículas) devido aos seus seis subsistemas de detecção diferentes dispostos em camadas ao redor do ponto de colisão.
+
+Este detector tem seu próprio sistema de coordenadas cilíndricas: o ângulo $\phi$ é medido em torno do eixo do feixe, o ângulo polar $\theta$ é o ângulo a partir do eixo do feixe \cite{aad2008atlas} e a \emph{pseudorapidez} $\eta  =  - \ln \tan \left( {\frac{\theta }{2}} \right)$, como mostrado na na Figura~\ref{fig:2T07}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=8cm]{./figuras/sistema_de_coordenadas.pdf}\\
+	\caption{Sistema de coordenadas do Detector ATLAS. Extraído de \cite{dos2006sistema}.}
+	\label{fig:2T07}
+\end{figure}
+
+As características de construção e modulação do detector ATLAS foram pensadas de acordo com o perfil dos eventos de interesse do ATLAS e suas particularidades, uma vez que a identificação dessas partículas é feita pelas características de sua assinatura, que é uma marca particular, deixada no aparato, como pode ser visto na Figura \ref{fig:2T15}. Em \cite{Lippmann:2011bb} é apresentada um detalhamento sobre a construção desse e dos outros detectores do CERN.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=8cm]{./figuras/assinatura_particulas_atlas.png}\\
+	\caption{Modelo computacional da assinatura das partículas no detector ATLAS. Extraído de (cds.cern.ch).}
+	\label{fig:2T15}
+\end{figure}
+
+\section{Subsistemas do Detector}
+
+O \ac{ID} do ATLAS é composto de três partes: uma seção cilíndrica, chamada de Barril (\emph{Barrel}) e duas regiões em forma de disco, chamadas de tampas (\emph{Endcaps}), contendo os seguintes detectores:
+
+\begin{itemize}
+	\item Detector de Pixels  (\ac{SPD}): fornece medidas em duas dimensões com alta precisão perto do ponto de interação;
+	
+	\item Detector de Traços baseado em semicondutores (\ac{SCT}): em conjunto com o SPD, consegue extrair medidas de momento, parâmetro de impacto e posição de vértice;
+	
+	\item Detector de Radiação de Transição (\ac{TRT}): contribui para a medida precisa do momento de todos os traços \cite{benekos2003atlas}.
+\end{itemize}
+
+Além do \ac{ID}, o detector ATLAS conta com os calorímetros eletromagnético e hadrônico, que são dispositivos utilizados para absorver toda a energia cinética de uma partícula e transformá-la em um sinal eletrônico proporcional ao valor da energia depositada \cite{das1994introduction}. O \ac{EM} \cite{calorimeter2008construction} é composto de absorvedores de chumbo e eletrodos intercalados em forma de acordeão, sendo utilizado Argônio líquido como material ativo. Já o \ac{HAD} do detector ATLAS, chamado de Calorímetro de Telhas (do inglês \emph{Tile Calorimeter}, ou \emph{TileCal}), utiliza placas cintiladoras, em formato de telha, como material ativo e, como material absorvedor, faz o uso de placas de aço com baixo carbono \cite{aad2010readiness}.
+
+Uma descrição detalhada desses calorímetros pode ser encontrada em alguns documentos, como por exemplo: \cite{peralva2012detecccao}, \cite{grupen2008particle} e \cite{francavilla2012atlas}.
+
+Por fim, na camada mais externa do detector ATLAS encontra-se a câmara de múons. O espectrômetro de múons \cite{atlas2010commissioning} circunda o calorímetro e mede as trajetórias dessas partículas, sendo, assim, capaz de medir o seu momento junto com o ID.

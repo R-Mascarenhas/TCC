@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertacao.aux
+A level-1 auxiliary file: ./pretextuais/capa.aux
+A level-1 auxiliary file: ./pretextuais/folha_de_rosto.aux
+A level-1 auxiliary file: ./pretextuais/ficha_catalografica.aux
+A level-1 auxiliary file: ./pretextuais/folha_de_aprovacao.aux
+A level-1 auxiliary file: ./pretextuais/dedicatoria.aux
+A level-1 auxiliary file: ./pretextuais/agradecimentos.aux
+A level-1 auxiliary file: ./pretextuais/epigrafe.aux
+A level-1 auxiliary file: ./pretextuais/resumo.aux
+A level-1 auxiliary file: ./pretextuais/abstract.aux
+A level-1 auxiliary file: ./pretextuais/acronimos.aux
+A level-1 auxiliary file: ./textuais/introducao/introducao.aux
+A level-1 auxiliary file: ./textuais/discretizacao/discretizacao.aux
+A level-1 auxiliary file: ./textuais/desenvolvimento/desenvolvimento.aux
+A level-1 auxiliary file: ./textuais/resultados/resultados.aux
+A level-1 auxiliary file: ./textuais/conclusao/conclusao.aux
+The style file: abnt-alf.bst
+A level-1 auxiliary file: ./postextuais/apendice/apendicePubli.aux
+Database file #1: ./referencias/bibliografia.bib
+I was expecting a `,' or a `}'---line 301 of file ./referencias/bibliografia.bib
+ :   
+ :   url =          {http://home.cern/about/physics}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 309 of file ./referencias/bibliografia.bib
+ :   
+ :   url =          {http://mundoestranho.abril.com.br/materia/o-que-sao-os-aceleradores-de-particulas}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 328 of file ./referencias/bibliografia.bib
+ :   
+ :   url =          {http://www.cecm.usp.br/~caique/SM.html}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "cernwebabout" isn't style-file defined
+--line 337 of file ./referencias/bibliografia.bib
+I was expecting a `,' or a `}'---line 654 of file ./referencias/bibliografia.bib
+ :   
+ :   url =          {http://www.iro.umontreal.ca/~bengioy/yoshua_en/research.html}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
++---------------------------------------------------------+
+| Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+(There were 4 error messages)

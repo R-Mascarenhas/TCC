@@ -1,0 +1,17 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Resumo
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Resumo}
+
+
+\noindent A identificação de partículas é de fundamental importância para os experimentos de física de altas energias desenvolvidos ao redor do mundo. Nesse ambiente de física de partículas, a probabilidade de ocorrência de  partículas relevantes aos estudos propostos são baixíssimas em relação às partículas que formam o ruído de fundo, exigindo algoritmos com índices de eficiência de detecção dos sinais de interesse e rejeição de ruído de fundo cada vez melhores. Muitos métodos de identificação de partículas fazem uso da técnica de verossimilhança, esse método utiliza a densidade de probabilidade das variáveis para criar um discriminador. Sendo assim, para garantir a performance da classificação faz-se necessário uma boa qualidade de estimação das distribuições em questão, sendo estas comumente diferentes das distribuições conhecidas e parametrizadas na literatura. Nessa tese, os métodos aplicados à estimação de densidade não-paramétrica serão revisados e possíveis otimizações serão avaliadas a partir dos dados produzidos por um dos maiores experimentos do CERN, o ATLAS. Concentrado no contexto \emph{offline}, o trabalho reproduz o método baseado em verossimilhança e propõe algumas melhorias com o uso de algoritmos de processamento mais otimizados, estatística robusta e técnicas de discretização diferentes das utilizadas na literatura. Além disso, esse trabalho se propõe a expandir as ferramentas utilizadas na estimação univariada para o ambiente de estimação de densidades multivariada, conhecida como MKDE (do inglês, \emph{Multivariate Kernel Density Estimation}), que pode ser capaz de mitigar o erro inserido na consideração de independência entre as variáveis discriminantes inserida pelo método de \emph{Likelihood} atualmente em uso por vários experimentos desse tipo. Inicialmente, este trabalho se propõe a implementar o método de verossimilhança baseando-se na estimação de densidades univariadas usadas na reconstrução da densidade conjunta das variáveis discriminantes e a estudar o impacto de possíveis parâmetros relacionados à implementação do algoritmo de estimação de densidades univariadas. Em uma segunda etapa, a implementação do MKDE é inserida através de uma comparação direta com o método univariado.
+
+\vspace{0.5cm}
+
+\noindent Palavras-chave: Estimação de Densidades, Verossimilhança, \textit{FastKDE}, Discretização. \\
+
+\newpage
+
+

@@ -1,0 +1,35 @@
+\chapter{INTRODUÇÃO}
+
+%Atualmente, devido à complexidade crescente dos experimentos científicos, há um aumento no uso de estimadores não paramétricos de densidade para se obter a PDF das distribuições que não podem ser descritas por funções paramétricas conhecidas. Existem vários trabalhos em andamento relatando este tipo de estimação em diferentes áreas do conhecimento como Engenharia, Física, Biologia, Economia, Ecologia, Geologia, dentre outras. Este trabalho tem como plano de fundo o alto nível de performance demandada de algoritmos de estimação e classificação em experimentos de física de partículas, como em \cite{aad2008atlas}.
+
+%Geralmente, neste tipo de experimento, os algoritmos estão relacionados à viabilidade dos estudos propostos pelos físicos, uma vez que, geralmente, os eventos de interesse, chamados de sinais, são extremamente raros e contaminados com um alto nível de ruído de fundo. Contudo, é necessário construir algorítimos capazes de identificar eventos com a menor taxa de erro possível, o que implicitamente significa delimitar e estimar características probabilísticas de todos os eventos conhecidos da melhor maneira possível.
+
+%Atualmente, diversos algoritmos de classificação no contexto de \textit{big data} usam KDE não paramétrico \cite{scott2015multivariate}, Os experimentos do Centro Europeu de Pesquisa nuclear, (do frânces, \textit{Conseil Européen pour la Recherche Nucléaire}) (CERN) são exemplos disso no caso de algoritmo de identificação de elétrons aplicado ao experimento ATLAS \cite{atlas2014electron}. Tais algoritmos necessitam não apenas de uma performance ótima, mas também de menos poder computacional.
+
+
+\label{cap:intro}
+
+A crescente evolução tecnológica vem possibilitando o desenvolvimento de muitas áreas do conhecimento, sendo uma delas a engenharia elétrica, mais precisamente a análise multivariada \cite{vicini2005analise} que torna-se cada vez mais uma ferramenta importante para a solução de problemas ligados à estimação de densidades e seleção de eventos, tanto no ambiente industrial quanto em laboratórios de pesquisa. Entretanto, tais problemas podem ocorrem em outras áreas do conhecimento, sendo assim, o esforço em prol da otimização dessas ferramentas de maneira multidisciplinar é de grande interesse.
+
+Nas últimas décadas, a importância de uma modelagem estocástica por \ac{PDF}, utilizando-se de métodos não paramétricos teve um crescimento considerável devido ao fato de que vários experimentos geradores de enorme quantidade de dados foram iniciados.  Os experimentos ligados ao \ac{LHC} representam alguns deles. Desde a criação do \ac{CERN}, físicos e engenheiros de diferentes países têm trabalhado em conjunto para investigar questões referentes ao estado da arte da ciência fundamental relacionada à física de altas energias, usando instrumentos científicos complexos para estudar os constituintes básicos da matéria e suas interações. No complexo principal do \ac{CERN}, o \ac{LHC}, prótons são colocados em um acelerador que os faz colidir quase à velocidade da luz. Este processo permite estudar como as partículas interagem e fornece uma visão das leis fundamentais da natureza \cite{cernwebabout}.
+
+
+Atualmente, a física experimental de altas energias é um ramo da ciência em progressiva expansão e pode ser considerada um dos campos científicos mais exigentes em termos de processamento de sinal, esse fato é explicado devido aos eventos de interesse serem raros e contaminados com alto nível de ruído de fundo, demandando sistemas cada vez mais otimizados no que diz respeito a tempo de processamento, eficiência de detecção e rejeição de ruído.
+
+Com o objetivo de observar os subprodutos dessas colisões, é necessário usar detectores; basicamente, sensores que, trabalhando em conjunto, são capazes de medir algumas características dos subprodutos das colisões e transformá-los em sinais elétricos que podem ser armazenados e utilizados em estudos relacionados a física de altas energias.
+
+Em geral, para problemas cujas variáveis podem ser modeladas, a estimação das mesmas se torna paramétrica. No entanto, é muito importante enfatizar que, devido à complexidade do problema, suas variáveis podem não ser descritas com as funções de densidade de probabilidade conhecidas na literatura. Sendo assim, a aplicação de métodos não paramétricos se espalhou consideravelmente nos últimos anos devido às ferramentas recentemente desenvolvidas para análise estatística. Tais métodos  fornecem um caminho alternativo a estimação paramétrica e possibilita o estudo de grandes quantidades de dados, essa linha de pesquisa torna-se objeto significativo de estudo, uma vez que contempla pesquisas teóricas e práticas com relação direta a temas como regressão, discriminação e reconhecimento de padrões. 
+
+%Neste contexto, abre-se então a possibilidade de buscar uma combinação fundamentada entre estimação não paramétrica e processamento estatístico multivariado, no intuito de garantir uma resposta eficaz, robusta e viável.
+
+
+ Neste contexto, o presente trabalho visa avaliar os erros inseridos pelo processo de discretização propondo diferentes métodos e olhando diretamente à sua performance de estimação, considerando as interpolações pelo vizinho mais próximo e linear. O impacto pelos pontos longe da região de alta probabilidade também são avaliados uma vez que é um problema comum na estimação de \ac{PDF}.
+
+\section{Motivação}
+
+%Neste trabalho, serão propostos novos métodos de discretização a fim de reduzir os erros de estimação sem demandar de mais poder computacional para tal, tentando garantir uma quantidade de pontos adequadas a cada região de interesse.
+Na última década muitos trabalhos relacionados ao tema de otimização da estimação de densidade não paramétrica, tanto numérica \cite{schindler2012bandwidth} quanto computacional \cite{gramacki2017nonparametric}, foram publicados, bem como sobre os temas de discretização, estatística robusta e medidas de distância, mostrando que são temas que mesmo sendo discutidos há décadas ainda estão sendo utilizados, explorados e em desenvolvimento. Além disso, experimentos complexos de Big Data, como os do LHC, têm aplicado análises usando estimação de densidade em conjunto com técnicas de verossimilhança empregados em problemas de identificação de partículas obtendo resultados relevantes, mesmo utilizando uma simplificação da formulação matemática desse método, assumindo independência entre variáveis. Portanto, abre-se a possibilidade de contribuir nessa área no que diz respeito a otimização da estimação de densidades e suas nuances, usando como base de desenvolvimento um sistema altamente complexo, com grande número de variáveis e distribuições com características bastante distintas, como ocorre com os experimentos do \ac{LHC}. 
+
+\section{Estrutura do Trabalho}
+Este documento está organizado da seguinte maneira: XXXXXXXX
+

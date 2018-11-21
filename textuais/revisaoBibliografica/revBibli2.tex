@@ -1,0 +1,63 @@
+\chapter{Revisão Bibliográfica}\label{cap:rev}
+
+Nesse capitulo será apresentada uma revisão bibliográfica dos principais conceitos usados para o desenvolvimento desse trabalho. Essa revisão visa mostrar tanto o início das pesquisas nessa área quanto os avanços realizados nos últimos anos. Os tópicos estudados nesse trabalho foram:
+
+\begin{itemize}
+	\item Estimação de Densidades;
+	\item Discretização;
+	\item Avaliadores de Estimação;
+	\item Algoritmos bio-inspirados.
+\end{itemize}
+
+\section{Estimação de Densidade}
+
+Para análise de grandes quantidades de dados e/ou conjuntos multidimensionais de dados é necessário recorrer à ferramentas estatísticas, como estimadores paramétricos, estimadores não-paramétricos ou recursos gráficos \cite{scott2015multivariate}. 
+
+A primeira abordagem citada pode ser considerada a mais eficiente, uma vez que pode-se obter os parâmetros da função de densidade utilizando o conhecimento a priori sobre os dados, entretanto, tal método pode levar a erros de estimação caso a função geradora dos dados seja desconhecida e/ou não pertencer às função já parametrizadas na literatura \cite{sheskin2003handbook}. Já a segunda ferramenta é considerada mais flexível, no sentido de que não é estritamente necessário algum conhecimento anterior sobre os dados a serem analisados, contudo essa abordagem leva a um problema denominado de 'Maldição da Otimização', onde existem parâmetros a serem otimizados que necessitam de um conhecimento prévio da distribuição, nesse momento algumas suposições, baseadas na análise dos dados, podem ser feitas. Essa alternativa de unir um conhecimento prévio ao método de estimação não-paramétrico gera uma discussão, entre alguns autores (e.g.  \cite{marascuilo1977nonparametric}), sobre o uso do termo '\textit{assumption freer}' ao invés do termo 'não-paramétrico'. Por fim, os recursos gráficos se apresentam como uma ferramenta extra que pode mostrar o problema de outros pontos de vista, trazer luz e mostrar o inesperado.
+
+No caso desta tese o desenvolvimento se dá no âmbito da estimação não-paramétrica, uma vez que a intenção desse trabalho é contribuir para a otimização da estimação e classificação de dados quando não se tem conhecimento sobre as funções geradoras.
+
+\subsection{Estimação de Densidade não-paramétrica}
+
+No campo da estimação de densidade não-paramétrica podemos citar o pesquisador David W. Scott por suas inúmeras contribuições: estudos sobre o histograma \cite{histogramScott}, primeiro estimador não-paramétrico, a concepção do \ac{ASH} \cite{ashScott}, pesquisas relacionadas a otimização de histogramas \cite{scott1979optimal}, outros estimadores não-paramétricos \cite{scott1987biased}, \cite{scott1981monte} e \cite{wang19941}, otimizações do \ac{KDE} \cite{terrell1992variable}, \cite{scott1977kernel} e \cite{scott1985kernel} e estudos sobre estimação de densidades multidimensionais \cite{sain1994cross}, muitos desses tópicos abordados de maneira clara no livro \cite{scott2015multivariate}, que serviu como base para o início das pesquisas dessa tese.
+
+Além disso, analisando os estudos desse tema na literatura temos que os métodos de \ac{KDE} datam de \cite{rosenblatt1956remarks} e \cite{parzen1962estimation}, depois desses podemos citar os trabalhos de  \cite{eubank1988spline}, \cite{hardle1990applied}, \cite{hardle1988smoothing}, \cite{silverman1986density}, \cite{wahba1990spline}, \cite{wand1994kernel} e \cite{jones1996brief} como exemplos de estudos relacionados ao tema de suavização da estimação de densidades, tais métodos são, por muitas vezes, capazes de fornecer uma metodologia útil e eficiente para análise dos dados.
+
+O \ac{KDE} é amplamente utilizado devido a sua simplicidade tanto na implementação quanto na interpretação de seus resultados, em \cite{zambom2012review} o autor apresenta uma revisão sobre esse método, mostrando importantes aspectos teóricos do mesmo. O \ac{KDE} apresenta uso em casos de modelagem, inferência estatística e análise de dados, entretanto, sua utilização pode ser restringida devido ao seu custo computacional, quando comparado a outros métodos \cite{tang2016fast}. 
+
+Com esse detalhe em mente e sabendo que atualmente, alguns experimentos, exigem otimização no sentido de custo computacional e estabilidade numérica podemos citar alguns tópicos de estudo no escopo de aprimorar a estimação de densidade baseada no \ac{KDE}, são eles:
+
+\begin{itemize}
+	\item Custo computacional;
+	\item Escolha da Largura de Banda;
+	\item Parâmetro de suavização da estimação;
+	\item Métodos de discretização e escolha do número de pontos;
+	\item Sensibilidade a descontinuidades. 
+\end{itemize}
+
+Contudo, ressalta-se que para a otimização de cada tópico citado necessita-se de uma análise profunda e individual, mesmo assim, em muitos casos, pode-se chegar a questões de otimização cíclica. Nos próximos parágrafos serão apresentados alguns dos principais trabalhos desenvolvidos sobre cada tema.
+
+
+\paragraph{Custo computacional}
+
+Mesmo com a publicação de muitos livros e artigos sobre o tema de estimação de densidades nas últimas décadas, as soluções e implementações desenvolvidas com o \ac{KDE} ainda consomem muito tempo. Em casos onde o conjunto de dados a ser analisado não passa de algumas centenas esse problema pode ser desconsiderado, entretanto, quando almeja-se avaliar grandes quantidades de dados \textit{(Big Data)}, essa questão pode ser um obstáculo, principalmente em casos multidimensionais \cite{gramacki2017nonparametric}.
+
+Existem muitos estudos que propõem formas de diminuir o consumo de tempo dos algoritmos de \ac{KDE}, sendo que a maioria faz uso de métodos de aproximação computacional, entretanto, o erro dessas aproximações não pode ser controlado. Com isso em mente os autores de \cite{raykar2010fast} apresentam uma ferramenta baseada em expansão de Taylor, mantendo somente os primeiros termos com o intuito de garantir que o erro causado pelo truncamento da serie permaneça menor que o erro desejado. Em \cite{tang2016fast} é proposto um método de estimação unidimensional e multidimensional baseada em polinômios locais e comparado com o método de \ac{KDE} padrão. Já em \cite{langrene2017fast} é apresentado o método baseado em \textit{Fast Sum Updating} que consiste na ordenação dos dados de entrada e na transição do \textit{kernel} de um ponto de avaliação para outro, atualizando somente os pontos de entrada que não pertenciam a janela selecionada anteriormente. Ainda dentro desse mesmo tema temos \cite{yin2008fast} que aborda esse conteúdo utilizando a teoria de \ac{SBR}. E, de modo geral, o trabalho de \cite{lang2005empirical} apresenta resultados de experimentos testando os métodos \ac{FGT}, \ac{IFGT} e Árvore Dupla (do inglês, \textit{Dual-Tree}) em relação ao tamanho do conjunto de dados, dimensão, erro permitido, além de medidas de tempo de CPU e uso de memória.
+
+\paragraph{Escolha da Largura de Banda}
+
+A discussão sobre a seleção de largura de banda (do inglês, \textit{Bandwidth}) vem acontecendo a cerca de três décadas \cite{heidenreich2013bandwidth}. Embora existam outros aspectos a serem analisados na estimativa de densidade, a escolha desse parâmetro não é de forma alguma menos problemática. Isso se torna visível ao ler os muitos estudos empíricos em que os autores apresentam novas propostas normalmente fornecendo simulações em que mostram que o próprio seletor supera alguns dos métodos existentes. Entretanto a seleção da largura de banda é algo mais complexo do que aparenta ser, nenhum dos muitos métodos de seleção existentes conseguem superar os outros quando se considera as mais variadas densidades a serem estimadas , como mostrado em \cite{heidenreich2013bandwidth} e \cite{turlach1993bandwidth}.
+
+A escolha da largura de banda é sensível a muitos aspectos da distribuição, como \textit{Kurtosis} \cite{decarlo1997meaning}, \textit{Skewness} \cite{mardia1970measures}, caudas exponenciais, descontinuidades, multi-picos, tamanho da amostra, entre outros. Neste contexto, pode-se citar os artigos de \cite{oyang2005data} e \cite{kim2012robust}, o primeiro apresenta a técnica de calcular a largura de banda variável com um modelo mais relaxado, o segundo aborda o tema da ponto de vista da estatística robusta, que tem como principal contribuição a não consideração de pontos fora da densidade (\textit{outliers}) para os cálculo estatísticos e de largura de banda. E as teses de doutorado de \cite{walter1998density}, \cite{duong2004bandwidth} e \cite{schindler2012bandwidth}.
+
+\paragraph{Parâmetro de suavização da estimação}
+
+\section{Discretização}
+
+
+\section{Avaliadores de Estimação}
+
+
+\section{Algoritmos bio-inspirados}
+
+
