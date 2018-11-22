@@ -115,7 +115,7 @@ onde $\mu$ é a média da distribuição, $\sigma$ o desvio padrão e $x$ a vari
 
 
 \subsection{\textit{Linspace}}
-O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} dada. Após, o eixo horizontal terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal e a Figura~\ref{fig:Lognormal_lin} ilustra o mesmo método para uma distribuição Lognormal com diferentes desvios padrões, limitando o eixo horizontal à uma área de probabilidade de $99.99\%$. A Figura~\ref{fig:datalin} mostra as distribuições geradas, conforme é mostrada na Figura~\ref{fig:data}, discretizadas utilizando este método.
+O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} dada. Após, o eixo horizontal terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal e a Figura~\ref{fig:Lognormal_lin} ilustra o mesmo método para uma distribuição Lognormal com diferentes desvios padrões, limitando o eixo horizontal à uma área de probabilidade de $99.99\%$. A Figura~\ref{fig:datalin} mostra as distribuições geradas, conforme é mostrado na Figura~\ref{fig:data}, discretizadas utilizando este método.
 
 \begin{figure}[H]
 	\centering
@@ -203,7 +203,7 @@ O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a 
 É possível perceber que este método atende de forma satisfatória distribuições que não possuem derivadas muito altas como é ilustrado na figura \ref{fig:linspace_curve} e nas figuras \ref{fig:lin001} à \ref{fig:lin050}, embora nas Figuras \ref{fig:randnlin} e \ref{fig:randloglin} há um erro de estimação por devida à quantidade de eventos simulados. Nas figuras \ref{fig:lin100} à \ref{fig:lin150} e \ref{fig:randn_outlin} o método em questão já não consegue descrever a curva, colocando um número insuficientes de pontos na região de alta probabilidade e um número superior de pontos na região de alta probabilidade.
 
 \subsection{\textit{CDFm}}
-Ela representa a discretização baseada na \ac{CDF}. Para este método, a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal, a Figura~\ref{fig:Lognormal_cdf} para a distribuição Lognormal e a Figura~XXXXX para o \textit{dataset}. Note que, quanto maior a probabilidade da função de densidade, maior o número de pontos na sua região e que os \textit{outliers} não fazem mais tanto efeito, como é o cada da \textit{Linspace}.
+Ela representa a discretização baseada na \ac{CDF}. Para este método, a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal, a Figura~\ref{fig:Lognormal_cdf} para a distribuição Lognormal e a Figura~XXXXX para o \textit{dataset}. Note que, quanto maior a probabilidade da função de densidade, maior o número de pontos na sua região e que os \textit{outliers} não fazem mais tanto efeito, como é o caso do \textit{Linspace}.
 
 \color{red} COLOCAR GRÁFICO 2X3 \color{black}
 
@@ -266,7 +266,7 @@ Ela representa a discretização baseada na \ac{CDF}. Para este método, a discr
 Como este método baseia-se na \ac{CDF}, quando maior a variação na \ac{PDF}, mais rápido a CDF sobe, fazendo assim com que este método coloque mais pontos nas regiões de alta probabilidade e poucos pontos nas regiões de baixa probabilidade, sendo assim um método imune à \textit{outliers}.
 
 \subsection{\textit{PDFm}}
-Este método também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas função de referência a própria \ac{PDF}, ao invés da sua \ac{CDF}. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona para a distribuição Normal e a Figura~\ref{fig:Lognormal_pdf} para a distribuição Lognormal. Ela possui o efeito de incrementar o número de pontos onde a primeira derivada da \ac{PDF} é maior.
+Este método também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas função de referência a própria \ac{PDF}, ao invés da sua \ac{CDF}. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona para a distribuição Normal,a Figura~\ref{fig:Lognormal_pdf} para a distribuição Lognormal e a Figura~XXXX para dados gerados. Ela possui o efeito de incrementar o número de pontos onde a primeira derivada da \ac{PDF} é maior, ou seja, quanto maior a inclinação da curva, mais pontos são colocados.
 
 \begin{figure}[H]
 	\centering
@@ -368,7 +368,22 @@ G_X(x) = \int_{-\infty}^x g_X(y)\cdot dy
 \label{equ:dcdf}
 \end{equation}
 
-\subsection{\textit{iPDF2}}
+
+Já para a aplicação com dados gerados, ilustrado na Figura~XXXX, precisamos utilizar a derivada discreta, que pode ser feita utilizando o método de diferenças finitas, que consiste em computar a inclinação de uma reta secante vizinha através dos pontos $(x,f(x))$ e $(x+h,f(x+h))$ \cite{burden2001numerical} que pode ser vista na Figura~XXXX. A inclinação dessa reta pode ser descrita pela Equação~\eqref{eq:derivdisc}
+
+\begin{equation}
+	{\displaystyle f'(x) = {f(x+h)-f(x) \over h}}
+	\label{eq:derivdisc}
+\end{equation}
+
+onde \textit{h} é a distancia entre dois pontos vizinhos (\textit{bins}) e x o valor do \textit{bin}
+
+{\color{red} BOTAR UMA FIGURA MANEIRA AQUI PRA EXPLICAR A DERIVADA DISCRETA}
+
+
+
+
+\subsection{\textit{iPDF2}} \label{cap:ipdf2}
 Este método é construído da mesma maneira da \textit{IPDF1} mas usando a segunda detivada ao invés da primeira, como é mostrado na Figura~\ref{fig:ddPDF1} e \ref{fig:ddPDF2}. Suas equações são mostradas em \eqref{equ:hx} e \eqref{equ:ddcdf}.
 
 {\color{red} COLOCAR O GRÁFICO DA DERIVADA EM ANEXO E AQUI O GRÁFICO DA CDF PARA A LOGNORMAL E COM OS DATASETS}
@@ -411,6 +426,12 @@ H_X(x) = \int_{-\infty}^x h_X(y)\cdot dy
 \label{equ:ddcdf}
 \end{equation}
 
+Para os dados gerados, o precedimento é o mesmo descrito na Seção~\ref{cap:ipdf2} e a equação da segunda derivada discreta pode ser escrita pela Equação~\ref{eq:derivdisc2}.
+
+\begin{equation}
+{\displaystyle f''(x) = {f'(x+h)-f'(x) \over h}}
+\label{eq:derivdisc2}
+\end{equation}
 
 \section{Ambiente de Análise}
 Para analisar as diferenças entre a \ac{PDF} real e estimada ao longo de toda a extensão do eixo das abscissas, a área entre as duas \ac{PDF}s será usada como medida da estimação de erro. Além do mais, o eixo das abscissas foi dividida em $N$ regiões de mesmo tamanho, chamado \ac{RoI} \cite{ron1999art}. Essas regiões são compreendidas entre valores máximos e mínimos predefinidos do eixo horizontal. A Figura~XXXXX mostra este processo quando a abscissa é dividida em 20 regiões, todas compreendidas entre os valores $-4$ e $4$ do eixo $ x $.

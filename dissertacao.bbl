@@ -10,6 +10,11 @@
 {BIBA, M. et al. Unsupervised discretization using kernel density estimation.
   In:  \emph{IJCAI}. [S.l.: s.n.], 2007. p. 696--701.}
 
+\bibitem[Burden e Faires 2001]{burden2001numerical}
+\abntrefinfo{Burden e Faires}{BURDEN; FAIRES}{2001}
+{BURDEN, R.; FAIRES, J. \emph{Numerical analysis 7th ed., brooks/cole, thomson
+  learning}. [S.l.]: Inc, 2001.}
+
 \bibitem[CERN 2015]{cernwebabout}
 \abntrefinfo{CERN}{CERN}{2015}
 {CERN. \emph{About CERN}. 2015.
