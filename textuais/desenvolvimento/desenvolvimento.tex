@@ -31,7 +31,7 @@ onde $\mu$ é a média da distribuição, $\sigma$ o desvio padrão e $x$ a vari
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./figuras/Normal}
+	\includegraphics[width=0.6\linewidth]{./figuras/Normal}
 	\caption{Ilustração da curva Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$.}
 	\label{fig:Gaussiana}
 \end{figure}
@@ -80,7 +80,7 @@ onde $\mu$ é a média da distribuição, $\sigma$ o desvio padrão e $x$ a vari
 		\label{fig:sig150}
 	\end{subfigure}
 	
-	\caption{Ilustração das curvas Lognormais em que: (a) possui $\sigma = 0.01$; (b) possui $\sigma = 0.25$; (c) possui $\sigma = 0.5$; (d) possui $\sigma = 1$; (e) possui $\sigma = 1.25$; e (f) possui $\sigma = 1.5$}
+	\caption{Ilustração das curvas Lognormais construidas com diferentes parâmetros: (a) possui $\sigma = 0.01$; (b) possui $\sigma = 0.25$; (c) possui $\sigma = 0.5$; (d) possui $\sigma = 1$; (e) possui $\sigma = 1.25$; e (f) possui $\sigma = 1.5$}
 	\label{fig:Lognormal}
 \end{figure}
 
@@ -200,10 +200,10 @@ O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a 
 \end{figure}
 
 
-É possível perceber que este método atende de forma satisfatória distribuições que não possuem derivadas muito altas como é ilustrado na figura \ref{fig:linspace_curve} e nas figuras \ref{fig:lin001} à \ref{fig:lin050}, embora nas Figuras \ref{fig:randnlin} e \ref{fig:randloglin} há um erro de estimação por devida à quantidade de eventos simulados. Nas figuras \ref{fig:lin100} à \ref{fig:lin150} e \ref{fig:randn_outlin} o método em questão já não consegue descrever a curva, colocando um número insuficientes de pontos na região de alta probabilidade e um número superior de pontos na região de alta probabilidade.
+É possível perceber que este método atende de forma satisfatória distribuições que não possuem derivadas muito altas como é ilustrado na figura \ref{fig:linspace_curve} e nas figuras \ref{fig:lin001} à \ref{fig:lin050}, embora nas Figuras \ref{fig:randnlin} e \ref{fig:randloglin} há um erro de estimação por devida à quantidade de eventos simulados. Nas figuras \ref{fig:lin100} à \ref{fig:lin150} e \ref{fig:randn_outlin} o método em questão já não consegue descrever a curva, colocando um número insuficientes de pontos na região de alta probabilidade e um número maior de pontos na região de alta probabilidade.
 
 \subsection{\textit{CDFm}}
-Ela representa a discretização baseada na \ac{CDF}. Para este método, a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal, a Figura~\ref{fig:Lognormal_cdf} para a distribuição Lognormal e a Figura~XXXXX para o \textit{dataset}. Note que, quanto maior a probabilidade da função de densidade, maior o número de pontos na sua região e que os \textit{outliers} não fazem mais tanto efeito, como é o caso do \textit{Linspace}.
+O método denominado nesse trabalho de \ac{CDFm} representa a discretização baseada na \ac{CDF}. Para este método, a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal, a Figura~\ref{fig:Lognormal_cdf} para a distribuição Lognormal e a Figura~XXXXX para o \textit{dataset}. Note que, quanto maior a probabilidade da \ac{PDF}, maior o número de pontos na sua região e que os \textit{outliers} não fazem mais tanto efeito, como é o caso do \textit{Linspace}.
 
 \color{red} COLOCAR GRÁFICO 2X3 \color{black}
 
@@ -256,7 +256,7 @@ Ela representa a discretização baseada na \ac{CDF}. Para este método, a discr
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./figuras/CDFm_normal_1}
+	\includegraphics[width=0.6\linewidth]{./figuras/CDFm_normal_1}
 	\caption{Ilustração da discretização da distribuição Gaussiana baseada em sua CDF.}
 	\label{fig:CDFm_curve}
 \end{figure}
@@ -266,7 +266,7 @@ Ela representa a discretização baseada na \ac{CDF}. Para este método, a discr
 Como este método baseia-se na \ac{CDF}, quando maior a variação na \ac{PDF}, mais rápido a CDF sobe, fazendo assim com que este método coloque mais pontos nas regiões de alta probabilidade e poucos pontos nas regiões de baixa probabilidade, sendo assim um método imune à \textit{outliers}.
 
 \subsection{\textit{PDFm}}
-Este método também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas função de referência a própria \ac{PDF}, ao invés da sua \ac{CDF}. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona para a distribuição Normal,a Figura~\ref{fig:Lognormal_pdf} para a distribuição Lognormal e a Figura~XXXX para dados gerados. Ela possui o efeito de incrementar o número de pontos onde a primeira derivada da \ac{PDF} é maior, ou seja, quanto maior a inclinação da curva, mais pontos são colocados.
+Este método, denominado de \ac{PDFm} também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas função de referência a própria \ac{PDF}, ao invés da sua \ac{CDF}. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona para a distribuição Normal,a Figura~\ref{fig:Lognormal_pdf} para a distribuição Lognormal e a Figura~XXXX para dados gerados. Ela possui o efeito de incrementar o número de pontos onde a primeira derivada da \ac{PDF} é maior, ou seja, quanto maior a inclinação da curva, mais pontos são colocados.
 
 \begin{figure}[H]
 	\centering
@@ -328,7 +328,7 @@ Este método também usa a técnica de reflexão aplicada ao método da \textit{
 
 \subsection{\textit{iPDF1}}
 
-Este método reflete os valores verticais para o eixo horizontal usando a \ac{CDF} da primeira derivada da \ac{PDF} como uma transformação de base, como é ilustrado nas Figuras~\ref{fig:dPDF1} e \ref{fig:dPDF2}
+O método da \ac{iPDF1} reflete os valores verticais para o eixo horizontal usando a \ac{CDF} da primeira derivada da \ac{PDF} como uma transformação de base, como é ilustrado nas Figuras~\ref{fig:dPDF1} e \ref{fig:dPDF2}
 {\color{red} COLOCAR O GRÁFICO DA DERIVADA EM ANEXO E AQUI O GRÁFICO DA CDF PARA A LOGNORMAL E COM OS DATASETS}
 \begin{figure}[!ht]
 	\centering
@@ -384,7 +384,7 @@ onde \textit{h} é a distancia entre dois pontos vizinhos (\textit{bins}) e x o 
 
 
 \subsection{\textit{iPDF2}} \label{cap:ipdf2}
-Este método é construído da mesma maneira da \textit{IPDF1} mas usando a segunda detivada ao invés da primeira, como é mostrado na Figura~\ref{fig:ddPDF1} e \ref{fig:ddPDF2}. Suas equações são mostradas em \eqref{equ:hx} e \eqref{equ:ddcdf}.
+O método da \ac{iPDF2} é construído da mesma maneira da \textit{IPDF1} mas usando a segunda detivada ao invés da primeira, como é mostrado na Figura~\ref{fig:ddPDF1} e \ref{fig:ddPDF2}. Suas equações são mostradas em \eqref{equ:hx} e \eqref{equ:ddcdf}.
 
 {\color{red} COLOCAR O GRÁFICO DA DERIVADA EM ANEXO E AQUI O GRÁFICO DA CDF PARA A LOGNORMAL E COM OS DATASETS}
 
