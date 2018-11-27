@@ -27,14 +27,9 @@ Estes cinco métodos serão mostrados utilizando \ac{PDF}s analíticas Gaussiana
 	{\displaystyle f_{L_X}(x;\mu ,\sigma )={\frac {1}{x\sigma {\sqrt {2\pi }}}}\cdot e^ {-\frac {\left(\ln(x)-\mu \right)^{2}}{2\sigma ^{2}}}}
 	\label{eq:Lognormal}
 \end{equation}
-onde $\mu$ é a média da distribuição, $\sigma$ o desvio padrão e $x$ a variável aleatória.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{./figuras/Normal}
-	\caption{Ilustração da curva Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$.}
-	\label{fig:Gaussiana}
-\end{figure}
+
+
 
 \begin{figure}[H]
 	\centering
@@ -363,10 +358,7 @@ As equações \eqref{equ:dpdf1} e \eqref{equ:dcdf} descrevem este método matema
 onde $\zeta$ é a equação da distribuição da derivada da distribuição normal, $\mu$ é a média, $\sigma$ o desvio padrão, $x$ a variável aleatória, $c_1$ é a área abaixo da curva $\zeta$, e $g_X$ é a versão normalizada.	
 A \ac{CDF} de $g_X$ ($G_X(x)$) é usada para transferir os valores da abscissa ao eixo da ordenada como mostra a  Figura~\ref{fig:dPDF2}.
 
-\begin{equation}
-G_X(x) = \int_{-\infty}^x g_X(y)\cdot dy
-\label{equ:dcdf}
-\end{equation}
+
 
 
 Já para a aplicação com dados gerados, ilustrado na Figura~XXXX, precisamos utilizar a derivada discreta, que pode ser feita utilizando o método de diferenças finitas, que consiste em computar a inclinação de uma reta secante vizinha através dos pontos $(x,f(x))$ e $(x+h,f(x+h))$ \cite{burden2001numerical} que pode ser vista na Figura~XXXX. A inclinação dessa reta pode ser descrita pela Equação~\eqref{eq:derivdisc}
