@@ -106,6 +106,9 @@ Neste capítulo estudaremos mais afundo os métodos de discretização apresenta
 {\color{red} Não entendi muito bem o que é pra colocar aqui, seria apenas o algoritmo da discretização? pq este meio que já foi explicado no cap 2 né, quando eu explico como cada método funciona. Talvez seja mais interessante botar isso aqui lá pro final, explicando como os erros foram calculados, o que achas?}
 
 \section{Tem que pensar num nome bonito pra cá haha}
+Aqui iremos testar todas os métodos apresentados até o momento para distribuições diferentes e variando o número de estimação
+\subsection{Gaussiana}
+
 
 \subsection{\textit{Linspace}}
 O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} dada. Após, o eixo horizontal terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal e a Figura~\ref{fig:Lognormal_lin} ilustra o mesmo método para uma distribuição Lognormal com diferentes desvios padrões, limitando o eixo horizontal à uma área de probabilidade de $99.99\%$. A Figura~\ref{fig:datalin} mostra as distribuições geradas, conforme é mostrado na Figura~\ref{fig:data}, discretizadas utilizando este método.

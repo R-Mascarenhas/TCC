@@ -12,11 +12,12 @@
 \contentsline {chapter}{\numberline {3}DESENVOLVIMENTO}{27}
 \contentsline {section}{\numberline {3.1}Algoritmo}{29}
 \contentsline {section}{\numberline {3.2}Tem que pensar num nome bonito pra c\IeC {\'a} haha}{29}
-\contentsline {subsection}{\numberline {3.2.1}\textit {Linspace}}{29}
-\contentsline {subsection}{\numberline {3.2.2}\textit {CDFm}}{31}
-\contentsline {subsection}{\numberline {3.2.3}\textit {PDFm}}{33}
-\contentsline {subsection}{\numberline {3.2.4}\textit {iPDF1}}{35}
-\contentsline {subsection}{\numberline {3.2.5}\textit {iPDF2}}{37}
+\contentsline {subsection}{\numberline {3.2.1}Gaussiana}{29}
+\contentsline {subsection}{\numberline {3.2.2}\textit {Linspace}}{29}
+\contentsline {subsection}{\numberline {3.2.3}\textit {CDFm}}{31}
+\contentsline {subsection}{\numberline {3.2.4}\textit {PDFm}}{33}
+\contentsline {subsection}{\numberline {3.2.5}\textit {iPDF1}}{35}
+\contentsline {subsection}{\numberline {3.2.6}\textit {iPDF2}}{37}
 \contentsline {section}{\numberline {3.3}Ambiente de An\IeC {\'a}lise}{38}
 \contentsline {chapter}{\numberline {4}Resultados}{39}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{40}
