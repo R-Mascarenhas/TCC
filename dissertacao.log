@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  26 NOV 2018 23:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  27 NOV 2018 00:19
 entering extended mode
 **./dissertacao.tex
 (dissertacao.tex
@@ -722,9 +722,6 @@ LaTeX Warning: Unused global option(s):
 (textuais/discretizacao/discretizacao.aux)
 (textuais/desenvolvimento/desenvolvimento.aux
 
-LaTeX Warning: Label `cap:anal' multiply defined.
-
-
 LaTeX Warning: Label `equ:Normal' multiply defined.
 
 
@@ -1167,150 +1164,148 @@ le pdfs with page group included in a single page
 
  (textuais/desenvolvimento/desenvolvimento.tex
 Cap\'{\i }tulo 3.
-Package acronym Info: Label `acro:FD' newly defined as it shall be overridden
-although it is yet undefined on input line 17.
+<./figuras/log_sigma_001.png, id=174, 570.933pt x 714.7503pt>
+File: ./figuras/log_sigma_001.png Graphic file (type png)
+<use ./figuras/log_sigma_001.png>
+Package pdftex.def Info: ./figuras/log_sigma_001.png  used on input line 32. on
+ input line 32.
+Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
+e 32.
+<./figuras/log_sigma_025.png, id=175, 570.933pt x 714.7503pt>
+File: ./figuras/log_sigma_025.png Graphic file (type png)
+<use ./figuras/log_sigma_025.png>
+Package pdftex.def Info: ./figuras/log_sigma_025.png  used on input line 39. on
+ input line 39.
+Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
+e 39.
+<./figuras/log_sigma_05.png, id=176, 570.933pt x 714.7503pt>
+File: ./figuras/log_sigma_05.png Graphic file (type png)
+<use ./figuras/log_sigma_05.png>
+Package pdftex.def Info: ./figuras/log_sigma_05.png  used on input line 46. on 
+input line 46.
+Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
+e 46.
+<./figuras/log_sigma_1.png, id=177, 570.933pt x 714.7503pt>
+File: ./figuras/log_sigma_1.png Graphic file (type png)
+<use ./figuras/log_sigma_1.png>
+Package pdftex.def Info: ./figuras/log_sigma_1.png  used on input line 53. on i
+nput line 53.
+Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
+e 53.
+<./figuras/log_sigma_125.png, id=178, 570.933pt x 714.7503pt>
+File: ./figuras/log_sigma_125.png Graphic file (type png)
+<use ./figuras/log_sigma_125.png>
+Package pdftex.def Info: ./figuras/log_sigma_125.png  used on input line 60. on
+ input line 60.
+Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
+e 60.
+<./figuras/log_sigma_15.png, id=179, 570.2103pt x 714.7503pt>
+File: ./figuras/log_sigma_15.png Graphic file (type png)
+<use ./figuras/log_sigma_15.png>
+Package pdftex.def Info: ./figuras/log_sigma_15.png  used on input line 67. on 
+input line 67.
+Package pdftex.def Info: Requested size: 132.30666pt x 165.83963pt on input lin
+e 67.
 [27
 
 
 
 ]
-<./figuras/log_sigma_001.png, id=177, 570.933pt x 714.7503pt>
-File: ./figuras/log_sigma_001.png Graphic file (type png)
-<use ./figuras/log_sigma_001.png>
-Package pdftex.def Info: ./figuras/log_sigma_001.png  used on input line 38. on
- input line 38.
-Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 38.
-<./figuras/log_sigma_025.png, id=178, 570.933pt x 714.7503pt>
-File: ./figuras/log_sigma_025.png Graphic file (type png)
-<use ./figuras/log_sigma_025.png>
-Package pdftex.def Info: ./figuras/log_sigma_025.png  used on input line 45. on
- input line 45.
-Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 45.
-<./figuras/log_sigma_05.png, id=179, 570.933pt x 714.7503pt>
-File: ./figuras/log_sigma_05.png Graphic file (type png)
-<use ./figuras/log_sigma_05.png>
-Package pdftex.def Info: ./figuras/log_sigma_05.png  used on input line 52. on 
-input line 52.
-Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 52.
-<./figuras/log_sigma_1.png, id=180, 570.933pt x 714.7503pt>
-File: ./figuras/log_sigma_1.png Graphic file (type png)
-<use ./figuras/log_sigma_1.png>
-Package pdftex.def Info: ./figuras/log_sigma_1.png  used on input line 59. on i
-nput line 59.
-Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 59.
-<./figuras/log_sigma_125.png, id=181, 570.933pt x 714.7503pt>
-File: ./figuras/log_sigma_125.png Graphic file (type png)
-<use ./figuras/log_sigma_125.png>
-Package pdftex.def Info: ./figuras/log_sigma_125.png  used on input line 66. on
- input line 66.
-Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 66.
-<./figuras/log_sigma_15.png, id=182, 570.2103pt x 714.7503pt>
-File: ./figuras/log_sigma_15.png Graphic file (type png)
-<use ./figuras/log_sigma_15.png>
-Package pdftex.def Info: ./figuras/log_sigma_15.png  used on input line 73. on 
-input line 73.
-Package pdftex.def Info: Requested size: 132.30666pt x 165.83963pt on input lin
-e 73.
 <./figuras/datanormal_0.png, id=183, 426.393pt x 714.7503pt>
 File: ./figuras/datanormal_0.png Graphic file (type png)
 <use ./figuras/datanormal_0.png>
-Package pdftex.def Info: ./figuras/datanormal_0.png  used on input line 88. on 
-input line 88.
+Package pdftex.def Info: ./figuras/datanormal_0.png  used on input line 82. on 
+input line 82.
 Package pdftex.def Info: Requested size: 119.07666pt x 199.60522pt on input lin
-e 88.
+e 82.
 <./figuras/datanormal_25.png, id=184, 426.393pt x 714.7503pt>
 File: ./figuras/datanormal_25.png Graphic file (type png)
 <use ./figuras/datanormal_25.png>
-Package pdftex.def Info: ./figuras/datanormal_25.png  used on input line 95. on
- input line 95.
+Package pdftex.def Info: ./figuras/datanormal_25.png  used on input line 89. on
+ input line 89.
 Package pdftex.def Info: Requested size: 119.07666pt x 199.60522pt on input lin
-e 95.
+e 89.
 <./figuras/datalognormal_0.png, id=185, 426.393pt x 714.7503pt>
 File: ./figuras/datalognormal_0.png Graphic file (type png)
 <use ./figuras/datalognormal_0.png>
-Package pdftex.def Info: ./figuras/datalognormal_0.png  used on input line 102.
- on input line 102.
+Package pdftex.def Info: ./figuras/datalognormal_0.png  used on input line 96. 
+on input line 96.
 Package pdftex.def Info: Requested size: 119.07666pt x 199.60522pt on input lin
-e 102.
+e 96.
  [28 <./figuras/log_sigma_001.png> <./figuras/log_sigma_025.png> <./figuras/log
 _sigma_05.png> <./figuras/log_sigma_1.png> <./figuras/log_sigma_125.png> <./fig
 uras/log_sigma_15.png>]
 File: ./figuras/normal_1.png Graphic file (type png)
 <use ./figuras/normal_1.png>
-Package pdftex.def Info: ./figuras/normal_1.png  used on input line 117. on inp
-ut line 117.
+Package pdftex.def Info: ./figuras/normal_1.png  used on input line 115. on inp
+ut line 115.
 Package pdftex.def Info: Requested size: 308.71106pt x 205.10884pt on input lin
-e 117.
+e 115.
  [29 <./figuras/datanormal_0.png> <./figuras/datanormal_25.png> <./figuras/data
 lognormal_0.png>]
 <./figuras/normal_1_0.png, id=201, 570.933pt x 714.7503pt>
 File: ./figuras/normal_1_0.png Graphic file (type png)
 <use ./figuras/normal_1_0.png>
-Package pdftex.def Info: ./figuras/normal_1_0.png  used on input line 126. on i
-nput line 126.
+Package pdftex.def Info: ./figuras/normal_1_0.png  used on input line 124. on i
+nput line 124.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 126.
+e 124.
 <./figuras/normal_1_25.png, id=202, 570.933pt x 714.7503pt>
 File: ./figuras/normal_1_25.png Graphic file (type png)
 <use ./figuras/normal_1_25.png>
-Package pdftex.def Info: ./figuras/normal_1_25.png  used on input line 133. on 
-input line 133.
+Package pdftex.def Info: ./figuras/normal_1_25.png  used on input line 131. on 
+input line 131.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 133.
+e 131.
 <./figuras/lognormal_05_0.png, id=203, 570.933pt x 714.7503pt>
 File: ./figuras/lognormal_05_0.png Graphic file (type png)
 <use ./figuras/lognormal_05_0.png>
-Package pdftex.def Info: ./figuras/lognormal_05_0.png  used on input line 140. 
-on input line 140.
+Package pdftex.def Info: ./figuras/lognormal_05_0.png  used on input line 138. 
+on input line 138.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 140.
+e 138.
 <./figuras/lognormal_001.png, id=204, 570.933pt x 714.7503pt>
 File: ./figuras/lognormal_001.png Graphic file (type png)
 <use ./figuras/lognormal_001.png>
-Package pdftex.def Info: ./figuras/lognormal_001.png  used on input line 154. o
-n input line 154.
+Package pdftex.def Info: ./figuras/lognormal_001.png  used on input line 152. o
+n input line 152.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 154.
+e 152.
 <./figuras/lognormal_025.png, id=205, 570.933pt x 714.7503pt>
 File: ./figuras/lognormal_025.png Graphic file (type png)
 <use ./figuras/lognormal_025.png>
-Package pdftex.def Info: ./figuras/lognormal_025.png  used on input line 161. o
-n input line 161.
+Package pdftex.def Info: ./figuras/lognormal_025.png  used on input line 159. o
+n input line 159.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 161.
+e 159.
 <./figuras/lognormal_05.png, id=206, 570.933pt x 714.7503pt>
 File: ./figuras/lognormal_05.png Graphic file (type png)
 <use ./figuras/lognormal_05.png>
-Package pdftex.def Info: ./figuras/lognormal_05.png  used on input line 168. on
- input line 168.
+Package pdftex.def Info: ./figuras/lognormal_05.png  used on input line 166. on
+ input line 166.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 168.
+e 166.
 <./figuras/lognormal_1.png, id=207, 570.933pt x 714.7503pt>
 File: ./figuras/lognormal_1.png Graphic file (type png)
 <use ./figuras/lognormal_1.png>
-Package pdftex.def Info: ./figuras/lognormal_1.png  used on input line 175. on 
-input line 175.
+Package pdftex.def Info: ./figuras/lognormal_1.png  used on input line 173. on 
+input line 173.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 175.
+e 173.
 <./figuras/lognormal_125.png, id=208, 570.933pt x 714.7503pt>
 File: ./figuras/lognormal_125.png Graphic file (type png)
 <use ./figuras/lognormal_125.png>
-Package pdftex.def Info: ./figuras/lognormal_125.png  used on input line 182. o
-n input line 182.
+Package pdftex.def Info: ./figuras/lognormal_125.png  used on input line 180. o
+n input line 180.
 Package pdftex.def Info: Requested size: 132.30666pt x 165.63242pt on input lin
-e 182.
+e 180.
 <./figuras/lognormal_15.png, id=209, 569.4876pt x 714.7503pt>
 File: ./figuras/lognormal_15.png Graphic file (type png)
 <use ./figuras/lognormal_15.png>
-Package pdftex.def Info: ./figuras/lognormal_15.png  used on input line 189. on
- input line 189.
+Package pdftex.def Info: ./figuras/lognormal_15.png  used on input line 187. on
+ input line 187.
 Package pdftex.def Info: Requested size: 132.30666pt x 166.04684pt on input lin
-e 189.
+e 187.
  [30 <./figuras/normal_1_0.png> <./figuras/normal_1_25.png> <./figuras/lognorma
 l_05_0.png>] [31 <./figuras/lognormal_001.png> <./figuras/lognormal_025.png> <.
 /figuras/lognormal_05.png> <./figuras/lognormal_1.png> <./figuras/lognormal_125
@@ -1319,142 +1314,142 @@ l_05_0.png>] [31 <./figuras/lognormal_001.png> <./figuras/lognormal_025.png> <.
 File: ./figuras/CDFm_lognormal_001.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_001.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_001.png  used on input line 2
-09. on input line 209.
+07. on input line 207.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 209.
+ 207.
 <./figuras/CDFm_lognormal_025.png, id=227, 859.2903pt x 570.933pt>
 File: ./figuras/CDFm_lognormal_025.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_025.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_025.png  used on input line 2
-16. on input line 216.
+14. on input line 214.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 216.
+ 214.
 <./figuras/CDFm_lognormal_05.png, id=228, 859.2903pt x 570.933pt>
 File: ./figuras/CDFm_lognormal_05.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_05.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_05.png  used on input line 22
-3. on input line 223.
+1. on input line 221.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 223.
+ 221.
 <./figuras/CDFm_lognormal_1.png, id=229, 859.2903pt x 570.933pt>
 File: ./figuras/CDFm_lognormal_1.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_1.png>
-Package pdftex.def Info: ./figuras/CDFm_lognormal_1.png  used on input line 230
-. on input line 230.
+Package pdftex.def Info: ./figuras/CDFm_lognormal_1.png  used on input line 228
+. on input line 228.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 230.
+ 228.
 <./figuras/CDFm_lognormal_125.png, id=230, 859.2903pt x 570.933pt>
 File: ./figuras/CDFm_lognormal_125.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_125.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_125.png  used on input line 2
-37. on input line 237.
+35. on input line 235.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 237.
+ 235.
 <./figuras/CDFm_lognormal_15.png, id=231, 859.2903pt x 570.933pt>
 File: ./figuras/CDFm_lognormal_15.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_15.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_15.png  used on input line 24
-4. on input line 244.
+2. on input line 242.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 244.
+ 242.
 File: ./figuras/CDFm_normal_1.png Graphic file (type png)
 <use ./figuras/CDFm_normal_1.png>
-Package pdftex.def Info: ./figuras/CDFm_normal_1.png  used on input line 254. o
-n input line 254.
+Package pdftex.def Info: ./figuras/CDFm_normal_1.png  used on input line 252. o
+n input line 252.
 Package pdftex.def Info: Requested size: 264.61333pt x 175.81131pt on input lin
-e 254.
+e 252.
 [32 <./figuras/CDFm_lognormal_001.png> <./figuras/CDFm_lognormal_025.png> <./fi
 guras/CDFm_lognormal_05.png> <./figuras/CDFm_lognormal_1.png> <./figuras/CDFm_l
 ognormal_125.png> <./figuras/CDFm_lognormal_15.png>]
 File: ./figuras/PDFm_normal_1.png Graphic file (type png)
 <use ./figuras/PDFm_normal_1.png>
-Package pdftex.def Info: ./figuras/PDFm_normal_1.png  used on input line 268. o
-n input line 268.
+Package pdftex.def Info: ./figuras/PDFm_normal_1.png  used on input line 266. o
+n input line 266.
 Package pdftex.def Info: Requested size: 295.48106pt x 196.31871pt on input lin
-e 268.
+e 266.
  [33]
 <./figuras/PDFm_lognormal_001.png, id=244, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_001.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_001.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_001.png  used on input line 2
-79. on input line 279.
+77. on input line 277.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 279.
+ 277.
 <./figuras/PDFm_lognormal_025.png, id=245, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_025.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_025.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_025.png  used on input line 2
-86. on input line 286.
+84. on input line 284.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 286.
+ 284.
 <./figuras/PDFm_lognormal_05.png, id=246, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_05.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_05.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_05.png  used on input line 29
-3. on input line 293.
+1. on input line 291.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 293.
+ 291.
 <./figuras/PDFm_lognormal_1.png, id=247, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_1.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_1.png>
-Package pdftex.def Info: ./figuras/PDFm_lognormal_1.png  used on input line 300
-. on input line 300.
+Package pdftex.def Info: ./figuras/PDFm_lognormal_1.png  used on input line 298
+. on input line 298.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 300.
+ 298.
 <./figuras/PDFm_lognormal_125.png, id=248, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_125.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_125.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_125.png  used on input line 3
-07. on input line 307.
+05. on input line 305.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 307.
+ 305.
 <./figuras/PDFm_lognormal_15.png, id=249, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_15.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_15.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_15.png  used on input line 31
-4. on input line 314.
+2. on input line 312.
 Package pdftex.def Info: Requested size: 216.1011pt x 143.57793pt on input line
- 314.
+ 312.
  [34]
 File: ./figuras/dpdf1.pdf Graphic file (type pdf)
 <use ./figuras/dpdf1.pdf>
-Package pdftex.def Info: ./figuras/dpdf1.pdf  used on input line 332. on input 
-line 332.
+Package pdftex.def Info: ./figuras/dpdf1.pdf  used on input line 330. on input 
+line 330.
 Package pdftex.def Info: Requested size: 194.04887pt x 128.52165pt on input lin
-e 332.
+e 330.
 File: ./figuras/dpdf2.pdf Graphic file (type pdf)
 <use ./figuras/dpdf2.pdf>
-Package pdftex.def Info: ./figuras/dpdf2.pdf  used on input line 339. on input 
-line 339.
+Package pdftex.def Info: ./figuras/dpdf2.pdf  used on input line 337. on input 
+line 337.
 Package pdftex.def Info: Requested size: 207.27887pt x 127.34769pt on input lin
-e 339.
+e 337.
  [35 <./figuras/PDFm_lognormal_001.png> <./figuras/PDFm_lognormal_025.png> <./f
 iguras/PDFm_lognormal_05.png> <./figuras/PDFm_lognormal_1.png> <./figuras/PDFm_
 lognormal_125.png> <./figuras/PDFm_lognormal_15.png>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 367.
+(amsmath)                 on input line 365.
 
 Package acronym Info: Label `acro:iPDF2' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 379.
+although it is yet undefined on input line 377.
 [36]
 File: ./figuras/ddpdf1.pdf Graphic file (type pdf)
 <use ./figuras/ddpdf1.pdf>
-Package pdftex.def Info: ./figuras/ddpdf1.pdf  used on input line 387. on input
- line 387.
+Package pdftex.def Info: ./figuras/ddpdf1.pdf  used on input line 385. on input
+ line 385.
 Package pdftex.def Info: Requested size: 194.04887pt x 130.9129pt on input line
- 387.
+ 385.
 File: ./figuras/ddpdf2.pdf Graphic file (type pdf)
 <use ./figuras/ddpdf2.pdf>
-Package pdftex.def Info: ./figuras/ddpdf2.pdf  used on input line 396. on input
- line 396.
+Package pdftex.def Info: ./figuras/ddpdf2.pdf  used on input line 394. on input
+ line 394.
 Package pdftex.def Info: Requested size: 207.27887pt x 125.62306pt on input lin
-e 396.
+e 394.
  [37]
 Package acronym Info: Label `acro:RoI' newly defined as it shall be overridden
-although it is yet undefined on input line 429.
+although it is yet undefined on input line 427.
 ) [38]
 \openout2 = `./textuais/resultados/resultados.aux'.
 
@@ -1503,13 +1498,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7403 strings out of 493312
- 110871 string characters out of 3138898
- 180991 words of memory out of 3000000
- 10543 multiletter control sequences out of 15000+200000
+ 7400 strings out of 493312
+ 110854 string characters out of 3138898
+ 180980 words of memory out of 3000000
+ 10540 multiletter control sequences out of 15000+200000
  29128 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,41p,1463b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,41p,1277b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/
@@ -1525,7 +1520,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti12.pfb>
-Output written on dissertacao.pdf (42 pages, 2901278 bytes).
+Output written on dissertacao.pdf (42 pages, 2900786 bytes).
 PDF statistics:
  335 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,20 +1,14 @@
 \chapter{DESENVOLVIMENTO} \label{cap:desenvolvimento}
-Neste capítulo, será apresentado as propostas de métodos de discretização, sua descrição e equacionamento. Além disso, o contexto em que estes métodos serão avaliados também será mostrado.
 
-Como o objetivo deste trabalho é validar apenas os efeitos da discretização no contexto da estimação de \ac{PDF}, o erro de estimação causado por este processo é medido entre a saída do processo de discretização em si e a função usada para gerar os dados. As funções aqui testadas serão baseadas em distribuições Gaussianas ou Lognormais com diferentes variâncias, bem como suas funções analíticas ou através de dados gerados.
+Neste capítulo estudaremos mais afundo os métodos de discretização apresentados na Seção~\ref{cap:metodos} e, para tal, iremos por aprova algumas distribuições distintas sendo elas a distribuição normal com média $ \mu =0 $ e desvio padrão $ \sigma = 1 $ devido ao fato de tais parâmetros não interferirem na forma desta distribuição e é ilustrado na Figura~\ref{fig:Gaussiana}; Distribuição Lognormal com média $ \mu = 0 $ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal} e com três \textit{Datasets} discretos diferentes, o primeiro sendo de uma distribuição normal com média nula e desvio padrão unitário representado na Figura~\ref{fig:randn}, o segundo será também uma distribuição normal com os mesmos parâmetros da primeira mas com a diferença que este irá possuir \textit{outliers}, ou seja, alguns pontos distantes da região de interesse ilustrado pela Figura~\ref{fig:randn_out} e, por fim, a ultima será uma distribuição Lognormal com média nula e desvio padrão de 0.5, ilustrado pela Figura~\ref{fig:randlog}.
 
-\section{Métodos de discretização}
-\label{cap:anal}
-Para se estudar os efeitos da discretização no processo de estimação de \ac{PDF}, a performance de cinco diferentes métodos serão confrontados, como listados abaixo: 
-\begin{itemize}
-	\item \textit{Linspace};
-	\item \textit{CDFm};
-	\item \textit{PDFm};
-	\item \textit{iPDF1};
-	\item \textit{iPDF2}.
-\end{itemize}
 
-Estes cinco métodos serão mostrados utilizando \ac{PDF}s analíticas Gaussiana, com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana}, Lognormal, com $\mu = 0$ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal} e com três \textit{Datasets} diferentes, o primeiro sendo de uma distribuição normal com média nula e desvio padrão unitário representado na Figura~\ref{fig:randn}, o segundo será também uma distribuição normal com os mesmos parâmetros da primeira mas com a diferença que este irá possuir \textit{outliers}, ou seja, alguns pontos distantes da região de interesse ilustrado pela Figura~\ref{fig:randn_out} e, por fim, a ultima será uma distribuição Lognormal com média nula e desvio padrão de 0.5, ilustrado pela Figura~\ref{fig:randlog}. Todos os \textit{data sets} possuem mil eventos e foram gerados utilizando a biblioteca \textit{numpy} do \textit{software} \textit{Python} e com o número de \textit{binagem} definido pelo \ac{FD} que é um estimador robusto que leva em conta a variabilidade dos dados e o tamanho dos mesmos. Todos os métodos testados terão o número de estimação $N = 25$ para uma melhor visualização.
+%Neste capítulo, será apresentado as propostas de métodos de discretização, sua descrição e equacionamento. Além disso, o contexto em que estes métodos serão avaliados também será mostrado.
+
+%Como o objetivo deste trabalho é validar apenas os efeitos da discretização no contexto da estimação de \ac{PDF}, o erro de estimação causado por este processo é medido entre a saída do processo de discretização em si e a função usada para gerar os dados. As funções aqui testadas serão baseadas em distribuições Gaussianas ou Lognormais com diferentes variâncias, bem como suas funções analíticas ou através de dados gerados.
+
+
+%Estes cinco métodos serão mostrados utilizando \ac{PDF}s analíticas Gaussiana, com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana}, Lognormal, com $\mu = 0$  Todos os \textit{data sets} possuem mil eventos e foram gerados utilizando a biblioteca \textit{numpy} do \textit{software} \textit{Python} e com o número de \textit{binagem} definido pelo \ac{FD} que é um estimador robusto que leva em conta a variabilidade dos dados e o tamanho dos mesmos. Todos os métodos testados terão o número de estimação $N = 25$ para uma melhor visualização.
 
 %Estes cinco métodos serão demostrados utilizando-se a \ac{PDF} Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana},  e a \ac{PDF} Lognormal com $\mu = 0$ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal}, além disso, estes métodos também s ambas com o numero de pontos $N = 25$.
   
@@ -108,6 +102,10 @@ Estes cinco métodos serão mostrados utilizando \ac{PDF}s analíticas Gaussiana
 	\label{fig:data}
 \end{figure}
 
+\section{Algoritmo}
+{\color{red} Não entendi muito bem o que é pra colocar aqui, seria apenas o algoritmo da discretização? pq este meio que já foi explicado no cap 2 né, quando eu explico como cada método funciona. Talvez seja mais interessante botar isso aqui lá pro final, explicando como os erros foram calculados, o que achas?}
+
+\section{Tem que pensar num nome bonito pra cá haha}
 
 \subsection{\textit{Linspace}}
 O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} dada. Após, o eixo horizontal terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal e a Figura~\ref{fig:Lognormal_lin} ilustra o mesmo método para uma distribuição Lognormal com diferentes desvios padrões, limitando o eixo horizontal à uma área de probabilidade de $99.99\%$. A Figura~\ref{fig:datalin} mostra as distribuições geradas, conforme é mostrado na Figura~\ref{fig:data}, discretizadas utilizando este método.
