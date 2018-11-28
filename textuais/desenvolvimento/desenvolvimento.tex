@@ -105,10 +105,145 @@ Neste capítulo estudaremos mais afundo os métodos de discretização apresenta
 \section{Algoritmo}
 {\color{red} Não entendi muito bem o que é pra colocar aqui, seria apenas o algoritmo da discretização? pq este meio que já foi explicado no cap 2 né, quando eu explico como cada método funciona. Talvez seja mais interessante botar isso aqui lá pro final, explicando como os erros foram calculados, o que achas?}
 
-\section{Tem que pensar num nome bonito pra cá haha}
-Aqui iremos testar todas os métodos apresentados até o momento para distribuições diferentes e variando o número de estimação
+\section{Ambiente de Análise}
+Aqui iremos testar todas os métodos apresentados até o momento para diferentes distribuições variando o número de estimação para $ N = 15 $ e $ N = 25 $
 \subsection{Gaussiana}
 
+Utilizando como base a Figura~\ref{fig:Gaussiana}
+
+\subsubsection{\textit{Linspace}}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/normal_15}
+		\caption{}
+		\label{fig:norm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/normal_25}
+		\caption{}
+		\label{fig:norm25}
+	\end{subfigure}
+	
+	\caption{Discretização da distribuição Normal utilizando-se o método \textit{Linspace}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\label{fig:normlin}
+\end{figure}
+
+Podemos perceber que para este método, mesmo com quinze pontos de estimação, o método conseguiu descrever bem a curva, acentuando o erro nas regiões de alta probabilidade.
+
+\subsubsection{\textit{CDFm}}
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/CDFm_normal_15}
+		\caption{}
+		\label{fig:cdfnorm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/CDFm_normal_25}
+		\caption{}
+		\label{fig:cdfnorm25}
+	\end{subfigure}
+	
+	\caption{Discretização da distribuição Normal utilizando-se o método \textit{CDFm}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\label{fig:cdfnorm}
+\end{figure}
+
+Vemos que a região de alta probabilidade é representada com um menor erro do que no método \textit{Linspace} mas, em contrapartida, a região de baixa probabilidade necessitaria de um número muito maior de pontos para possuir o mesmo erro do método anterior.
+
+\subsubsection{\textit{PDFm}}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/PDFm_normal_15}
+		\caption{}
+		\label{fig:pdfnorm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/PDFm_normal_25}
+		\caption{}
+		\label{fig:pdfnorm25}
+	\end{subfigure}
+	
+	\caption{Discretização da distribuição Normal utilizando-se o método \textit{PDFm}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\label{fig:pdfmnorm}
+\end{figure}
+
+Para a distribuição Normal, este método apresenta um maior erro na região de alta probabilidade do que o método \ac{CDFm} mas nas regiões de baixa probabilidade o erro de estimação é menor do que o visto anteriormente, fazendo assim uma combinação dos métodos \textit{Linspace} e \textit{CDFm}.
+ 
+\subsubsection{\textit{iPDF1}}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_normal_15}
+		\caption{}
+		\label{fig:ipdfnorm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_normal_25}
+		\caption{}
+		\label{fig:ipdfnorm25}
+	\end{subfigure}
+	
+	\caption{Discretização da distribuição Normal utilizando-se o método \textit{iPDF1}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\label{fig:ipdfmnorm}
+\end{figure}
+
+
+
+\subsubsection{\textit{iPDF2}}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF2_normal_15}
+		\caption{}
+		\label{fig:ipdf2norm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF2_normal_25}
+		\caption{}
+		\label{fig:ipdf2norm25}
+	\end{subfigure}
+	
+	\caption{Discretização da distribuição Normal utilizando-se o método \textit{iPDF2}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\label{fig:ipdf2norm}
+\end{figure}
+
+\subsection{Lognormal}
+
+\subsubsection{\textit{Linspace}}
+\subsubsection{\textit{CDFm}}
+\subsubsection{\textit{PDFm}}
+\subsubsection{\textit{iPDF1}}
+\subsubsection{\textit{iPDF2}}
+\subsection{Dataset}
+
+\subsubsection{\textit{Linspace}}
+\subsubsection{\textit{CDFm}}
+\subsubsection{\textit{PDFm}}
+\subsubsection{\textit{iPDF1}}
+\subsubsection{\textit{iPDF2}}
 
 \subsection{\textit{Linspace}}
 O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} dada. Após, o eixo horizontal terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal e a Figura~\ref{fig:Lognormal_lin} ilustra o mesmo método para uma distribuição Lognormal com diferentes desvios padrões, limitando o eixo horizontal à uma área de probabilidade de $99.99\%$. A Figura~\ref{fig:datalin} mostra as distribuições geradas, conforme é mostrado na Figura~\ref{fig:data}, discretizadas utilizando este método.

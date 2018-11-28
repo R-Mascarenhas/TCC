@@ -7,20 +7,37 @@
 \contentsline {subsection}{\numberline {2.1.1}\textit {Linspace}}{22}
 \contentsline {subsection}{\numberline {2.1.2}\textit {CDFm}}{23}
 \contentsline {subsection}{\numberline {2.1.3}\textit {PDFm}}{24}
-\contentsline {subsection}{\numberline {2.1.4}\textit {iPDF1}}{24}
-\contentsline {subsection}{\numberline {2.1.5}\textit {iPDF2}}{25}
+\contentsline {subsection}{\numberline {2.1.4}\textit {iPDF1}}{25}
+\contentsline {subsection}{\numberline {2.1.5}\textit {iPDF2}}{26}
 \contentsline {chapter}{\numberline {3}DESENVOLVIMENTO}{27}
 \contentsline {section}{\numberline {3.1}Algoritmo}{29}
-\contentsline {section}{\numberline {3.2}Tem que pensar num nome bonito pra c\IeC {\'a} haha}{29}
+\contentsline {section}{\numberline {3.2}Ambiente de An\IeC {\'a}lise}{29}
 \contentsline {subsection}{\numberline {3.2.1}Gaussiana}{29}
-\contentsline {subsection}{\numberline {3.2.2}\textit {Linspace}}{29}
-\contentsline {subsection}{\numberline {3.2.3}\textit {CDFm}}{31}
-\contentsline {subsection}{\numberline {3.2.4}\textit {PDFm}}{33}
-\contentsline {subsection}{\numberline {3.2.5}\textit {iPDF1}}{35}
-\contentsline {subsection}{\numberline {3.2.6}\textit {iPDF2}}{37}
-\contentsline {section}{\numberline {3.3}Ambiente de An\IeC {\'a}lise}{38}
-\contentsline {chapter}{\numberline {4}Resultados}{39}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{40}
-\contentsline {chapter}{Refer\^encias}{41}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Lista de Publica\IeC {\c c}\IeC {\~o}es}{42}
-\contentsline {section}{\numberline {A.1}Publica\IeC {\c c}\IeC {\~o}es em Anais de Congresso Internacional}{42}
+\contentsline {subsubsection}{\numberline {3.2.1.1}\textit {Linspace}}{30}
+\contentsline {subsubsection}{\numberline {3.2.1.2}\textit {CDFm}}{30}
+\contentsline {subsubsection}{\numberline {3.2.1.3}\textit {PDFm}}{31}
+\contentsline {subsubsection}{\numberline {3.2.1.4}\textit {iPDF1}}{31}
+\contentsline {subsubsection}{\numberline {3.2.1.5}\textit {iPDF2}}{32}
+\contentsline {subsection}{\numberline {3.2.2}Lognormal}{32}
+\contentsline {subsubsection}{\numberline {3.2.2.1}\textit {Linspace}}{32}
+\contentsline {subsubsection}{\numberline {3.2.2.2}\textit {CDFm}}{32}
+\contentsline {subsubsection}{\numberline {3.2.2.3}\textit {PDFm}}{32}
+\contentsline {subsubsection}{\numberline {3.2.2.4}\textit {iPDF1}}{32}
+\contentsline {subsubsection}{\numberline {3.2.2.5}\textit {iPDF2}}{32}
+\contentsline {subsection}{\numberline {3.2.3}Dataset}{32}
+\contentsline {subsubsection}{\numberline {3.2.3.1}\textit {Linspace}}{32}
+\contentsline {subsubsection}{\numberline {3.2.3.2}\textit {CDFm}}{32}
+\contentsline {subsubsection}{\numberline {3.2.3.3}\textit {PDFm}}{32}
+\contentsline {subsubsection}{\numberline {3.2.3.4}\textit {iPDF1}}{32}
+\contentsline {subsubsection}{\numberline {3.2.3.5}\textit {iPDF2}}{32}
+\contentsline {subsection}{\numberline {3.2.4}\textit {Linspace}}{32}
+\contentsline {subsection}{\numberline {3.2.5}\textit {CDFm}}{34}
+\contentsline {subsection}{\numberline {3.2.6}\textit {PDFm}}{36}
+\contentsline {subsection}{\numberline {3.2.7}\textit {iPDF1}}{38}
+\contentsline {subsection}{\numberline {3.2.8}\textit {iPDF2}}{40}
+\contentsline {section}{\numberline {3.3}Ambiente de An\IeC {\'a}lise}{41}
+\contentsline {chapter}{\numberline {4}Resultados}{42}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{43}
+\contentsline {chapter}{Refer\^encias}{44}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Lista de Publica\IeC {\c c}\IeC {\~o}es}{45}
+\contentsline {section}{\numberline {A.1}Publica\IeC {\c c}\IeC {\~o}es em Anais de Congresso Internacional}{45}

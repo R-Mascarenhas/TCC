@@ -42,7 +42,7 @@ Estes cinco métodos serão demostrados a priori  utilizando-se uma distribuiç�
 \end{figure}
 
 \subsection{\textit{Linspace}}
-O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF}. Após, o eixo $ x $ terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. a Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal, limitando o eixo horizontal à uma área de probabilidade de $99,99\%$.
+O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} qualquer. Após, o eixo $ x $ terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal, limitando o eixo horizontal à uma área de probabilidade de $99,99\%$.
 
 
 \begin{figure}[H]
@@ -54,7 +54,7 @@ O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a 
 
 
 \subsection{\textit{CDFm}}
-O método denominado nesse trabalho de \ac{CDFm} representa a discretização baseada na \ac{CDF} descrita pela Equação~\eqref{equ:CDF} para uma variável contínua e \eqref{equ:CDF_disc} para o caso de uma variável discreta possuindo valores em $ b $. Para este método, no caso de se ter a função geradora, primeiramente calcula-se a \ac{CDF} da distribuição e então faz-se uma distribuição linear de pontos no eixo $ y $ e encontra-se os seus respectivos valores para o eixo $ x $, conforme mostra a Figura~\ref{fig:CDFm_curve}. Note que, quanto maior a probabilidade da \ac{CDF}, maior o número de pontos em sua região.
+O método denominado nesse trabalho de \ac{CDFm} representa a discretização baseada na \ac{CDF} descrita pela Equação~\eqref{equ:CDF} para uma variável contínua e \eqref{equ:CDF_disc} para o caso de uma variável discreta possuindo valores em $ b $. Para este método, no caso de se ter a função geradora, primeiramente calcula-se a \ac{CDF} da distribuição e então faz-se uma distribuição linear de pontos no eixo $ y $ e encontra-se os seus respectivos valores para o eixo $ x $ fazendo sua função inversa, conforme mostra a Equação~\eqref{equ:cdf_inv} e é ilustado pela Figura~\ref{fig:CDFm_curve}.
 
 
 %a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal. Note que, quanto maior a probabilidade da \ac{PDF}, maior o número de pontos na sua região.
@@ -69,6 +69,11 @@ O método denominado nesse trabalho de \ac{CDFm} representa a discretização ba
  \label{equ:CDF_disc}
 \end{equation}
 
+\begin{equation}
+CDFm(y) = F^{-1}_X(x)
+\label{equ:cdf_inv}
+\end{equation}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{./figuras/CDFm_normal_1}
@@ -76,10 +81,10 @@ O método denominado nesse trabalho de \ac{CDFm} representa a discretização ba
 	\label{fig:CDFm_curve}
 \end{figure}
 
-
+É possível notar que, quanto maior a probabilidade da \ac{CDF}, maior o número de pontos em sua região.
 
 \subsection{\textit{PDFm}}
-Este método, denominado de \ac{PDFm} também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas a função de referência é a própria \ac{PDF}, ao invés da sua \ac{CDF}. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona. 
+Este método, denominado de \ac{PDFm} também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas a função de referência é a própria \ac{PDF}, ao invés da sua \ac{CDF}, com isso, os pontos de intercessão da curva com os valores em $ y $ são calculados. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona. 
 
 \begin{figure}[H]
 	\centering
