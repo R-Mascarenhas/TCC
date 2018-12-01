@@ -1,6 +1,42 @@
 \chapter{DESENVOLVIMENTO} \label{cap:desenvolvimento}
 
-Neste capítulo estudaremos mais afundo os métodos de discretização apresentados na Seção~\ref{cap:metodos} e, para tal, iremos por aprova algumas distribuições distintas sendo elas a distribuição normal com média $ \mu =0 $ e desvio padrão $ \sigma = 1 $ devido ao fato de tais parâmetros não interferirem na forma desta distribuição e é ilustrado na Figura~\ref{fig:Gaussiana}; Distribuição Lognormal com média $ \mu = 0 $ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal} e com três \textit{Datasets} discretos diferentes, o primeiro sendo de uma distribuição normal com média nula e desvio padrão unitário representado na Figura~\ref{fig:randn}, o segundo será também uma distribuição normal com os mesmos parâmetros da primeira mas com a diferença que este irá possuir \textit{outliers}, ou seja, alguns pontos distantes da região de interesse ilustrado pela Figura~\ref{fig:randn_out} e, por fim, a ultima será uma distribuição Lognormal com média nula e desvio padrão de 0.5, ilustrado pela Figura~\ref{fig:randlog}.
+Neste capítulo, serão descritos alguns detalhes da construção dos métodos e do algoritmo para avaliação de sua performance, além disso, serão mostradas as dificuldades encontradas na aplicação prática desses métodos. A discretização da estimação de densidades de variáveis discriminantes pode influenciar de forma direta na tarefa de classificação, entretanto, este trabalho se concentrou somente no impacto desses métodos na estimação, entendendo que um menor erro de estimação pode levar a uma melhor classificação.
+
+\section{Conjunto de dados}
+
+Um dos objetivos desse trabalho é otimizar o desempenho dos algoritmos de estimação de densidade via KDE que fazem uso de métodos de discretização e posteriormente essas estimações serão usadas para a identificação e classificação de eventos. Portanto o conjunto de dados aqui escolhido tem por base as estimações que podem ser encontradas em alguns dos experimentos de física de partículas mais importantes atualmente, como o ATLAS e CMS.
+
+Nas Figuras \ref{fig:15} e \ref{fig:16} são mostrados casos representativos de variáveis usadas para a identificação de elétrons nos experimentos CMS e ATLAS, respectivamente. Para o CMS, pode-se ver o perfil dos elétrons e do ruído de fundo, bem como a diferença entre dados reais e simulados. Já na Figura \ref{fig:16} é mostrado também as varias formas de ruído de fundo para elétrons no ATLAS.
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{./figuras/variaveisCMS.png}
+		\caption{Caso representativo, variáveis de identificação de elétrons, do experimento CMS: variável $\Delta\eta$, forma do chuveiro $\sigma_{\eta\eta}$ e distribuição de energia-momento $1/E_{SC}-1/p$. Extraído de \cite{cms2015performance}.}\label{fig:15} 
+	\end{center}
+\end{figure}
+
+Pode-se considerar que a identificação de elétrons em experimentos de física de altas energias é de certa forma similar, respeitando as particularidades de cada detector. Portanto, é de se esperar que a otimização de algoritmos de identificação de elétrons estudada em um conjunto de dados possa ser reproduzida, considerando as especificidades de cada experimento, em um outro conjunto de dados, fazendo com que o estudo para melhoria do desempenho desse processo seja de suma importância.
+
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{./figuras/variaveisATLAS.pdf}
+		\caption{Caso representativo, variáveis de identificação de elétrons, do experimento ATLAS, no calorímetro, formato do chuveiro, apresentados separadamente para sinal e os vários tipos de ruídos de fundo. As variáveis apresentadas são: (a) vazamento hadrônico R${_{had}}$, (b) de largura em eta no segundo W${_2}$ amostragem, (c) R${_\eta}$, (d) largura em $\eta$ nas w${_{s,tot}}$, pequeno, e (e) E${_{ratio}}$. Extraído de \cite{alison2014road}.}\label{fig:16}
+	\end{center}
+\end{figure}
+
+Pode-se observar que as variáveis discriminantes destes experimentos apresentam distribuições que muitas vezes se assemelham à algumas distribuições conhecidas na literatura, como a distribuição \textit{Gaussiana} e a \textit{Lognormal}. Sendo assim, com o intuito de realizar as análises em um ambiente controlado foram escolhidas as distribuições \textit{Gaussiana} e \textit{Lognormal}, sendo que a última parametrizada de 6 maneiras diferentes.
+
+A distribuição normal foi definida com média $ \mu =0 $ e desvio padrão $ \sigma = 1 $, ilustrada na Figura~\ref{fig:Gaussiana}, devido ao fato de tais parâmetros não interferirem na forma desta distribuição.
+
+\begin{equation}
+{\displaystyle f_{N_X}(x;\mu,\sigma) = \frac{1}{\sigma\sqrt{2\pi}}\cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}}
+\label{equ:Normal}
+\end{equation}
+
+Já a distribuição \textit{Lognormal} com média $ \mu = 0 $ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal}.
+
+%e com três \textit{Datasets} discretos diferentes, o primeiro sendo de uma distribuição normal com média nula e desvio padrão unitário representado na Figura~\ref{fig:randn}, o segundo será também uma distribuição normal com os mesmos parâmetros da primeira mas com a diferença que este irá possuir \textit{outliers}, ou seja, alguns pontos distantes da região de interesse ilustrado pela Figura~\ref{fig:randn_out} e, por fim, a ultima será uma distribuição Lognormal com média nula e desvio padrão de 0.5, ilustrado pela Figura~\ref{fig:randlog}.
 
 
 %Neste capítulo, será apresentado as propostas de métodos de discretização, sua descrição e equacionamento. Além disso, o contexto em que estes métodos serão avaliados também será mostrado.
@@ -11,15 +47,12 @@ Neste capítulo estudaremos mais afundo os métodos de discretização apresenta
 %Estes cinco métodos serão mostrados utilizando \ac{PDF}s analíticas Gaussiana, com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana}, Lognormal, com $\mu = 0$  Todos os \textit{data sets} possuem mil eventos e foram gerados utilizando a biblioteca \textit{numpy} do \textit{software} \textit{Python} e com o número de \textit{binagem} definido pelo \ac{FD} que é um estimador robusto que leva em conta a variabilidade dos dados e o tamanho dos mesmos. Todos os métodos testados terão o número de estimação $N = 25$ para uma melhor visualização.
 
 %Estes cinco métodos serão demostrados utilizando-se a \ac{PDF} Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana},  e a \ac{PDF} Lognormal com $\mu = 0$ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal}, além disso, estes métodos também s ambas com o numero de pontos $N = 25$.
-  
-\begin{equation}
-{\displaystyle f_{N_X}(x;\mu,\sigma) = \frac{1}{\sigma\sqrt{2\pi}}\cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}}
-\label{equ:Normal}
-\end{equation}
+
+
 
 \begin{equation}
-	{\displaystyle f_{L_X}(x;\mu ,\sigma )={\frac {1}{x\sigma {\sqrt {2\pi }}}}\cdot e^ {-\frac {\left(\ln(x)-\mu \right)^{2}}{2\sigma ^{2}}}}
-	\label{eq:Lognormal}
+{\displaystyle f_{L_X}(x;\mu ,\sigma )={\frac {1}{x\sigma {\sqrt {2\pi }}}}\cdot e^ {-\frac {\left(\ln(x)-\mu \right)^{2}}{2\sigma ^{2}}}}
+\label{eq:Lognormal}
 \end{equation}
 
 
@@ -75,67 +108,113 @@ Neste capítulo estudaremos mais afundo os métodos de discretização apresenta
 
 
 
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.27\textwidth}
-		\centering 
-		\includegraphics[width=\linewidth]{./figuras/datanormal_0}
-		\caption{}
-		\label{fig:randn}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.27\textwidth}
-		\centering 
-		\includegraphics[width=\linewidth]{./figuras/datanormal_25}
-		\caption{}
-		\label{fig:randn_out}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.27\textwidth}
-		\centering 
-		\includegraphics[width=\linewidth]{./figuras/datalognormal_0}
-		\caption{}
-		\label{fig:randlog}
-	\end{subfigure}
-	
-	\caption{Histograma dos dados gerados sendo eles: (a) Gaussiana com $\mu = 0$ e $\sigma$ = 1; (b) Gaussiana com $\mu = 0$, $\sigma = 1$ e \textit{outlier} em $\pm 25$; (c) Lognormal com $\mu = 0$ e $\sigma = 0.5$.}
-	\label{fig:data}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\begin{subfigure}[b]{0.27\textwidth}
+%	\centering 
+%	\includegraphics[width=\linewidth]{./figuras/datanormal_0}
+%	\caption{}
+%	\label{fig:randn}
+%\end{subfigure}
+%\hfill
+%\begin{subfigure}[b]{0.27\textwidth}
+%	\centering 
+%	\includegraphics[width=\linewidth]{./figuras/datanormal_25}
+%	\caption{}
+%	\label{fig:randn_out}
+%\end{subfigure}
+%\hfill
+%\begin{subfigure}[b]{0.27\textwidth}
+%	\centering 
+%	\includegraphics[width=\linewidth]{./figuras/datalognormal_0}
+%	\caption{}
+%	\label{fig:randlog}
+%\end{subfigure}
+
+%\caption{Histograma dos dados gerados sendo eles: (a) Gaussiana com $\mu = 0$ e $\sigma$ = 1; (b) Gaussiana com $\mu = 0$, $\sigma = 1$ e \textit{outlier} em $\pm 25$; (c) Lognormal com $\mu = 0$ e $\sigma = 0.5$.}
+%\label{fig:data}
+%\end{figure}
 
 \section{Algoritmo}
-{\color{red} Não entendi muito bem o que é pra colocar aqui, seria apenas o algoritmo da discretização? pq este meio que já foi explicado no cap 2 né, quando eu explico como cada método funciona. Talvez seja mais interessante botar isso aqui lá pro final, explicando como os erros foram calculados, o que achas?}
 
-\section{Ambiente de Análise}
-Aqui iremos testar todas os métodos apresentados até o momento para diferentes distribuições variando o número de estimação para $ N = 15 $ e $ N = 25 $
-\subsection{Gaussiana}
+O algoritmo para comparação e validação dos métodos de discretização de estimação construído nesse trabalho pode ser resumido pelo diagrama de blocos da Figura \ref{fig:08}, sendo testado de duas maneiras diversas: utilizando somente a função analítica e usando os dados gerados a partir das funções geradoras.
 
-Utilizando como base a Figura~\ref{fig:Gaussiana}
+\begin{figure}[H]
+	\begin{center}
+	%	\includegraphics[width=0.5\linewidth]{./figuras/algoritmo1.png}
+		\caption{Diagrama de blocos do algoritmo para validação dos métodos de discretização.}\label{fig:08}
+	\end{center}
+\end{figure}
 
-\subsubsection{\textit{Linspace}}
+
+\begin{description}
+	\item[Função Analítica] Inicialmente uma função geradora é escolhida, sua discretização é feita utilizando os métodos apresentados, essa discretização é utilizada para calcular todos os pontos da curva original (utilizando interpolação) e por fim faz-se o cálculo da distância entre as duas curvas (analítica e discretizada) utilizando a métrica de distancia chamada L1, que é um caso particular da Equação \eqref{eq:4T06}.
+	
+	\begin{equation}\label{eq:4T06}
+	{L_p} = {\left( {\int {{{\left| {f - g} \right|}^p}} } \right)^{{\raise0.7ex\hbox{$1$} \!\mathord{\left/
+					{\vphantom {1 p}}\right.\kern-\nulldelimiterspace}
+				\!\lower0.7ex\hbox{$p$}}}}
+	\end{equation}
+	
+	Onde $p$ é o parâmetro a ser escolhido. No caso mais simples, $p=1$, a equação~\ref{eq:4T06} se torna a equação~\ref{eq:4T15}.
+	
+	\begin{equation}\label{eq:4T15}
+	{L_1} = {\int {\left| {f - g} \right|} }
+	\end{equation}
+	
+	A equação~\ref{eq:4T15} é chamado de \ac{IAE} ou distância L1.
+	
+	\item[Dados gerados] Nesse caso, única diferença é que o calculo da discretização é feito usando como base a distribuição de eventos aleatórios geradas pela função geradora escolhida.
+\end{description}
+
+%\color{red} PAREI AQUI \color{black}
+
+\section{Demostração dos métodos de discretização}
+
+Com o intuito de validar os algoritmo e os métodos de discretização serão apresentados nessa seção o funcionamento desses métodos para a função gaussiana e a função \textit{lognormal} com $\sigma = X$. E, com o objetivo de demostrar de forma mais clara o efeito desses métodos e sua dependência ao número de pontos de estimação escolhidos, os métodos serão avaliados variando o número de estimação para $ N = 15 $ e $ N = 25 $.
+
+\subsection{Método \textit{Linspace}}
+
+De acordo com o princípio de funcionamento do método de discretização \textit{Linspace} espera-se que este entregue resultados satisfatórios em distribuições com variações mais lentas, como mostrado nas Figuras~\ref{fig:lin_norm15} e \ref{fig:lin_norm25}. Já para conjunto de dados que apresenta variações mais rápidas, como mostrado nas Figuras~\ref{fig:lin_log15} e \ref{fig:lin_log25}, este método não alcança uma boa representação da PDF.
+
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\linewidth]{./figuras/normal_15}
+		\includegraphics[width=\linewidth]{./figuras/Linspace_normal_15}
 		\caption{}
-		\label{fig:norm15}
+		\label{fig:lin_norm15}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\linewidth]{./figuras/normal_25}
+		\includegraphics[width=\linewidth]{./figuras/Linspace_normal_25}
 		\caption{}
-		\label{fig:norm25}
+		\label{fig:lin_norm25}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/Linspace_lognormal_15}
+		\caption{}
+		\label{fig:lin_log15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/Linspace_lognormal_25}
+		\caption{}
+		\label{fig:lin_log25}
 	\end{subfigure}
 	
-	\caption{Discretização da distribuição Normal utilizando-se o método \textit{Linspace}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\caption{Discretização utilizando o método de \textit{Linspace}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
 	\label{fig:normlin}
 \end{figure}
 
-Podemos perceber que para este método, mesmo com quinze pontos de estimação, o método conseguiu descrever bem a curva, acentuando o erro nas regiões de alta probabilidade.
+Entretanto, pode-se perceber que com o aumento do número de pontos de estimação ($N = 15$ para $N = 25$) o desempenho deste método apresenta uma melhora significativa, portanto, fica claro que é possível alcançar uma boa performance com o método de \textit{Linspace}. Mas, há de se comentar que o aumento do número de pontos de estimação é um fator decisivo no custo computacional desses algoritmos, além disso, aumenta a quantidade de informação a ser armazenada ou transmitida.
 
-\subsubsection{\textit{CDFm}}
+\subsection{Método \textit{CDFm}}
 
 
 \begin{figure}[H]
@@ -154,13 +233,28 @@ Podemos perceber que para este método, mesmo com quinze pontos de estimação, 
 		\label{fig:cdfnorm25}
 	\end{subfigure}
 	
-	\caption{Discretização da distribuição Normal utilizando-se o método \textit{CDFm}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/CDFm_lognormal_15}
+		\caption{}
+		\label{fig:cdf_log15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/CDFm_lognormal_25}
+		\caption{}
+		\label{fig:cdf_log25}
+	\end{subfigure}
+	
+	\caption{Discretização utilizando o método de \textit{CDFm}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
 	\label{fig:cdfnorm}
 \end{figure}
 
 Vemos que a região de alta probabilidade é representada com um menor erro do que no método \textit{Linspace} mas, em contrapartida, a região de baixa probabilidade necessitaria de um número muito maior de pontos para possuir o mesmo erro do método anterior.
 
-\subsubsection{\textit{PDFm}}
+\subsection{Método \textit{PDFm}}
 
 \begin{figure}[H]
 	\centering
@@ -177,14 +271,30 @@ Vemos que a região de alta probabilidade é representada com um menor erro do q
 		\caption{}
 		\label{fig:pdfnorm25}
 	\end{subfigure}
+
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/PDFm_lognormal_15}
+		\caption{}
+		\label{fig:pdflognorm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/PDFm_lognormal_25}
+		\caption{}
+		\label{fig:pdflognorm25}
+	\end{subfigure}
 	
-	\caption{Discretização da distribuição Normal utilizando-se o método \textit{PDFm}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\caption{Discretização utilizando o método de \textit{PDFm}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
 	\label{fig:pdfmnorm}
 \end{figure}
 
+
+
 Para a distribuição Normal, este método apresenta um maior erro na região de alta probabilidade do que o método \ac{CDFm} mas nas regiões de baixa probabilidade o erro de estimação é menor do que o visto anteriormente, fazendo assim uma combinação dos métodos \textit{Linspace} e \textit{CDFm}.
- 
-\subsubsection{\textit{iPDF1}}
+
+\subsection{Método \textit{iPDF1}}
 
 \begin{figure}[H]
 	\centering
@@ -201,14 +311,28 @@ Para a distribuição Normal, este método apresenta um maior erro na região de
 		\caption{}
 		\label{fig:ipdfnorm25}
 	\end{subfigure}
+
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_lognormal_15}
+		\caption{}
+		\label{fig:ipdflognorm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_lognormal_25}
+		\caption{}
+		\label{fig:ipdflognorm25}
+	\end{subfigure}
 	
-	\caption{Discretização da distribuição Normal utilizando-se o método \textit{iPDF1}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\caption{Discretização utilizando o método de \textit{iPDF1}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
 	\label{fig:ipdfmnorm}
 \end{figure}
 
 
 
-\subsubsection{\textit{iPDF2}}
+\subsection{Método \textit{iPDF2}}
 
 \begin{figure}[H]
 	\centering
@@ -225,347 +349,55 @@ Para a distribuição Normal, este método apresenta um maior erro na região de
 		\caption{}
 		\label{fig:ipdf2norm25}
 	\end{subfigure}
+
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF2_lognormal_15}
+		\caption{}
+		\label{fig:ipdf2lognorm15}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{./figuras/iPDF2_lognormal_25}
+		\caption{}
+		\label{fig:ipdf2lognorm25}
+	\end{subfigure}
 	
-	\caption{Discretização da distribuição Normal utilizando-se o método \textit{iPDF2}: (a) Discretização utilizando-se 15 pontos de estimação; (b) Discretização utilizando-se 25 pontos de estimação.}
+	\caption{Discretização utilizando o método de \textit{iPDF2}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
 	\label{fig:ipdf2norm}
 \end{figure}
 
-\subsection{Lognormal}
 
-\subsubsection{\textit{Linspace}}
-\subsubsection{\textit{CDFm}}
-\subsubsection{\textit{PDFm}}
-\subsubsection{\textit{iPDF1}}
-\subsubsection{\textit{iPDF2}}
-\subsection{Dataset}
+%\include{./textuais/desenvolvimento/resto_desen}
 
-\subsubsection{\textit{Linspace}}
-\subsubsection{\textit{CDFm}}
-\subsubsection{\textit{PDFm}}
-\subsubsection{\textit{iPDF1}}
-\subsubsection{\textit{iPDF2}}
+\section{Custo Computacional}
 
-\subsection{\textit{Linspace}}
-O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a variável aleatória, representada pelo eixo das abscissas de uma \ac{PDF} dada. Após, o eixo horizontal terá \textit{N} pontos igualmente espaçados entre dois valores predefinidos que definem os parâmetros de início e término da distribuição. Este método é o mais utilizado na literatura devido a sua simplicidade. A Figura~\ref{fig:linspace_curve} ilustra o método \textit{Linspace} para a distribuição Normal e a Figura~\ref{fig:Lognormal_lin} ilustra o mesmo método para uma distribuição Lognormal com diferentes desvios padrões, limitando o eixo horizontal à uma área de probabilidade de $99.99\%$. A Figura~\ref{fig:datalin} mostra as distribuições geradas, conforme é mostrado na Figura~\ref{fig:data}, discretizadas utilizando este método.
+Os algoritmo de \textit{Kernel} são muito utilizados na literatura no contexto de análise de dados ou modelagem de dados, entretanto é sabido que esse método é computacionalmente mais lento em comparação com outros. Por isso muitos pesquisadores fazem uso de algoritmos que efetuam aproximações matemáticas no intuito de ganhar em custo computacional, chamados de \textit{FastKDE}, ou seja, existe um \textit{trade-off} entre estabilidade numérica e economia computacional. Entretanto, como já mencionado, o tempo de processamento esta diretamente ligado ao número de eventos da distribuição e ao número de pontos a serem estimados.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{./figuras/normal_1}
-	\caption{Ilustração do método Linspace aplicado à uma distribuição normal.}
-	\label{fig:linspace_curve}
-\end{figure}
+Portanto, no intuito de ilustrar a consequência de se aumentar o número de pontos de estimação a Figura \ref{fig:compKDE} apresentada o tempo de processamento de um algoritmo matricial de \textit{FastKDE} utilizado para a estimação de uma distribuição gaussiana $N(0,1)$ ao se variar o número de eventos e número de pontos de estimação.
 
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\linewidth]{./figuras/normal_1_0}
-		\caption{}
-		\label{fig:randnlin}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\linewidth]{./figuras/normal_1_25}
-		\caption{}
-		\label{fig:randn_outlin}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\linewidth]{./figuras/lognormal_05_0}
-		\caption{}
-		\label{fig:randloglin}
-	\end{subfigure}
-	
-	\caption{Histograma dos dados gerados utilizando a discretização pelo método \textit{Linspace} sendo eles: (a) Gaussiana com $\mu = 0$ e $\sigma$ = 1; (b) Gaussiana com $\mu = 0$, $\sigma = 1$ e \textit{outlier} em $\pm 25$; (c) Lognormal com $\mu = 0$ e $\sigma = 0.5$.}
-	\label{fig:datalin}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/lognormal_001.png}
-		\caption{}
-		\label{fig:lin001}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/lognormal_025}
-		\caption{}
-		\label{fig:lin025}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/lognormal_05}
-		\caption{}
-		\label{fig:lin050}
-	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/lognormal_1}
-		\caption{}
-		\label{fig:lin100}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/lognormal_125}
-		\caption{}
-		\label{fig:lin125}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/lognormal_15}
-		\caption{}
-		\label{fig:lin150}
-	\end{subfigure}
-\caption{Ilustração do método Linspace aplicado à uma distribuição lognormal em que: (a) possui $\sigma = 0.01$; (b) possui $\sigma = 0.25$; (c) possui $\sigma = 0.5$; (d) possui $\sigma = 1$; (e) possui $\sigma = 1.25$; e (f) possui $\sigma = 1.5$}
-\label{fig:Lognormal_lin}
-\end{figure}
-
-
-É possível perceber que este método atende de forma satisfatória distribuições que não possuem derivadas muito altas como é ilustrado na figura \ref{fig:linspace_curve} e nas figuras \ref{fig:lin001} à \ref{fig:lin050}, embora nas Figuras \ref{fig:randnlin} e \ref{fig:randloglin} há um erro de estimação por devida à quantidade de eventos simulados. Nas figuras \ref{fig:lin100} à \ref{fig:lin150} e \ref{fig:randn_outlin} o método em questão já não consegue descrever a curva, colocando um número insuficientes de pontos na região de alta probabilidade e um número maior de pontos na região de alta probabilidade.
-
-\subsection{\textit{CDFm}}
-O método denominado nesse trabalho de \ac{CDFm} representa a discretização baseada na \ac{CDF}. Para este método, a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal, a Figura~\ref{fig:Lognormal_cdf} para a distribuição Lognormal e a Figura~XXXXX para o \textit{dataset}. Note que, quanto maior a probabilidade da \ac{PDF}, maior o número de pontos na sua região e que os \textit{outliers} não fazem mais tanto efeito, como é o caso do \textit{Linspace}.
-
-\color{red} COLOCAR GRÁFICO 2X3 \color{black}
-
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/CDFm_lognormal_001.png}
-		\caption{}
-		\label{fig:log001}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/CDFm_lognormal_025}
-		\caption{}
-		\label{fig:log025}
-	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/CDFm_lognormal_05}
-		\caption{}
-		\label{fig:log050}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/CDFm_lognormal_1}
-		\caption{}
-		\label{fig:log100}
-	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/CDFm_lognormal_125}
-		\caption{}
-		\label{fig:log125}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/CDFm_lognormal_15}
-		\caption{}
-		\label{fig:log150}
-	\end{subfigure}
-	\caption{Ilustração do método \textit{CDFm} aplicado à uma distribuição lognormal em que: (a) possui $\sigma = 0.01$; (b) possui $\sigma = 0.25$; (c) possui $\sigma = 0.5$; (d) possui $\sigma = 1$; (e) possui $\sigma = 1.25$; e (f) possui $\sigma = 1.5$}
-	\label{fig:Lognormal_cdf}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{./figuras/CDFm_normal_1}
-	\caption{Ilustração da discretização da distribuição Gaussiana baseada em sua CDF.}
-	\label{fig:CDFm_curve}
-\end{figure}
-
-\color{red} COLOCAR AQUI A FIGURA COM DATASET P/ CDFM \color{black}
-
-Como este método baseia-se na \ac{CDF}, quando maior a variação na \ac{PDF}, mais rápido a CDF sobe, fazendo assim com que este método coloque mais pontos nas regiões de alta probabilidade e poucos pontos nas regiões de baixa probabilidade, sendo assim um método imune à \textit{outliers}.
-
-\subsection{\textit{PDFm}}
-Este método, denominado de \ac{PDFm} também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas função de referência a própria \ac{PDF}, ao invés da sua \ac{CDF}. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona para a distribuição Normal,a Figura~\ref{fig:Lognormal_pdf} para a distribuição Lognormal e a Figura~XXXX para dados gerados. Ela possui o efeito de incrementar o número de pontos onde a primeira derivada da \ac{PDF} é maior, ou seja, quanto maior a inclinação da curva, mais pontos são colocados.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.67\linewidth]{./figuras/PDFm_normal_1}
-	\caption{Ilustração da discretização da distribuição Gaussiana baseada em sua PDF.}
-	\label{fig:PDFm_curve}
-\end{figure}
-
-{\color{red} COLOCAR GRÁFICO 2X3}
-
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/PDFm_lognormal_001.png}
-		\caption{}
-		\label{fig:pdflog001}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/PDFm_lognormal_025}
-		\caption{}
-		\label{fig:pdflog025}
-	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/PDFm_lognormal_05}
-		\caption{}
-		\label{fig:pdflog050}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/PDFm_lognormal_1}
-		\caption{}
-		\label{fig:pdflog100}
-	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/PDFm_lognormal_125}
-		\caption{}
-		\label{fig:pdflog125}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/PDFm_lognormal_15}
-		\caption{}
-		\label{fig:pdflog150}
-	\end{subfigure}
-	\caption{Ilustração do método \textit{PDFm} aplicado à uma distribuição Lognormal em que: (a) possui $\sigma = 0.01$; (b) possui $\sigma = 0.25$; (c) possui $\sigma = 0.5$; (d) possui $\sigma = 1$; (e) possui $\sigma = 1.25$; e (f) possui $\sigma = 1.5$}
-	\label{fig:Lognormal_pdf}
-\end{figure}
-
-{\color{red} COLOCAR GRÁFICO DOS DATASETS}
-
-\subsection{\textit{iPDF1}}
-
-O método da \ac{iPDF1} reflete os valores verticais para o eixo horizontal usando a \ac{CDF} da primeira derivada da \ac{PDF} como uma transformação de base, como é ilustrado nas Figuras~\ref{fig:dPDF1} e \ref{fig:dPDF2}
-{\color{red} COLOCAR O GRÁFICO DA DERIVADA EM ANEXO E AQUI O GRÁFICO DA CDF PARA A LOGNORMAL E COM OS DATASETS}
 \begin{figure}[!ht]
 	\centering
-	\begin{subfigure}[b]{0.44\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/dpdf1}
-		\caption{}
-		\label{fig:dPDF1}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.47\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/dpdf2}
-		\caption{}
-		\label{fig:dPDF2}
-	\end{subfigure}
-\caption{PDF Gaussiana e sua primeira derivada à esquerda. Ilustração da discretização da distribuição Gaussiana baseada na CDF da sua primeira derivada à direita.}
-\label{fig:dPDF}
+	\includegraphics[width=0.8\linewidth]{./figuras/custocomp.png}\\
+	\caption{Gráfico do tempo de processamento de um algoritmo de estimação de densidades baseado em KDE quando aumenta-se o número de eventos a serem estimados e o número de pontos de estimação.}
+	\label{fig:compKDE}
 \end{figure}
 
-As equações \eqref{equ:dpdf1} e \eqref{equ:dcdf} descrevem este método matematicamente.
+Pode-se observar que o tempo de processamento para $N = 1024$ é aproximadamente $75\%$ maior que para $N = 128$ quando o número de eventos é igual a $10^5$ e aproximadamente $67\%$ maior para número de eventos igual a $10^4$. Ou seja, um método de discretização capaz de apresentar o mesmo erro de estimação mesmo com menos pontos de estimação pode trazer benefícios importantes em ambientes de alta exigência.
 
-\color{red} COLOCAR AQUI TB A EQUAÇÃO PRA LOGNORMAL \color{black}
-\begin{equation}
-\begin{array}{l}
-\vspace{0.3cm}\displaystyle \zeta(x) = \frac{|\mu-x|}{\sigma^3\sqrt{2\pi}}\cdot e^{\left(\frac{-(\mu-x)^2}{2\sigma^2}\right) } \\
-\vspace{0.3cm} \displaystyle \int_{-\infty}^{\infty} \zeta(x)\cdot dx = c_1 \\
-\displaystyle g_X(x) = \frac{\zeta(x)}{c_1}
-\label{equ:dpdf1}
-\end{array}
-\end{equation}
-onde $\zeta$ é a equação da distribuição da derivada da distribuição normal, $\mu$ é a média, $\sigma$ o desvio padrão, $x$ a variável aleatória, $c_1$ é a área abaixo da curva $\zeta$, e $g_X$ é a versão normalizada.	
-A \ac{CDF} de $g_X$ ($G_X(x)$) é usada para transferir os valores da abscissa ao eixo da ordenada como mostra a  Figura~\ref{fig:dPDF2}.
-
-
-
-
-Já para a aplicação com dados gerados, ilustrado na Figura~XXXX, precisamos utilizar a derivada discreta, que pode ser feita utilizando o método de diferenças finitas, que consiste em computar a inclinação de uma reta secante vizinha através dos pontos $(x,f(x))$ e $(x+h,f(x+h))$ \cite{burden2001numerical} que pode ser vista na Figura~XXXX. A inclinação dessa reta pode ser descrita pela Equação~\eqref{eq:derivdisc}
-
-\begin{equation}
-	{\displaystyle f'(x) = {f(x+h)-f(x) \over h}}
-	\label{eq:derivdisc}
-\end{equation}
-
-onde \textit{h} é a distancia entre dois pontos vizinhos (\textit{bins}) e x o valor do \textit{bin}
-
-{\color{red} BOTAR UMA FIGURA MANEIRA AQUI PRA EXPLICAR A DERIVADA DISCRETA}
-
-
-
-
-\subsection{\textit{iPDF2}} \label{cap:ipdf2}
-O método da \ac{iPDF2} é construído da mesma maneira da \textit{IPDF1} mas usando a segunda detivada ao invés da primeira, como é mostrado na Figura~\ref{fig:ddPDF1} e \ref{fig:ddPDF2}. Suas equações são mostradas em \eqref{equ:hx} e \eqref{equ:ddcdf}.
-
-{\color{red} COLOCAR O GRÁFICO DA DERIVADA EM ANEXO E AQUI O GRÁFICO DA CDF PARA A LOGNORMAL E COM OS DATASETS}
-
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}[b]{0.44\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/ddpdf1.pdf}
-		\caption{}
-		\label{fig:ddPDF1}
-	\end{subfigure}
-	\hfill
-	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	\begin{subfigure}[b]{0.47\textwidth}
-		\centering 
-		\includegraphics[width=\textwidth]{./figuras/ddpdf2.pdf}
-		\caption{}
-		\label{fig:ddPDF2}
-	\end{subfigure}
-	
-	\caption{PDF Gaussiana e sua segunda derivada à esquerda. Ilustração da discretização da distribuição Gaussiana baseada na CDF da sua segunda derivada à direita.}
-	\label{fig:ddPDF}
-\end{figure}
-\color{red} COLOCAR AQUI TB A EQUAÇÃO PRA LOGNORMAL \color{black}
-\begin{equation}
-\begin{array}{l}
-\vspace{0.3cm}\displaystyle \eta(x) = \frac{|\sigma^2 - (\mu - x)^2|}{ \sigma^5\sqrt{2\pi}}\cdot e^{-\frac{(\mu - x)^2}{2 \sigma^2}} \\
-\vspace{0.3cm} \displaystyle \int_{-\infty}^{\infty} \eta(x)\cdot dx = c_2 \\
-\displaystyle h_X(x) = \frac{\eta(x)}{c_2}
-\label{equ:hx}
-\end{array}
-\end{equation}
-onde $\eta$ é a equação de distribuição de segunda derivada da distribuição Normal, $c_2$ é a área abaixo da curva desta distribuição, e $h_X$ é sua versão normalizada. 
-Finalmente, $H_X(x)$ é a \ac{CDF} de $h_X$, dada por \eqref{equ:ddcdf}.
-
-\begin{equation}
-H_X(x) = \int_{-\infty}^x h_X(y)\cdot dy
-\label{equ:ddcdf}
-\end{equation}
-
-Para os dados gerados, o precedimento é o mesmo descrito na Seção~\ref{cap:ipdf2} e a equação da segunda derivada discreta pode ser escrita pela Equação~\ref{eq:derivdisc2}.
-
-\begin{equation}
-{\displaystyle f''(x) = {f'(x+h)-f'(x) \over h}}
-\label{eq:derivdisc2}
-\end{equation}
 
 \section{Ambiente de Análise}
-Para analisar as diferenças entre a \ac{PDF} real e estimada ao longo de toda a extensão do eixo das abscissas, a área entre as duas \ac{PDF}s será usada como medida da estimação de erro. Além do mais, o eixo das abscissas foi dividida em $N$ regiões de mesmo tamanho, chamado \ac{RoI} \cite{ron1999art}. Essas regiões são compreendidas entre valores máximos e mínimos predefinidos do eixo horizontal. A Figura~XXXXX mostra este processo quando a abscissa é dividida em 20 regiões, todas compreendidas entre os valores $-4$ e $4$ do eixo $ x $.
+
+Para analisar as diferenças entre a \ac{PDF} real e estimada ao longo de toda a extensão do eixo das abscissas, a área entre as duas \ac{PDF}s será usada como medida da estimação de erro. Além do mais, o eixo das abscissas foi dividida em $N$ regiões de mesmo tamanho, chamado \ac{RoI} \cite{ron1999art}. Essas regiões são compreendidas entre valores máximos e mínimos predefinidos do eixo horizontal. A Figura~\ref{fig:error} mostra este processo quando a abscissa é dividida em 20 regiões, todas compreendidas entre os valores $-4$ e $4$ do eixo $ x $.
 
 
-{\color{red} COLOCAR AQUI O GRÁFICO COM O ERRO QUE TEM ZOOM}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{./figuras/error1}\\
+	\caption{Ilustração da medida de erro entre a PDF Real e a Estimada com 20 regiões de interesse.}
+	\label{fig:error}
+\end{figure}
 
-A maneira que a \ac{RoI} é usada neste trabalho permitirá avaliar o erro de estimação em função de quatro diferentes parâmetros: Probabilidade; Eixo das abscissas; Primeira e Segunda Derivada. Para estimar os valores entre os pontos discretos, dois métodos de interpolação serão usados: interpolação pelo Vizinho Mais Próximo e Linear. 200 amostras serão usadas no processo de discretização. O erro de estimação tende a melhoras conforme o número de amostras aumenta mas sua característica geral não muda. Este último é a principal preocupação deste trabalho.
 
+A maneira que a \ac{RoI} é usada neste trabalho permitirá avaliar o erro de estimação em função de quatro diferentes parâmetros: Probabilidade; Eixo das abscissas; Primeira e Segunda Derivada. Para estimar os valores entre os pontos discretos, dois métodos de interpolação serão usados: interpolação pelo Vizinho Mais Próximo e Linear. 200 amostras serão usadas no processo de discretização. O erro de estimação tende a melhoras conforme o número de amostras aumenta mas sua característica geral não muda. Este último é a principal preocupação deste trabalho. 

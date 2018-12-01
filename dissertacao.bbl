@@ -5,20 +5,27 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[Alison 2014]{alison2014road}
+\abntrefinfo{Alison}{ALISON}{2014}
+{ALISON, J. \emph{The road to discovery: Detector alignment, electron
+  identification, particle misidentification, ww physics, and the discovery of
+  the Higgs Boson}. [S.l.]: Springer, 2014.}
+
 \bibitem[Biba et al. 2007]{biba2007unsupervised}
 \abntrefinfo{Biba et al.}{BIBA et al.}{2007}
 {BIBA, M. et al. Unsupervised discretization using kernel density estimation.
   In:  \emph{IJCAI}. [S.l.: s.n.], 2007. p. 696--701.}
 
-\bibitem[Burden e Faires 2001]{burden2001numerical}
-\abntrefinfo{Burden e Faires}{BURDEN; FAIRES}{2001}
-{BURDEN, R.; FAIRES, J. \emph{Numerical analysis 7th ed., brooks/cole, thomson
-  learning}. [S.l.]: Inc, 2001.}
-
 \bibitem[CERN 2015]{cernwebabout}
 \abntrefinfo{CERN}{CERN}{2015}
 {CERN. \emph{About CERN}. 2015.
 Dispon{\'\i}vel em: $<$http://home.web.cern.ch/about$>$.}
+
+\bibitem[collaboration et al. 2015]{cms2015performance}
+\abntrefinfo{collaboration et al.}{COLLABORATION et al.}{2015}
+{COLLABORATION, C. et al. Performance of electron reconstruction and selection
+  with the cms detector in proton-proton collisions at sqrt (s)= 8 tev.
+\emph{arXiv preprint arXiv:1502.02701}, 2015.}
 
 \bibitem[Fayyad e Irani 1993]{fayyad1993multi}
 \abntrefinfo{Fayyad e Irani}{FAYYAD; IRANI}{1993}
@@ -37,16 +44,38 @@ Dispon{\'\i}vel em: $<$http://home.web.cern.ch/about$>$.}
 {GRAMACKI, A. \emph{Nonparametric Kernel Density Estimation and Its
   Computational Aspects}. [S.l.]: Springer, 2017.}
 
+\bibitem[Gurevich et al. 1966]{gurevich1966integral}
+\abntrefinfo{Gurevich et al.}{GUREVICH et al.}{1966}
+{GUREVICH, B.~L. et al. \emph{Integral, measure, and derivative: a unified
+  approach}. [S.l.]: Courier Corporation, 1966.}
+
+\bibitem[Hanagaki et al. 2002]{hanagaki2002electron}
+\abntrefinfo{Hanagaki et al.}{HANAGAKI et al.}{2002}
+{HANAGAKI, K. et al. Electron identification in belle.
+\emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, Elsevier,
+  v.~485, n.~3, p. 490--503, 2002.}
+
 \bibitem[Jones 1989]{jones1989discretized}
 \abntrefinfo{Jones}{JONES}{1989}
 {JONES, M.~C. Discretized and interpolated kernel density estimates.
 \emph{Journal of the American Statistical Association}, Taylor \& Francis
   Group, v.~84, n.~407, p. 733--741, 1989.}
 
+\bibitem[KEK 2018]{superk}
+\abntrefinfo{KEK}{KEK}{2018}
+{KEK, H. E. A. R.~O. \emph{Super KEKB Ring}. 2018.
+Dispon{\'\i}vel em: $<$https://www.kek.jp/en/Facility/ACCL/SuperKEKBRing/$>$.}
+
 \bibitem[Ron 1999]{ron1999art}
 \abntrefinfo{Ron}{RON}{1999}
 {RON, B. \emph{The Art and Science of Digital Compositing}. [S.l.]: Morgan
   Kaufmann Verlag, 1999.}
+
+\bibitem[Ronqui 2015]{modelopadrao}
+\abntrefinfo{Ronqui}{RONQUI}{2015}
+{RONQUI, C.~M. \emph{Modelo Padrão}. 2015.
+Accessed: 2015-12-22.}
 
 \bibitem[Schindler 2012]{schindler2012bandwidth}
 \abntrefinfo{Schindler}{SCHINDLER}{2012}

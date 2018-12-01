@@ -17,6 +17,8 @@ A level-1 auxiliary file: ./textuais/conclusao/conclusao.aux
 The style file: abnt-alf.bst
 A level-1 auxiliary file: ./postextuais/apendice/apendicePubli.aux
 Database file #1: ./referencias/bibliografia.bib
+Warning--entry type for "superk" isn't style-file defined
+--line 14 of file ./referencias/bibliografia.bib
 I was expecting a `,' or a `}'---line 301 of file ./referencias/bibliografia.bib
  :   
  :   url =          {http://home.cern/about/physics}
