@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  1 DEC 2018 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  2 DEC 2018 19:03
 entering extended mode
 **./dissertacao.tex
 (dissertacao.tex
@@ -1371,29 +1371,21 @@ Package pdftex.def Info: ./figuras/error_normal_nearest_X.png  used on input li
 ne 21. on input line 21.
 Package pdftex.def Info: Requested size: 198.45662pt x 136.05177pt on input lin
 e 21.
-
-LaTeX Warning: File `./figuras/error_normal_nearest_Primeira Derivada.png' not 
-found on input line 30.
-
-<./figuras/error_normal_nearest_Primeira Derivada.png, id=342, 802.197pt x 542.
+<./figuras/error_normal_nearest_Primeira_Derivada.png, id=342, 802.197pt x 542.
 025pt>
-File: ./figuras/error_normal_nearest_Primeira Derivada.png Graphic file (type p
+File: ./figuras/error_normal_nearest_Primeira_Derivada.png Graphic file (type p
 ng)
-<use ./figuras/error_normal_nearest_Primeira Derivada.png>
-Package pdftex.def Info: ./figuras/error_normal_nearest_Primeira Derivada.png  
+<use ./figuras/error_normal_nearest_Primeira_Derivada.png>
+Package pdftex.def Info: ./figuras/error_normal_nearest_Primeira_Derivada.png  
 used on input line 30. on input line 30.
 Package pdftex.def Info: Requested size: 198.45662pt x 134.09163pt on input lin
 e 30.
-
-LaTeX Warning: File `./figuras/error_normal_nearest_Segunda Derivada.png' not f
-ound on input line 37.
-
-<./figuras/error_normal_nearest_Segunda Derivada.png, id=343, 790.6338pt x 542.
+<./figuras/error_normal_nearest_Segunda_Derivada.png, id=343, 790.6338pt x 542.
 025pt>
-File: ./figuras/error_normal_nearest_Segunda Derivada.png Graphic file (type pn
+File: ./figuras/error_normal_nearest_Segunda_Derivada.png Graphic file (type pn
 g)
-<use ./figuras/error_normal_nearest_Segunda Derivada.png>
-Package pdftex.def Info: ./figuras/error_normal_nearest_Segunda Derivada.png  u
+<use ./figuras/error_normal_nearest_Segunda_Derivada.png>
+Package pdftex.def Info: ./figuras/error_normal_nearest_Segunda_Derivada.png  u
 sed on input line 37. on input line 37.
 Package pdftex.def Info: Requested size: 198.45662pt x 136.05177pt on input lin
 e 37.
@@ -1401,72 +1393,140 @@ e 37.
 
 
 
-]
-<./figuras/error_normal_linear_Probabilidade.png, id=347, 790.6338pt x 542.025p
+] [41 <./figuras/error_normal_nearest_Probabilidade.png> <./figuras/error_norma
+l_nearest_X.png> <./figuras/error_normal_nearest_Primeira_Derivada.png> <./figu
+ras/error_normal_nearest_Segunda_Derivada.png>]
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png, id=354, 859.2903pt x 570.93
+3pt>
+File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png Graphic file (type png)
+
+<use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png  use
+d on input line 74. on input line 74.
+Package pdftex.def Info: Requested size: 198.45662pt x 131.85194pt on input lin
+e 74.
+<./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png, id=355, 859.2903pt x 570
+.933pt>
+File: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png Graphic file (type p
+ng)
+<use ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png  
+used on input line 83. on input line 83.
+Package pdftex.def Info: Requested size: 198.45662pt x 131.85194pt on input lin
+e 83.
+ [42 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png> <./figuras/ERRORPLOT_L
+1_TRUE_LOGNORMAL_NEAREST_00.png>]
+<./figuras/error_normal_linear_Probabilidade.png, id=361, 790.6338pt x 542.025p
 t>
 File: ./figuras/error_normal_linear_Probabilidade.png Graphic file (type png)
 <use ./figuras/error_normal_linear_Probabilidade.png>
 Package pdftex.def Info: ./figuras/error_normal_linear_Probabilidade.png  used 
-on input line 51. on input line 51.
+on input line 110. on input line 110.
 Package pdftex.def Info: Requested size: 198.45662pt x 136.05177pt on input lin
-e 51.
-<./figuras/error_normal_linear_X.png, id=348, 790.6338pt x 542.025pt>
+e 110.
+<./figuras/error_normal_linear_X.png, id=362, 790.6338pt x 542.025pt>
 File: ./figuras/error_normal_linear_X.png Graphic file (type png)
 <use ./figuras/error_normal_linear_X.png>
 Package pdftex.def Info: ./figuras/error_normal_linear_X.png  used on input lin
-e 60. on input line 60.
+e 119. on input line 119.
 Package pdftex.def Info: Requested size: 198.45662pt x 136.05177pt on input lin
-e 60.
-
-
-LaTeX Warning: File `./figuras/error_normal_linear_Primeira Derivada.png' not f
-ound on input line 69.
-
-<./figuras/error_normal_linear_Primeira Derivada.png, id=349, 802.197pt x 542.0
+e 119.
+<./figuras/error_normal_linear_Primeira_Derivada.png, id=363, 802.197pt x 542.0
 25pt>
-File: ./figuras/error_normal_linear_Primeira Derivada.png Graphic file (type pn
+File: ./figuras/error_normal_linear_Primeira_Derivada.png Graphic file (type pn
 g)
-<use ./figuras/error_normal_linear_Primeira Derivada.png>
-Package pdftex.def Info: ./figuras/error_normal_linear_Primeira Derivada.png  u
-sed on input line 69. on input line 69.
+<use ./figuras/error_normal_linear_Primeira_Derivada.png>
+Package pdftex.def Info: ./figuras/error_normal_linear_Primeira_Derivada.png  u
+sed on input line 128. on input line 128.
 Package pdftex.def Info: Requested size: 198.45662pt x 134.09163pt on input lin
-e 69.
-
-LaTeX Warning: File `./figuras/error_normal_linear_Segunda Derivada.png' not fo
-und on input line 76.
-
-<./figuras/error_normal_linear_Segunda Derivada.png, id=350, 790.6338pt x 542.0
+e 128.
+<./figuras/error_normal_linear_Segunda_Derivada.png, id=364, 790.6338pt x 542.0
 25pt>
-File: ./figuras/error_normal_linear_Segunda Derivada.png Graphic file (type png
+File: ./figuras/error_normal_linear_Segunda_Derivada.png Graphic file (type png
 )
-<use ./figuras/error_normal_linear_Segunda Derivada.png>
-Package pdftex.def Info: ./figuras/error_normal_linear_Segunda Derivada.png  us
-ed on input line 76. on input line 76.
+<use ./figuras/error_normal_linear_Segunda_Derivada.png>
+Package pdftex.def Info: ./figuras/error_normal_linear_Segunda_Derivada.png  us
+ed on input line 135. on input line 135.
 Package pdftex.def Info: Requested size: 198.45662pt x 136.05177pt on input lin
-e 76.
-[41 <./figuras/error_normal_nearest_Probabilidade.png> <./figuras/error_normal_
-nearest_X.png> <./figuras/error_normal_nearest_Primeira Derivada.png> <./figura
-s/error_normal_nearest_Segunda Derivada.png>]) [42 <./figuras/error_normal_line
-ar_Probabilidade.png> <./figuras/error_normal_linear_X.png> <./figuras/error_no
-rmal_linear_Primeira Derivada.png> <./figuras/error_normal_linear_Segunda Deriv
-ada.png>]
+e 135.
+ [43]
+Package acronym Info: Label `acro:iPDF2' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 143.
+ [44 <./figuras/error_normal_linear_Probabilidade.png> <./figuras/error_normal_
+linear_X.png> <./figuras/error_normal_linear_Primeira_Derivada.png> <./figuras/
+error_normal_linear_Segunda_Derivada.png>]
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png, id=376, 859.2903pt x 570.933
+pt>
+File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png Graphic file (type png)
+<use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png  used
+ on input line 154. on input line 154.
+Package pdftex.def Info: Requested size: 198.45662pt x 131.85194pt on input lin
+e 154.
+<./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png, id=377, 859.2903pt x 570.
+933pt>
+File: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png Graphic file (type pn
+g)
+<use ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png  u
+sed on input line 163. on input line 163.
+Package pdftex.def Info: Requested size: 198.45662pt x 131.85194pt on input lin
+e 163.
+<./figuras/erro3d_linspace.png, id=378, 859.2903pt x 565.1514pt>
+File: ./figuras/erro3d_linspace.png Graphic file (type png)
+<use ./figuras/erro3d_linspace.png>
+Package pdftex.def Info: ./figuras/erro3d_linspace.png  used on input line 182.
+ on input line 182.
+Package pdftex.def Info: Requested size: 198.45662pt x 130.51674pt on input lin
+e 182.
+<./figuras/figure13b.pdf, id=379, pagebox=cropbox, 659.10242pt x 443.01509pt>
+File: ./figuras/figure13b.pdf Graphic file (type pdf)
+<use ./figuras/figure13b.pdf>
+Package pdftex.def Info: ./figuras/figure13b.pdf  used on input line 189. on in
+put line 189.
+Package pdftex.def Info: Requested size: 198.45662pt x 133.39226pt on input lin
+e 189.
+ [45 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png> <./figuras/ERRORPLOT_L1
+_TRUE_LOGNORMAL_LINEAR_00.png> <./figuras/erro3d_linspace.png> <./figuras/figur
+e13b.pdf>] [46]
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_050_log.png, id=400, 867.24pt x 572
+.3784pt>
+File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_050_log.png Graphic file (type
+ png)
+<use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_050_log.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_050_log.png
+  used on input line 238. on input line 238.
+Package pdftex.def Info: Requested size: 198.45662pt x 130.98048pt on input lin
+e 238.
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_050_log.png, id=401, 867.24pt x 572.
+3784pt>
+File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_050_log.png Graphic file (type 
+png)
+<use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_050_log.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_050_log.png 
+ used on input line 247. on input line 247.
+Package pdftex.def Info: Requested size: 198.45662pt x 130.98048pt on input lin
+e 247.
+) [47 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_050_log.png> <./figuras/ERROR
+PLOT_L1_TRUE_NORMAL_LINEAR_050_log.png>]
 \openout2 = `./textuais/conclusao/conclusao.aux'.
 
  (textuais/conclusao/conclusao.tex
 Cap\'{\i }tulo 5.
-) [43
+) [48
 
 
 
-] (dissertacao.bbl [44
+] (dissertacao.bbl [49
 
 
-]) [45]
+]) [50]
 \openout2 = `./postextuais/apendice/apendicePubli.aux'.
 
  (postextuais/apendice/apendicePubli.tex
 Apendice A.
-) [46
+) [51
 
 
 ]
@@ -1491,11 +1551,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7542 strings out of 493312
- 114477 string characters out of 3138898
- 181399 words of memory out of 3000000
- 10674 multiletter control sequences out of 15000+200000
- 29128 words of font info for 69 fonts, out of 3000000 for 9000
+ 7637 strings out of 493312
+ 117325 string characters out of 3138898
+ 182644 words of memory out of 3000000
+ 10758 multiletter control sequences out of 15000+200000
+ 31278 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,46p,1377b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
@@ -1513,9 +1573,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti12.pfb>
-Output written on dissertacao.pdf (46 pages, 3829678 bytes).
+Output written on dissertacao.pdf (51 pages, 4603475 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
+ 471 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

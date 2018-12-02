@@ -23,9 +23,9 @@
 \contentsline {section}{\numberline {3.5}Ambiente de An\IeC {\'a}lise}{38}
 \contentsline {chapter}{\numberline {4}Resultados}{40}
 \contentsline {section}{\numberline {4.1}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o do vizinho mais pr\IeC {\'o}ximo}{40}
-\contentsline {section}{\numberline {4.2}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o linear}{42}
-\contentsline {section}{\numberline {4.3}Estima\IeC {\c c}\IeC {\~a}o de erro considerando \textit {outliers}}{42}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{43}
-\contentsline {chapter}{Refer\^encias}{44}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Lista de Publica\IeC {\c c}\IeC {\~o}es}{46}
-\contentsline {section}{\numberline {A.1}Publica\IeC {\c c}\IeC {\~o}es em Anais de Congresso Internacional}{46}
+\contentsline {section}{\numberline {4.2}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o linear}{43}
+\contentsline {section}{\numberline {4.3}Estima\IeC {\c c}\IeC {\~a}o de erro considerando \textit {outliers}}{45}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{48}
+\contentsline {chapter}{Refer\^encias}{49}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Lista de Publica\IeC {\c c}\IeC {\~o}es}{51}
+\contentsline {section}{\numberline {A.1}Publica\IeC {\c c}\IeC {\~o}es em Anais de Congresso Internacional}{51}

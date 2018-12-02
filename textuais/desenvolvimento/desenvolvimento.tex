@@ -156,13 +156,13 @@ O algoritmo para comparação e validação dos métodos de discretização de e
 				\!\lower0.7ex\hbox{$p$}}}}
 	\end{equation}
 	
-	Onde $p$ é o parâmetro a ser escolhido. No caso mais simples, $p=1$, a equação~\ref{eq:4T06} se torna a equação~\ref{eq:4T15}.
+	Onde $p$ é o parâmetro a ser escolhido. No caso mais simples, $p=1$, a equação~\eqref{eq:4T06} se torna a equação~\eqref{eq:4T15}.
 	
 	\begin{equation}\label{eq:4T15}
 	{L_1} = {\int {\left| {f - g} \right|} }
 	\end{equation}
 	
-	A equação~\ref{eq:4T15} é chamado de \ac{IAE} ou distância L1.
+	A equação~\eqref{eq:4T15} é chamado de \ac{IAE} ou distância L1.
 	
 	\item[Dados gerados] Nesse caso, única diferença é que o calculo da discretização é feito usando como base a distribuição de eventos aleatórios geradas pela função geradora escolhida.
 \end{description}
@@ -171,7 +171,7 @@ O algoritmo para comparação e validação dos métodos de discretização de e
 
 \section{Demostração dos métodos de discretização}
 
-Com o intuito de validar os algoritmo e os métodos de discretização serão apresentados nessa seção o funcionamento desses métodos para a função gaussiana e a função \textit{lognormal} com $\sigma = X$. E, com o objetivo de demostrar de forma mais clara o efeito desses métodos e sua dependência ao número de pontos de estimação escolhidos, os métodos serão avaliados variando o número de estimação para $ N = 15 $ e $ N = 25 $.
+Com o intuito de validar os algoritmo e os métodos de discretização serão apresentados nessa seção o funcionamento desses métodos para a função gaussiana e a função \textit{lognormal} com $\sigma = 1$. E, com o objetivo de demostrar de forma mais clara o efeito desses métodos e sua dependência ao número de pontos de estimação escolhidos, os métodos serão avaliados variando o número de estimação para $ N = 15 $ e $ N = 25 $.
 
 \subsection{Método \textit{Linspace}}
 
@@ -208,7 +208,7 @@ De acordo com o princípio de funcionamento do método de discretização \texti
 		\label{fig:lin_log25}
 	\end{subfigure}
 	
-	\caption{Discretização utilizando o método de \textit{Linspace}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
+	\caption{Discretização utilizando o método de \textit{Linspace}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (d) L(0,1) com $N = 25$.}
 	\label{fig:normlin}
 \end{figure}
 
@@ -248,7 +248,7 @@ Entretanto, pode-se perceber que com o aumento do número de pontos de estimaç�
 		\label{fig:cdf_log25}
 	\end{subfigure}
 	
-	\caption{Discretização utilizando o método de \textit{CDFm}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
+	\caption{Discretização utilizando o método de \textit{CDFm}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (d) L(0,1) com $N = 25$.}
 	\label{fig:cdfnorm}
 \end{figure}
 
@@ -286,7 +286,7 @@ Vemos que a região de alta probabilidade é representada com um menor erro do q
 		\label{fig:pdflognorm25}
 	\end{subfigure}
 	
-	\caption{Discretização utilizando o método de \textit{PDFm}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
+	\caption{Discretização utilizando o método de \textit{PDFm}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (d) L(0,1) com $N = 25$.}
 	\label{fig:pdfmnorm}
 \end{figure}
 
@@ -326,7 +326,7 @@ Para a distribuição Normal, este método apresenta um maior erro na região de
 		\label{fig:ipdflognorm25}
 	\end{subfigure}
 	
-	\caption{Discretização utilizando o método de \textit{iPDF1}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
+	\caption{Discretização utilizando o método de \textit{iPDF1}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (d) L(0,1) com $N = 25$.}
 	\label{fig:ipdfmnorm}
 \end{figure}
 
@@ -364,7 +364,7 @@ Para a distribuição Normal, este método apresenta um maior erro na região de
 		\label{fig:ipdf2lognorm25}
 	\end{subfigure}
 	
-	\caption{Discretização utilizando o método de \textit{iPDF2}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (a) L(0,1) com $N = 25$.}
+	\caption{Discretização utilizando o método de \textit{iPDF2}: (a) N(0,1) com $N = 15$, (b) N(0,1) com $N = 25$, (c) L(0,1) com $N = 15$ e (d) L(0,1) com $N = 25$.}
 	\label{fig:ipdf2norm}
 \end{figure}
 
