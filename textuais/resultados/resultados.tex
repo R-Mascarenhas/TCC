@@ -229,7 +229,8 @@ A Figura~\ref{fig:13b} mostra que os métodos propostos são menos sensíveis ao
 \end{table}
 
 Para a interpolação do vizinho mais próximo, o método \ac{iPDF1} apresentou o melhor desempenho enquanto para a interpolação Linear, o \ac{iPDF2} foi o melhor se o erro de estimação e a sensibilidade de \textit{outliers} forem considerados. O \ac{CDFm} mostrou-se praticamente imune a \textit{outliers}. Quando nenhum valor discrepante está presente, o Linspace atinge o melhor resultado seguido de perto pelo \ac{PDFm} e \ac{iPDF1} para o caso do vizinho mais próximo e pelo \ac{iPDF2} para o caso Linear. No entanto, é influenciado pela escolha arbitrária de 99.99\% da área como limites do eixo horizontal padrão para caracterizar a ausência de \textit{outliers}. 
-A figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a quantidade de pontos de estimação, sendo que, como é mostrado na Figura~\ref{fig:error_norm_near_50}, há uma mudança na performance de cada método, fazendo com que alguns se sobressaiam sobre outros conforme é aumentado o número de pontos, para este caso, utilizando a interpolação pelo vizinho mais próximo, os métodos \ac{iPDF1} e \ac{iPDF2} foram os que tiveram o menor erro até os 5000 pontos estimados. Já para a interpolação Linear, mostrada na Figura~\ref{fig:error_norm_lin_50} os métodos \ac{iPDF1}, \ac{iPDF2} e \ac{CDFm} estagnam por volta do 500º ponto de estimação, não alterando mais tanto o valor do erro após isso, em contrapartida, o método \textit{Linspace} continua a melhorar conforme o número de pontos aumenta, chegando ser o melhor a partir do 1000º ponto. 
+A figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a quantidade de pontos de estimação, sendo que, como é mostrado na Figura~\ref{fig:error_norm_near_50}, há uma mudança na performance de cada método, fazendo com que alguns se sobressaiam sobre outros conforme é aumentado o número de pontos, para este caso, utilizando a interpolação pelo vizinho mais próximo, os métodos \ac{iPDF1} e \ac{iPDF2} foram os que tiveram o menor erro até os 5000 pontos estimados. Já para a interpolação Linear, mostrada na Figura~\ref{fig:error_norm_lin_50} os métodos \ac{iPDF1}, \ac{iPDF2} e \ac{CDFm} estagnam por volta do 500º ponto de estimação, não alterando mais tanto o valor do erro após isso, em contrapartida, o método \textit{Linspace} continua a melhorar conforme o número de pontos aumenta, chegando ser o melhor a partir do 1000º ponto.
+ 
 
 \begin{figure}[H]
 	\centering
@@ -248,6 +249,6 @@ A figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a qu
 		\caption{}
 		\label{fig:error_norm_lin_50}
 	\end{subfigure}
-\caption{Erro total de estimação para a distribuição Normal com outlier em 50 (a) para a interpolação pelo vizinho mais próximo, (b) para a interpolação linear.}
+\caption{Erro total de estimação para a distribuição Normal com outlier em 50: (a) para a interpolação pelo vizinho mais próximo, (b) para a interpolação linear.}
 \label{fig:Error_out}
 \end{figure}
