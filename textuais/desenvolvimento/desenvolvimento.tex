@@ -1,10 +1,10 @@
 \chapter{DESENVOLVIMENTO} \label{cap:desenvolvimento}
-
+\vspace{-2cm}
 Neste capítulo, serão descritos alguns detalhes da construção dos métodos e do algoritmo para avaliação de sua performance, além disso, serão mostradas as dificuldades encontradas na aplicação prática desses métodos. A discretização da estimação de densidades de variáveis discriminantes pode influenciar de forma direta na tarefa de classificação, entretanto, este trabalho se concentrou somente no impacto desses métodos na estimação, entendendo que um menor erro de estimação pode levar a uma melhor classificação.
 
 \section{Conjunto de dados}
 
-Um dos objetivos desse trabalho é otimizar o desempenho dos algoritmos de estimação de densidade via KDE que fazem uso de métodos de discretização e posteriormente essas estimações serão usadas para a identificação e classificação de eventos. Portanto o conjunto de dados aqui escolhido tem por base as estimações que podem ser encontradas em alguns dos experimentos de física de partículas mais importantes atualmente, como o ATLAS e CMS.
+Um dos objetivos desse trabalho é otimizar o desempenho dos algoritmos de estimação de densidade via KDE que fazem uso de métodos de discretização e posteriormente essas estimações serão usadas para a identificação e classificação de eventos. Portanto o conjunto de dados aqui escolhido tem por base as estimações que podem ser encontradas em alguns dos experimentos de física de partículas mais importantes atualmente, como o ATLAS e \ac{CMS}.
 
 Nas Figuras \ref{fig:15} e \ref{fig:16} são mostrados casos representativos de variáveis usadas para a identificação de elétrons nos experimentos CMS e ATLAS, respectivamente. Para o CMS, pode-se ver o perfil dos elétrons e do ruído de fundo, bem como a diferença entre dados reais e simulados. Já na Figura \ref{fig:16} é mostrado também as varias formas de ruído de fundo para elétrons no ATLAS.
 
@@ -264,7 +264,7 @@ De acordo com o princípio de funcionamento do método de discretização \texti
 	\label{fig:lin_data}
 \end{figure}
 
-Entretanto, pode-se perceber que com o aumento do número de pontos de estimação ($N = 15$ para $N = 25$) o desempenho deste método apresenta uma melhora significativa, portanto, fica claro que é possível alcançar uma boa performance com o método de \textit{Linspace}. Mas, há de se comentar que o aumento do número de pontos de estimação é um fator decisivo no custo computacional desses algoritmos, além disso, aumenta a quantidade de informação a ser armazenada ou transmitida e, apesar da distribuição randL(0,1) ser baseada na L(0,1), está apresenta uma melhor discretização devido ao fato da sua extensão no eixo $ x $ ser menor. As distribuições L(0,0.01), L(0,0.25) e L(0,0.5) possuem um comportamento semelhante à N(0,1), enquanto as distribuições L(0,1.25) e L(0,1.5) semelhantes à L(0,1) como pode ser visto no Apêndice~\ref{cap:anexoLin}
+Entretanto, pode-se perceber que com o aumento do número de pontos de estimação ($N = 15$ para $N = 25$) o desempenho deste método apresenta uma melhora significativa, portanto, fica claro que é possível alcançar uma boa performance com o método de \textit{Linspace}. Mas, há de se comentar que o aumento do número de pontos de estimação é um fator decisivo no custo computacional desses algoritmos, além disso, aumenta a quantidade de informação a ser armazenada ou transmitida. Apesar da distribuição randL(0,1) ser baseada na L(0,1), está apresenta uma melhor discretização devido ao fato da sua extensão no eixo $ x $ ser menor. As distribuições L(0,0.01), L(0,0.25) e L(0,0.5) possuem um comportamento semelhante à N(0,1), enquanto as distribuições L(0,1.25) e L(0,1.5) semelhantes à L(0,1) como pode ser visto no Apêndice~\ref{cap:anexoLin}
 
 \subsection{Método \textit{CDFm}}
 
@@ -451,28 +451,28 @@ Este método tem como base fazer a discretização baseada na primeira derivada,
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\linewidth]{./figuras/iPDF1_normal_15}
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_normal_15_1_0_0}
 		\caption{}
 		\label{fig:ipdfnorm15}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\linewidth]{./figuras/iPDF1_normal_25}
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_normal_25_1_0_0}
 		\caption{}
 		\label{fig:ipdfnorm25}
 	\end{subfigure}
 
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\linewidth]{./figuras/iPDF1_lognormal_15}
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_lognormal_15_1_0_0}
 		\caption{}
 		\label{fig:ipdflognorm15}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\linewidth]{./figuras/iPDF1_lognormal_25}
+		\includegraphics[width=\linewidth]{./figuras/iPDF1_lognormal_25_1_0_0}
 		\caption{}
 		\label{fig:ipdflognorm25}
 	\end{subfigure}
