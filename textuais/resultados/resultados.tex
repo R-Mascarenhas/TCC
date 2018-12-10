@@ -1,15 +1,15 @@
-\chapter{Resultados} \label{cap:resultados}
+\chapter{RESULTADOS} \label{cap:resultados}
 \vspace{-2cm}
-Nessa sessão, os resultados serão dados em termos da área medida entre a diferença da \ac{PDF} real e a estimada, como previamente mencionado. Nas figuras que seguem , os valores serão mostrados no eixo vertical, nomeado de \textit{Erro}. O eixo horizontal mostra quatro perspectivas diferentes: Probabilidade, Eixo $ x $ (que seria os valores aleatórios da variável), Primeira derivada, e segunda derivada. Essas perspectivas diferentes irão permitir um melhor entendimento das características de cada método. Cada gráfico será completado com 200 pontos de dados, cada um representando o erro medido encontrado em cada \ac{RoI} (Contudo, nessa sessão, serão considerados 100 \ac{RoI} ao invés de 20 como mostrado na Figura~\ref{fig:error}). Essa sessão será será dividida em três análises diferentes. Sessão~\ref{cap:interp_neares} analisa a estimação de erro quando a interpolação pelo vizinho mais próximo é usada; Sessão~\ref{cap:interp_lin} avalia para a interpolação linear; e a Sessão~\ref{cap:interp_neares} insere problemas de \textit{outliers}. Quando \textit{outliers} são gerados, o desempenho de alguns métodos de discretização podem ser altamente degradados em comparação com outros, sendo uma questão importante a ser analisada.
+Nessa sessão, os resultados serão dados em termos da área medida entre a diferença da \ac{PDF} real e a estimada, como previamente mencionado. Nas figuras que seguem, os valores serão mostrados no eixo vertical, nomeado de \textit{Erro}. O eixo horizontal mostra quatro perspectivas diferentes: Probabilidade, Eixo $ x $ (que seria os valores aleatórios da variável), Primeira derivada, e segunda derivada Além disso há outra figura que mostra como o método se comporta quando o número de pontos de estimação varia sendo que, para os dados gerados, foram pegos 10 amostras que são representadas com a sua média e seu erro como o desvio padrão dessa média sobre a raiz quadrada do número de amostras. Essas perspectivas diferentes irão permitir um melhor entendimento das características de cada método. Essa sessão será dividida em três análises diferentes. Sessão~\ref{cap:interp_neares} analisa a estimação de erro quando a interpolação pelo vizinho mais próximo é usada; Sessão~\ref{cap:interp_lin} avalia para a interpolação linear; e a Sessão~\ref{cap:erro_out} insere problemas de \textit{outliers}. Quando \textit{outliers} são gerados, o desempenho de alguns métodos de discretização podem ser altamente degradados em comparação com outros, sendo uma questão importante a ser analisada.
 
 \section{Estimação de erro pela interpolação do vizinho mais próximo} \label{cap:interp_neares}
-A interpolação pelo vizinho mais próximo basicamente atribui o valor vizinho mais próximo ao valor da probabilidade da variável aleatória que será estimada. Portanto, o erro de estimação será proporcional à sua distância da amostra mais próxima. Tal método de interpolação produz um erro diretamente proporcional à primeira derivada \cite{gurevich1966integral}. Analisando as Figura~\ref{fig:12a}, \ref{fig:12b}, \ref{fig:error_log_near_prob} e \ref{fig:error_log_near_x} pode-se inferir que: 
+A interpolação pelo vizinho mais próximo basicamente atribui o valor conhecido mais próximo ao valor da probabilidade da variável aleatória que será estimada. Portanto, o erro de estimação será proporcional à sua distância da amostra mais próxima. Tal método de interpolação produz um erro diretamente proporcional à primeira derivada \cite{gurevich1966integral}. Analisando as Figura~\ref{fig:12a}, \ref{fig:12b}, \ref{fig:error_log_near_prob} e \ref{fig:error_log_near_x} pode-se inferir que: 
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_Probabilidade}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_Probabilidade_1}
 		\caption{}
 		\label{fig:12a}
 	\end{subfigure}
@@ -18,7 +18,7 @@ A interpolação pelo vizinho mais próximo basicamente atribui o valor vizinho 
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_X}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_X_1}
 		\caption{}
 		\label{fig:12b}
 	\end{subfigure}
@@ -27,14 +27,14 @@ A interpolação pelo vizinho mais próximo basicamente atribui o valor vizinho 
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_Primeira_Derivada.png}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_Primeira_Derivada_1.png}
 		\caption{}
 		\label{fig:12c}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_Segunda_Derivada.png}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_nearest_Segunda_Derivada_1.png}
 		\caption{}
 		\label{fig:12d}
 	\end{subfigure}
@@ -87,7 +87,7 @@ A interpolação pelo vizinho mais próximo basicamente atribui o valor vizinho 
 \end{description}  
 
 Na Figura~\ref{fig:12c} e \ref{fig:error_log_near_deriv} é possível perceber que:
- \begin{description}
+\begin{description}
 	\item[Linspace] apresenta um aumento do erro de estimação diretamente proporcional ao valor da 1ª derivada;
 	\item[CDFm] apresenta maior densidade de pontos na região de alta probabilidade e poucos pontos na região de baixa probabilidade. No entanto, do ponto de vista da 1ª derivada, o erro de estimação oscila entre valores altos e baixos para uma distribuição mais lenta;
 	\item[PDFm e iPDF1] tendem a manter constante o valor do erro de estimação, uma vez que se coloca mais pontos em regiões com derivadas maiores, onde o erro do método de discretização pelo vizinho mais próximo é maior. Porém, como mencionado anteriormente, as caudas apresentam os menores erros, o que justifica a diminuição do erro nas regiões de baixa derivada;
@@ -167,7 +167,7 @@ O método de interpolação linear naturalmente tende a apresentar erros de esti
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_Probabilidade}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_Probabilidade_1}
 		\caption{}
 		\label{fig:11a}
 	\end{subfigure}
@@ -176,7 +176,7 @@ O método de interpolação linear naturalmente tende a apresentar erros de esti
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_X}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_X_1}
 		\caption{}
 		\label{fig:11b}
 	\end{subfigure}
@@ -185,14 +185,14 @@ O método de interpolação linear naturalmente tende a apresentar erros de esti
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_Primeira_Derivada.png}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_Primeira_Derivada_1.png}
 		\caption{}
 		\label{fig:11c}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_Segunda_Derivada.png}
+		\includegraphics[width=\textwidth]{./figuras/error_normal_linear_Segunda_Derivada_1.png}
 		\caption{}
 		\label{fig:11d}
 	\end{subfigure}
@@ -347,14 +347,15 @@ A Figura~\ref{fig:13b} mostra que os métodos propostos são menos sensíveis ao
 \end{table}
 
 Para a interpolação do vizinho mais próximo, o método \ac{iPDF1} apresentou o melhor desempenho enquanto para a interpolação Linear, o \ac{iPDF2} foi o melhor se o erro de estimação e a sensibilidade de \textit{outliers} forem considerados. O \ac{CDFm} mostrou-se praticamente imune a \textit{outliers}. Quando nenhum valor discrepante está presente, o Linspace atinge o melhor resultado seguido de perto pelo \ac{PDFm} e \ac{iPDF1} para o caso do vizinho mais próximo e pelo \ac{iPDF2} para o caso Linear. No entanto, é influenciado pela escolha arbitrária de 99.99\% da área como limites do eixo horizontal padrão para caracterizar a ausência de \textit{outliers}. 
-A figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a quantidade de pontos de estimação, sendo que, como é mostrado na Figura~\ref{fig:error_norm_near_50}, há uma mudança na performance de cada método, fazendo com que alguns se sobressaiam sobre outros conforme é aumentado o número de pontos, para este caso, utilizando a interpolação pelo vizinho mais próximo, os métodos \ac{iPDF1} e \ac{iPDF2} foram os que tiveram o menor erro até os 5000 pontos estimados. Já para a interpolação Linear, mostrada na Figura~\ref{fig:error_norm_lin_50} os métodos \ac{iPDF1}, \ac{iPDF2} e \ac{CDFm} estagnam por volta do 500º ponto de estimação, não alterando mais tanto o valor do erro após isso, em contrapartida, o método \textit{Linspace} continua a melhorar conforme o número de pontos aumenta, chegando ser o melhor a partir do 1000º ponto.
- 
+
+A Figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a quantidade de pontos de estimação, sendo que, como é mostrado na Figura~\ref{fig:error_norm_near_50}, há uma mudança na performance de cada método, fazendo com que alguns se sobressaiam sobre outros conforme é aumentado o número de pontos, para este caso, utilizando a interpolação pelo vizinho mais próximo, os métodos \ac{iPDF1} e \ac{iPDF2} foram os que tiveram o menor erro até os 5000 pontos estimados. Já para a interpolação Linear, mostrada na Figura~\ref{fig:error_norm_lin_50} os métodos \ac{iPDF1}, \ac{iPDF2} e \ac{CDFm} estagnam por volta do 500º ponto de estimação, não alterando mais tanto o valor do erro após isso, em contrapartida, o método \textit{Linspace} continua a melhorar conforme o número de pontos aumenta, chegando ser o melhor a partir do 1000º ponto.
+
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_050_log}
+		\includegraphics[width=\textwidth]{./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025}
 		\caption{}
 		\label{fig:error_norm_near_50}
 	\end{subfigure}
@@ -363,12 +364,12 @@ A figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a qu
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
-		\includegraphics[width=\textwidth]{./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_050_log}
+		\includegraphics[width=\textwidth]{./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_025}
 		\caption{}
 		\label{fig:error_norm_lin_50}
 	\end{subfigure}
-\caption{Erro total de estimação para a distribuição Normal com outlier em 50: (a) para a interpolação pelo vizinho mais próximo, (b) para a interpolação linear.}
-\label{fig:Error_out}
+	\caption{Erro total de estimação para a distribuição Normal com outlier em 25: (a) para a interpolação pelo vizinho mais próximo, (b) para a interpolação linear.}
+	\label{fig:Error_out}
 \end{figure}
 
 \begin{figure}[H]
@@ -391,3 +392,72 @@ A figura~\ref{fig:Error_out} mostra como o erro varia conforme é aumentado a qu
 	\caption{Erro total de estimação para a distribuição randN(0,1) com outlier em 25: (a) para a interpolação pelo vizinho mais próximo, (b) para a interpolação linear.}
 	\label{fig:Error_out}
 \end{figure}
+
+\section{Exemplo Prático}
+Vamos agora supor que um \textit{dataset} qualquer vindo de um sensor possui 100 mil eventos e vou medido 25 vezes, e que estes geram o histograma da Figura~\ref{fig:log22}
+
+\begin{figure}[H]
+	\centering 
+	\includegraphics[width=0.6\linewidth]{./figuras/datalognormal_0_2_2}
+	\caption{Histograma representativo de uma realidade com 100 mil eventos}
+	\label{fig:log22}
+\end{figure}
+
+Como pode ser visto, este histograma possui uma variação muito rápida, o que torna difícil de ser discretizada pelo método \textit{Linspace}, visto que o mesmo irá necessitar de muitos pontos de estimação para que o erro permaneça pequeno
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2}
+		\caption{}
+		\label{fig:error_near_log22}
+	\end{subfigure}
+	\hfill
+	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+	%(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2}
+		\caption{}
+		\label{fig:error_lin_log22}
+	\end{subfigure}
+	\caption{Erro total de estimação para a distribuição da Figura~\ref{fig:log22}: (a) para a interpolação pelo vizinho mais próximo, (b) para a interpolação linear.}
+	\label{fig:Error_log22}
+\end{figure}
+
+Devido ao fato da distribuição possuir valores muito distantes e a variação muito rápida, o método de interpolação já não faz tanto efeito, como pode-se ver pela Figura~\ref{fig:Error_log22}. Entretanto, para este caso, o método \ac{iPDF2} foi o que obteve o melhor resultado que pode ser visto nas Tabelas~\ref{tab:error_eq} e \ref{tab:error_eq_near} mostrando a diferença do número de pontos de estimação para cada estimação possuindo o mesmo erro.
+
+\begin{table}[H]
+	\centering
+	\caption{Equivalência de pontos para o mesmo erro em diferentes métodos utilizando-se a interpolação linear.}
+	\label{tab:error_eq}
+\begin{tabular}{c|ccccl}
+	& \multicolumn{5}{c}{\textbf{Número de Pontos de Discretização}}    \\ \hline
+	\textbf{Divergência L1}  & \textbf{Linspace} & \textbf{CDFm} & \textbf{PDFm}  & \textbf{iPDF1} & \textbf{iPDF2} \\ \hline
+	2e-4  & 260      & 35   & 1900   & 35    & 10    \\ \hline
+	1e-5 & >5000    & 350  & >5000 & 120   & 45    \\ \hline
+	6.2e-6 & >5000    & >5000 & >5000 & 170   & 85  
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Equivalência de pontos para o mesmo erro em diferentes métodos utilizando-se a interpolação pelo vizinho mais próximo.}
+	\label{tab:error_eq_near}
+	\begin{tabular}{c|ccccl}
+		& \multicolumn{5}{c}{\textbf{Número de Pontos de Discretização}}    \\ \hline
+		\textbf{Divergência L1}  & \textbf{Linspace} & \textbf{CDFm} & \textbf{PDFm}  & \textbf{iPDF1} & \textbf{iPDF2} \\ \hline
+		2e-4  & 300      & 35   & 1900   & 35    & 10    \\ \hline
+		1e-5 & >5000    & 4480  & >5000 & 200   & 120    \\ \hline
+		6.2e-6 & >5000    & >5000 & >5000 & 340   & 400  
+	\end{tabular}
+\end{table}
+
+
+
+
+As distribuições que são baseadas em derivadas levam uma vantagem em relação às outras quando se trata de dados gerados, devido ao fato de suas distribuições ficarem mais ruidosas que o normal, o que suaviza sua CDF fazendo com que coloque mais pontos ao longo de toda distribuição ao invés de se concentrar mais na região de alta probabilidade, como é o caso do método \ac{CDFm}.
+
+Os resultados apresentados mostraram que os métodos propostos são mais resilientes aos \textit{outliers} e destacaram as vantagens e desvantagens de cada um, mostrando que o processo de discretização é de fundamental importância para minimizar o erro de estimação. Além disso, este trabalho fornece uma base sólida de conhecimento sobre esta questão, tornando este estudo uma possível base para futuras investigações aprofundadas.
+%Sendo assim, é possível perceber pelos métodos estudados que o método \textit{Linspace} é bem eficiente quando se trata de distribuições gaussianas e sem \textit{outliers}, por outro lado, quando a distribuição deixa de ser simétrica ou apresenta uma calda muito longa, este já se torna menos eficiente, fazendo com que os métodos que se baseiam na probabilidade se tornem melhores, sendo imunes à \textit{outliers} mas em contrapartida, exigem um algorítimo um pouco mais complexo.
