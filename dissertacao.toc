@@ -1,33 +1,33 @@
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{19}
-\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{20}
-\contentsline {section}{\numberline {1.2}O que foi feito}{21}
-\contentsline {section}{\numberline {1.3}Estrutura do Trabalho}{21}
-\contentsline {chapter}{\numberline {2}DISCRETIZA\IeC {\c C}\IeC {\~A}O}{22}
-\contentsline {section}{\numberline {2.1}M\IeC {\'e}todos de Discretiza\IeC {\c c}\IeC {\~a}o}{23}
-\contentsline {subsection}{\numberline {2.1.1}\textit {Linspace}}{24}
-\contentsline {subsection}{\numberline {2.1.2}\textit {CDFm}}{25}
-\contentsline {subsection}{\numberline {2.1.3}\textit {PDFm}}{25}
-\contentsline {subsection}{\numberline {2.1.4}\textit {iPDF1}}{26}
-\contentsline {subsection}{\numberline {2.1.5}\textit {iPDF2}}{27}
-\contentsline {chapter}{\numberline {3}DESENVOLVIMENTO}{29}
-\contentsline {section}{\numberline {3.1}Conjunto de dados}{29}
-\contentsline {section}{\numberline {3.2}Algoritmo}{33}
-\contentsline {section}{\numberline {3.3}Demostra\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos de discretiza\IeC {\c c}\IeC {\~a}o}{34}
-\contentsline {subsection}{\numberline {3.3.1}M\IeC {\'e}todo \textit {Linspace}}{34}
-\contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}todo \textit {CDFm}}{36}
-\contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo \textit {PDFm}}{39}
-\contentsline {subsection}{\numberline {3.3.4}M\IeC {\'e}todo \textit {iPDF1}}{40}
-\contentsline {subsection}{\numberline {3.3.5}M\IeC {\'e}todo \textit {iPDF2}}{42}
-\contentsline {section}{\numberline {3.4}Custo Computacional}{45}
-\contentsline {section}{\numberline {3.5}Ambiente de An\IeC {\'a}lise}{46}
-\contentsline {chapter}{\numberline {4}RESULTADOS}{47}
-\contentsline {section}{\numberline {4.1}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o do vizinho mais pr\IeC {\'o}ximo}{47}
-\contentsline {section}{\numberline {4.2}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o linear}{51}
-\contentsline {section}{\numberline {4.3}Estima\IeC {\c c}\IeC {\~a}o de erro considerando \textit {outliers}}{54}
-\contentsline {section}{\numberline {4.4}Exemplo Pr\IeC {\'a}tico}{57}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{60}
-\contentsline {section}{\numberline {5.1}Pr\IeC {\'o}ximos Passos}{60}
-\contentsline {chapter}{Refer\^encias}{61}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Lista de Publica\IeC {\c c}\IeC {\~o}es}{63}
-\contentsline {section}{\numberline {A.1}Publica\IeC {\c c}\IeC {\~o}es em Anais de Congresso Internacional}{63}
+\contentsline {chapter}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{19}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{20}{section.1.1}
+\contentsline {section}{\numberline {1.2}O que foi feito}{21}{section.1.2}
+\contentsline {section}{\numberline {1.3}Estrutura do Trabalho}{21}{section.1.3}
+\contentsline {chapter}{\numberline {2}DISCRETIZA\IeC {\c C}\IeC {\~A}O}{22}{chapter.2}
+\contentsline {section}{\numberline {2.1}M\IeC {\'e}todos de Discretiza\IeC {\c c}\IeC {\~a}o}{23}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}\textit {Linspace}}{24}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}\textit {CDFm}}{25}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}\textit {PDFm}}{25}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}\textit {iPDF1}}{26}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}\textit {iPDF2}}{27}{subsection.2.1.5}
+\contentsline {chapter}{\numberline {3}DESENVOLVIMENTO}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Conjunto de dados}{29}{section.3.1}
+\contentsline {section}{\numberline {3.2}Algoritmo}{33}{section.3.2}
+\contentsline {section}{\numberline {3.3}Demostra\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos de discretiza\IeC {\c c}\IeC {\~a}o}{34}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}M\IeC {\'e}todo \textit {Linspace}}{34}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}todo \textit {CDFm}}{36}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo \textit {PDFm}}{39}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}M\IeC {\'e}todo \textit {iPDF1}}{40}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}M\IeC {\'e}todo \textit {iPDF2}}{42}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Custo Computacional}{45}{section.3.4}
+\contentsline {section}{\numberline {3.5}Ambiente de An\IeC {\'a}lise}{46}{section.3.5}
+\contentsline {chapter}{\numberline {4}RESULTADOS}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o do vizinho mais pr\IeC {\'o}ximo}{47}{section.4.1}
+\contentsline {section}{\numberline {4.2}Estima\IeC {\c c}\IeC {\~a}o de erro pela interpola\IeC {\c c}\IeC {\~a}o linear}{50}{section.4.2}
+\contentsline {section}{\numberline {4.3}Estima\IeC {\c c}\IeC {\~a}o de erro considerando \textit {outliers}}{53}{section.4.3}
+\contentsline {section}{\numberline {4.4}Exemplo Pr\IeC {\'a}tico}{56}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Pr\IeC {\'o}ximos Passos}{59}{section.5.1}
+\contentsline {chapter}{Refer\^encias}{60}{section.5.1}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Lista de Publica\IeC {\c c}\IeC {\~o}es}{62}{appendix.A}
+\contentsline {section}{\numberline {A.1}Publica\IeC {\c c}\IeC {\~o}es em Anais de Congresso Internacional}{62}{section.A.1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  10 DEC 2018 00:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  11 DEC 2018 03:08
 entering extended mode
 **./dissertacao.tex
 (dissertacao.tex
@@ -476,13 +476,130 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen115
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count103
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count104
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen116
+\Fld@menulength=\count105
+\Field@Width=\dimen117
+\Fld@charsize=\dimen118
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip52
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -497,8 +614,8 @@ Package graphics Info: Driver file: dvips.def on input line 99.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\dvips.def"
 File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
 )
 (C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
@@ -509,18 +626,19 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen117
-\captionmargin@=\dimen118
-\captionwidth=\dimen119
-\caption@tempdima=\dimen120
-\caption@indent=\dimen121
-\caption@parindent=\dimen122
-\caption@hangindent=\dimen123
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@tempdima=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
 )
-\c@ContinuedFloat=\count101
+\c@ContinuedFloat=\count111
+Package caption Info: hyperref package is loaded.
 )
-\c@subfigure=\count102
-\c@subtable=\count103
+\c@subfigure=\count112
+\c@subtable=\count113
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -535,7 +653,7 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count104
+\c@float@type=\count114
 \float@exts=\toks17
 \float@box=\box52
 \@float@everytoks=\toks18
@@ -543,13 +661,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\latex\psfrag\psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
-\pfg@pcount=\count105
-\pfg@scount=\count106
+\pfg@pcount=\count115
+\pfg@scount=\count116
 \pfg@temp=\write3
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -558,49 +676,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen124
+\ex@=\dimen128
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen125
+\pmbraise@=\dimen129
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count107
+\inf@bad=\count117
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count108
-\leftroot@=\count109
+\uproot@=\count118
+\leftroot@=\count119
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count110
-\DOTSCASE@=\count111
+\classnum@=\count120
+\DOTSCASE@=\count121
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box54
 \strutbox@=\box55
-\big@size=\dimen126
+\big@size=\dimen130
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count112
-\c@MaxMatrixCols=\count113
-\dotsspace@=\muskip10
-\c@parentequation=\count114
-\dspbrk@lvl=\count115
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
+\dotsspace@=\muskip11
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
 \tag@help=\toks20
-\row@=\count116
-\column@=\count117
-\maxfields@=\count118
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
 \andhelp@=\toks21
-\eqnshift@=\dimen127
-\alignsep@=\dimen128
-\tagshift@=\dimen129
-\tagwidth@=\dimen130
-\totwidth@=\dimen131
-\lineht@=\dimen132
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
 \@envbody=\toks22
-\multlinegap=\skip53
-\multlinetaggap=\skip54
+\multlinegap=\skip54
+\multlinetaggap=\skip55
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -636,8 +754,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 (C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
 (C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write4
-\integerpart=\count119
-\decimalpart=\count120
+\integerpart=\count129
+\decimalpart=\count130
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -645,38 +763,23 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count121
-\Gm@cntv=\count122
-\c@Gm@tempcnt=\count123
-\Gm@bindingoffset=\dimen133
-\Gm@wd@mp=\dimen134
-\Gm@odd@mp=\dimen135
-\Gm@even@mp=\dimen136
-\Gm@layoutwidth=\dimen137
-\Gm@layoutheight=\dimen138
-\Gm@layouthoffset=\dimen139
-\Gm@layoutvoffset=\dimen140
+\Gm@cnth=\count131
+\Gm@cntv=\count132
+\c@Gm@tempcnt=\count133
+\Gm@bindingoffset=\dimen137
+\Gm@wd@mp=\dimen138
+\Gm@odd@mp=\dimen139
+\Gm@even@mp=\dimen140
+\Gm@layoutwidth=\dimen141
+\Gm@layoutheight=\dimen142
+\Gm@layouthoffset=\dimen143
+\Gm@layoutvoffset=\dimen144
 \Gm@dimlist=\toks25
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
-)
-(C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
@@ -692,21 +795,21 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip55
-\multirow@cntb=\count124
-\multirow@dima=\skip56
-\bigstrutjot=\dimen141
+\multirow@colwidth=\skip56
+\multirow@cntb=\count134
+\multirow@dima=\skip57
+\bigstrutjot=\dimen145
 ) (abntcite.sty
 Package: abntcite 2002/11/20
-\minimumbiblabelwidth=\skip57
-\ABCIauxlen=\skip58
-\c@ABCIaux=\count125
-\c@ABCImax=\count126
+\minimumbiblabelwidth=\skip58
+\ABCIauxlen=\skip59
+\c@ABCIaux=\count135
+\c@ABCImax=\count136
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
 )
-\biblabelsep=\skip59
+\biblabelsep=\skip60
 LaTeX Info: Redefining \cite on input line 429.
 \ABCItoken=\toks27
 )
@@ -720,99 +823,66 @@ LaTeX Warning: Unused global option(s):
 (pretextuais/epigrafe.aux) (pretextuais/resumo.aux) (pretextuais/abstract.aux)
 (pretextuais/acronimos.aux) (textuais/introducao/introducao.aux)
 (textuais/discretizacao/discretizacao.aux)
-(textuais/desenvolvimento/desenvolvimento.aux
-
-LaTeX Warning: Label `equ:Normal' multiply defined.
-
-) (textuais/resultados/resultados.aux
-
-LaTeX Warning: Label `fig:error_norm_near_50' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:error_norm_near_50' multiply defined.
-
-
-LaTeX Warning: Label `fig:error_norm_lin_50' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:error_norm_lin_50' multiply defined.
-
-
-LaTeX Warning: Label `fig:Error_out' multiply defined.
-
-) (textuais/conclusao/conclusao.aux) (postextuais/apendice/apendicePubli.aux)
-(postextuais/apendice/apendiceDisc.aux))
+(textuais/desenvolvimento/desenvolvimento.aux)
+(textuais/resultados/resultados.aux) (textuais/conclusao/conclusao.aux)
+(postextuais/apendice/apendicePubli.aux))
 \openout1 = `dissertacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring ON on input line 97.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count137
+)
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \nameref on input line 97.
+
+(dissertacao.out) (dissertacao.out)
+\@outlinefile=\write5
+\openout5 = `dissertacao.out'.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (C:\Users\Rafae\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen142
-\scratchbox=\box56
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\scratchcounter=\count138
+\scratchdimen=\dimen146
+\scratchbox=\box57
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen143
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen147
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks29
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
@@ -861,13 +931,17 @@ G,.JBIG2,.JB2,.eps]
 
 pdfTeX warning: pdflatex.exe (file ./logos/ufjf_logo.pdf): PDF inclusion: found
  PDF version <1.6>, but at most version <1.5> allowed
-<./logos/ufjf_logo.pdf, id=1, pagebox=cropbox, 98.87842pt x 71.44191pt>
+<./logos/ufjf_logo.pdf, id=130, pagebox=cropbox, 98.87842pt x 71.44191pt>
 File: ./logos/ufjf_logo.pdf Graphic file (type pdf)
 <use ./logos/ufjf_logo.pdf>
 Package pdftex.def Info: ./logos/ufjf_logo.pdf  used on input line 4. on input 
 line 4.
 Package pdftex.def Info: Requested size: 85.35826pt x 61.67429pt on input line 
 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 29.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 29.
 [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -892,14 +966,33 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [2
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 34.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \newpage
+              [2
 
 
 ])
 \openout2 = `./pretextuais/ficha_catalografica.aux'.
 
-
-(pretextuais/ficha_catalografica.tex [3
+ (pretextuais/ficha_catalografica.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 38.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 \newpage
+              [3
 
 
 ])
@@ -910,20 +1003,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[4
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 73.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 73.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \newpage
+              [4
 
 
 ])
 \openout2 = `./pretextuais/dedicatoria.aux'.
 
- (pretextuais/dedicatoria.tex [5
+ (pretextuais/dedicatoria.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 15.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 \clearpage
+                [5
 
 
 ])
 \openout2 = `./pretextuais/agradecimentos.aux'.
 
  (pretextuais/agradecimentos.tex)
-[6
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 116.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 116.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \include{./pretextuais/agradecimentos}
+                                             [6
 
 
 
@@ -936,7 +1057,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-[7
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 21.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 21.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 \newpage
+              [7
 
 
 ])
@@ -947,7 +1077,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[8
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 16.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \newpage
+              [8
 
 
 
@@ -959,18 +1098,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[9
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 16.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \newpage
+              [9
 
 
 
-]) (dissertacao.lof [10
+]) (dissertacao.lof
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 10.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 10.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 ...2014road}.\relax }}{31}{figure.caption.27}
+                                                   [10
 
 
 ]
 Package acronym Info: Label `acro:CDFm' newly defined as it shall be overridden
 
 although it is yet undefined on input line 17.
- [11]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 18.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 18.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ... $N = 25$.\relax }}{39}{figure.caption.37}
+                                                   [11]
 Package acronym Info: Label `acro:PDFm' newly defined as it shall be overridden
 
 although it is yet undefined on input line 19.
@@ -980,56 +1147,119 @@ although it is yet undefined on input line 21.
 Package acronym Info: Label `acro:iPDF2' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 23.
- [12]
-Package acronym Info: Label `acro:RoI' newly defined as it shall be overridden
-although it is yet undefined on input line 26.
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 26.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 ...{\'o}ximo.\relax }}{48}{figure.caption.46}
+                                                   [12]
 Overfull \hbox (24.337pt too wide) in paragraph at lines 29--29
  \T1/aer/m/n/12 variando-se o nú-me-ros de pon-tos a se es-ti-mar: (a) randN(0,
-1) e (b) randL(0,1)  []  
+1) e (b) randL(0,1)[][]  []  
  []
 
-[13])
-\tf@lof=\write5
-\openout5 = `dissertacao.lof'.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 36.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 36.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 ...}o linear.\relax }}{56}{figure.caption.58}
+                                                   [13])
+\tf@lof=\write6
+\openout6 = `dissertacao.lof'.
 
- [14] (dissertacao.lot
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 127.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 127.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.127 \listoftables
+                    [14] (dissertacao.lot
 Overfull \hbox (6.39778pt too wide) in paragraph at lines 4--4
- [] \T1/aer/m/n/12 Ta-bela []Equivalência de pon-tos para o mesmo erro em di-fe
--ren-tes mé-to-dos utilizando- 
+ [] \T1/aer/m/n/12 Ta-bela [][][]Equivalência de pon-tos para o mesmo erro em d
+i-fe-ren-tes mé-to-dos utilizando- 
  []
 
 
 Overfull \hbox (6.39778pt too wide) in paragraph at lines 5--5
- [] \T1/aer/m/n/12 Ta-bela []Equivalência de pon-tos para o mesmo erro em di-fe
--ren-tes mé-to-dos utilizando- 
+ [] \T1/aer/m/n/12 Ta-bela [][][]Equivalência de pon-tos para o mesmo erro em d
+i-fe-ren-tes mé-to-dos utilizando- 
  []
 
 )
-\tf@lot=\write6
-\openout6 = `dissertacao.lot'.
+\tf@lot=\write7
+\openout7 = `dissertacao.lot'.
 
- [15
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 129.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 129.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \include{./pretextuais/acronimos}
+                                        [15
 
 ]
 \openout2 = `./pretextuais/acronimos.aux'.
 
- (pretextuais/acronimos.tex) [16
+ (pretextuais/acronimos.tex)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 129.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 129.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \include{./pretextuais/acronimos}
+                                        [16
 
 
-] (dissertacao.toc [17
+] (dissertacao.toc
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 24.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 24.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 ...{\numberline {4}RESULTADOS}{47}{chapter.4}
+                                                   [17
 
 
 ])
-\tf@toc=\write7
-\openout7 = `dissertacao.toc'.
+\tf@toc=\write8
+\openout8 = `dissertacao.toc'.
 
- [18]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 131.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 131.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \tableofcontents
+                       [18]
 \openout2 = `./textuais/introducao/introducao.aux'.
 
-
-(textuais/introducao/introducao.tex
+ (textuais/introducao/introducao.tex
 Cap\'{\i }tulo 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1.
 Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
 although it is yet undefined on input line 5.
 Package acronym Info: Label `acro:LHC' newly defined as it shall be overridden
@@ -1037,11 +1267,17 @@ although it is yet undefined on input line 5.
 Package acronym Info: Label `acro:CERN' newly defined as it shall be overridden
 
 although it is yet undefined on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 13.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 13.
 [19
 
 
 
 ]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 18.
 Package acronym Info: Label `acro:CMS' newly defined as it shall be overridden
 although it is yet undefined on input line 22.
 Package acronym Info: Label `acro:ATLAS' newly defined as it shall be overridde
@@ -1049,119 +1285,184 @@ n
 although it is yet undefined on input line 22.
 Package acronym Info: Label `acro:MVA' newly defined as it shall be overridden
 although it is yet undefined on input line 24.
- [20]) [21]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 25.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 25.
+ [20]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 32.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 139.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 139.
+ [21]
 \openout2 = `./textuais/discretizacao/discretizacao.aux'.
 
  (textuais/discretizacao/discretizacao.tex
 Cap\'{\i }tulo 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1.
 Package acronym Info: Label `acro:KDE' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 11.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 11.
 [22
 
 
 
 ]
-<figuras/linspace2.pdf, id=87, pagebox=cropbox, 778.3479pt x 512.39432pt>
+<figuras/linspace2.pdf, id=519, pagebox=cropbox, 778.3479pt x 512.39432pt>
 File: figuras/linspace2.pdf Graphic file (type pdf)
 <use figuras/linspace2.pdf>
 Package pdftex.def Info: figuras/linspace2.pdf  used on input line 14. on input
  line 14.
 Package pdftex.def Info: Requested size: 273.14923pt x 179.8098pt on input line
  14.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 20.
 LaTeX Font Info:    Try loading font information for OMS+aer on input line 23.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\omsaer.fd"
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
-<./figuras/Normal.png, id=88, 859.2903pt x 570.933pt>
+<./figuras/Normal.png, id=524, 859.2903pt x 570.933pt>
 File: ./figuras/Normal.png Graphic file (type png)
 <use ./figuras/Normal.png>
 Package pdftex.def Info: ./figuras/Normal.png  used on input line 40. on input 
 line 40.
 Package pdftex.def Info: Requested size: 273.14923pt x 181.48264pt on input lin
 e 40.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 44.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 44.
  [23 <./figuras/linspace2.pdf>]
-<./figuras/normal_1.png, id=104, 859.2903pt x 570.933pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 45.
+<./figuras/normal_1.png, id=544, 859.2903pt x 570.933pt>
 File: ./figuras/normal_1.png Graphic file (type png)
 <use ./figuras/normal_1.png>
 Package pdftex.def Info: ./figuras/normal_1.png  used on input line 51. on inpu
 t line 51.
 Package pdftex.def Info: Requested size: 318.66948pt x 211.72975pt on input lin
 e 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 57.
 Package acronym Info: Label `acro:CDF' newly defined as it shall be overridden
 although it is yet undefined on input line 58.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 59.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 59.
  [24 <./figuras/Normal.png> <./figuras/normal_1.png>]
-<./figuras/CDFm_normal_1.png, id=111, 859.2903pt x 570.933pt>
+<./figuras/CDFm_normal_1.png, id=559, 859.2903pt x 570.933pt>
 File: ./figuras/CDFm_normal_1.png Graphic file (type png)
 <use ./figuras/CDFm_normal_1.png>
 Package pdftex.def Info: ./figuras/CDFm_normal_1.png  used on input line 80. on
  input line 80.
 Package pdftex.def Info: Requested size: 273.14923pt x 181.48264pt on input lin
 e 80.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 87.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 89.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 89.
  [25 <./figuras/CDFm_normal_1.png>]
-<./figuras/PDFm_normal_1.png, id=118, 859.2903pt x 570.933pt>
+<./figuras/PDFm_normal_1.png, id=576, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_normal_1.png Graphic file (type png)
 <use ./figuras/PDFm_normal_1.png>
 Package pdftex.def Info: ./figuras/PDFm_normal_1.png  used on input line 92. on
  input line 92.
 Package pdftex.def Info: Requested size: 305.01271pt x 202.65213pt on input lin
 e 92.
-<./figuras/dpdf1.pdf, id=119, pagebox=cropbox, 774.73442pt x 513.11702pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 99.
+<./figuras/dpdf1.pdf, id=582, pagebox=cropbox, 774.73442pt x 513.11702pt>
 File: ./figuras/dpdf1.pdf Graphic file (type pdf)
 <use ./figuras/dpdf1.pdf>
 Package pdftex.def Info: ./figuras/dpdf1.pdf  used on input line 107. on input 
 line 107.
 Package pdftex.def Info: Requested size: 200.30852pt x 132.66347pt on input lin
 e 107.
-<./figuras/dpdf2.pdf, id=120, pagebox=cropbox, 833.9958pt x 512.39432pt>
+<./figuras/dpdf2.pdf, id=583, pagebox=cropbox, 833.9958pt x 512.39432pt>
 File: ./figuras/dpdf2.pdf Graphic file (type pdf)
 <use ./figuras/dpdf2.pdf>
 Package pdftex.def Info: ./figuras/dpdf2.pdf  used on input line 114. on input 
 line 114.
 Package pdftex.def Info: Requested size: 213.96529pt x 131.4524pt on input line
  114.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 131.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 131.
  [26 <./figuras/PDFm_normal_1.png> <./figuras/dpdf1.pdf> <./figuras/dpdf2.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figuras/dpdf2.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<./figuras/ddpdf1.pdf, id=152, pagebox=cropbox, 755.22153pt x 509.50351pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 142.
+<./figuras/ddpdf1.pdf, id=625, pagebox=cropbox, 755.22153pt x 509.50351pt>
 File: ./figuras/ddpdf1.pdf Graphic file (type pdf)
 <use ./figuras/ddpdf1.pdf>
 Package pdftex.def Info: ./figuras/ddpdf1.pdf  used on input line 149. on input
  line 149.
 Package pdftex.def Info: Requested size: 200.30852pt x 135.1344pt on input line
  149.
-<./figuras/ddpdf2.pdf, id=153, pagebox=cropbox, 834.71848pt x 505.89pt>
+<./figuras/ddpdf2.pdf, id=626, pagebox=cropbox, 834.71848pt x 505.89pt>
 File: ./figuras/ddpdf2.pdf Graphic file (type pdf)
 <use ./figuras/ddpdf2.pdf>
 Package pdftex.def Info: ./figuras/ddpdf2.pdf  used on input line 158. on input
  line 158.
 Package pdftex.def Info: Requested size: 213.96529pt x 129.67567pt on input lin
 e 158.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 174.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 174.
  [27 <./figuras/ddpdf1.pdf> <./figuras/ddpdf2.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figuras/ddpdf2.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->]) [28]
+>])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 140.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 140.
+ [28]
 \openout2 = `./textuais/desenvolvimento/desenvolvimento.aux'.
 
  (textuais/desenvolvimento/desenvolvimento.tex
 Cap\'{\i }tulo 3.
-<./figuras/variaveisCMS.png, id=179, 506.6428pt x 494.59781pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 5.
+<./figuras/variaveisCMS.png, id=663, 506.6428pt x 494.59781pt>
 File: ./figuras/variaveisCMS.png Graphic file (type png)
 <use ./figuras/variaveisCMS.png>
 Package pdftex.def Info: ./figuras/variaveisCMS.png  used on input line 14. on 
 input line 14.
 Package pdftex.def Info: Requested size: 364.19667pt x 355.54411pt on input lin
 e 14.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 18.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 18.
 [29
 
 
 
 ]
-<./figuras/variaveisATLAS.pdf, id=183, pagebox=cropbox, 435.32718pt x 312.9803p
+<./figuras/variaveisATLAS.pdf, id=672, pagebox=cropbox, 435.32718pt x 312.9803p
 t>
 File: ./figuras/variaveisATLAS.pdf Graphic file (type pdf)
 <use ./figuras/variaveisATLAS.pdf>
@@ -1169,501 +1470,593 @@ Package pdftex.def Info: ./figuras/variaveisATLAS.pdf  used on input line 23. o
 n input line 23.
 Package pdftex.def Info: Requested size: 364.19667pt x 261.84622pt on input lin
 e 23.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 27.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 27.
  [30 <./figuras/variaveisCMS.png>]
 Package acronym Info: Label `acro:FD' newly defined as it shall be overridden
 although it is yet undefined on input line 28.
- [31 <./figuras/variaveisATLAS.pdf>]
-<./figuras/log_sigma_001.png, id=221, 570.933pt x 714.7503pt>
+<./figuras/log_sigma_001.png, id=687, 570.933pt x 714.7503pt>
 File: ./figuras/log_sigma_001.png Graphic file (type png)
 <use ./figuras/log_sigma_001.png>
-Package pdftex.def Info: ./figuras/log_sigma_001.png  used on input line 66. on
- input line 66.
+Package pdftex.def Info: ./figuras/log_sigma_001.png  used on input line 57. on
+ input line 57.
 Package pdftex.def Info: Requested size: 136.57462pt x 170.97646pt on input lin
-e 66.
-<./figuras/log_sigma_025.png, id=222, 570.933pt x 714.7503pt>
+e 57.
+<./figuras/log_sigma_025.png, id=688, 570.933pt x 714.7503pt>
 File: ./figuras/log_sigma_025.png Graphic file (type png)
 <use ./figuras/log_sigma_025.png>
-Package pdftex.def Info: ./figuras/log_sigma_025.png  used on input line 73. on
- input line 73.
+Package pdftex.def Info: ./figuras/log_sigma_025.png  used on input line 64. on
+ input line 64.
 Package pdftex.def Info: Requested size: 136.57462pt x 170.97646pt on input lin
-e 73.
-<./figuras/log_sigma_05.png, id=223, 570.933pt x 714.7503pt>
+e 64.
+<./figuras/log_sigma_05.png, id=689, 570.933pt x 714.7503pt>
 File: ./figuras/log_sigma_05.png Graphic file (type png)
 <use ./figuras/log_sigma_05.png>
-Package pdftex.def Info: ./figuras/log_sigma_05.png  used on input line 80. on 
-input line 80.
+Package pdftex.def Info: ./figuras/log_sigma_05.png  used on input line 71. on 
+input line 71.
 Package pdftex.def Info: Requested size: 136.57462pt x 170.97646pt on input lin
-e 80.
-<./figuras/log_sigma_1.png, id=224, 570.933pt x 714.7503pt>
+e 71.
+<./figuras/log_sigma_1.png, id=690, 570.933pt x 714.7503pt>
 File: ./figuras/log_sigma_1.png Graphic file (type png)
 <use ./figuras/log_sigma_1.png>
-Package pdftex.def Info: ./figuras/log_sigma_1.png  used on input line 87. on i
-nput line 87.
+Package pdftex.def Info: ./figuras/log_sigma_1.png  used on input line 78. on i
+nput line 78.
 Package pdftex.def Info: Requested size: 136.57462pt x 170.97646pt on input lin
-e 87.
-<./figuras/log_sigma_125.png, id=225, 570.933pt x 714.7503pt>
+e 78.
+<./figuras/log_sigma_125.png, id=691, 570.933pt x 714.7503pt>
 File: ./figuras/log_sigma_125.png Graphic file (type png)
 <use ./figuras/log_sigma_125.png>
-Package pdftex.def Info: ./figuras/log_sigma_125.png  used on input line 94. on
- input line 94.
+Package pdftex.def Info: ./figuras/log_sigma_125.png  used on input line 85. on
+ input line 85.
 Package pdftex.def Info: Requested size: 136.57462pt x 170.97646pt on input lin
-e 94.
-<./figuras/log_sigma_15.png, id=226, 570.2103pt x 714.7503pt>
+e 85.
+<./figuras/log_sigma_15.png, id=692, 570.2103pt x 714.7503pt>
 File: ./figuras/log_sigma_15.png Graphic file (type png)
 <use ./figuras/log_sigma_15.png>
-Package pdftex.def Info: ./figuras/log_sigma_15.png  used on input line 101. on
- input line 101.
+Package pdftex.def Info: ./figuras/log_sigma_15.png  used on input line 92. on 
+input line 92.
 Package pdftex.def Info: Requested size: 136.57462pt x 171.19458pt on input lin
-e 101.
-<./figuras/datanormal_0.png, id=227, 570.933pt x 714.7503pt>
+e 92.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 100.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 100.
+ [31 <./figuras/variaveisATLAS.pdf>]
+<./figuras/datanormal_0.png, id=732, 570.933pt x 714.7503pt>
 File: ./figuras/datanormal_0.png Graphic file (type png)
 <use ./figuras/datanormal_0.png>
-Package pdftex.def Info: ./figuras/datanormal_0.png  used on input line 116. on
- input line 116.
+Package pdftex.def Info: ./figuras/datanormal_0.png  used on input line 107. on
+ input line 107.
 Package pdftex.def Info: Requested size: 122.91785pt x 153.87553pt on input lin
-e 116.
-<./figuras/datanormal_25.png, id=228, 570.933pt x 714.7503pt>
+e 107.
+<./figuras/datanormal_25.png, id=733, 570.933pt x 714.7503pt>
 File: ./figuras/datanormal_25.png Graphic file (type png)
 <use ./figuras/datanormal_25.png>
-Package pdftex.def Info: ./figuras/datanormal_25.png  used on input line 123. o
-n input line 123.
+Package pdftex.def Info: ./figuras/datanormal_25.png  used on input line 114. o
+n input line 114.
 Package pdftex.def Info: Requested size: 122.91785pt x 153.87553pt on input lin
-e 123.
-<./figuras/datalognormal_0.png, id=229, 570.933pt x 714.7503pt>
+e 114.
+<./figuras/datalognormal_0.png, id=734, 570.933pt x 714.7503pt>
 File: ./figuras/datalognormal_0.png Graphic file (type png)
 <use ./figuras/datalognormal_0.png>
-Package pdftex.def Info: ./figuras/datalognormal_0.png  used on input line 130.
- on input line 130.
+Package pdftex.def Info: ./figuras/datalognormal_0.png  used on input line 121.
+ on input line 121.
 Package pdftex.def Info: Requested size: 122.91785pt x 153.87553pt on input lin
-e 130.
+e 121.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 129.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 129.
 
 [32 <./figuras/log_sigma_001.png> <./figuras/log_sigma_025.png> <./figuras/log_
 sigma_05.png> <./figuras/log_sigma_1.png> <./figuras/log_sigma_125.png> <./figu
 ras/log_sigma_15.png>]
-<./figuras/algoritmo1.png, id=239, 661.87276pt x 166.82326pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 134.
+<./figuras/algoritmo1.png, id=746, 667.89525pt x 166.82326pt>
 File: ./figuras/algoritmo1.png Graphic file (type png)
 <use ./figuras/algoritmo1.png>
-Package pdftex.def Info: ./figuras/algoritmo1.png  used on input line 149. on i
-nput line 149.
-Package pdftex.def Info: Requested size: 273.14923pt x 68.84853pt on input line
- 149.
+Package pdftex.def Info: ./figuras/algoritmo1.png  used on input line 140. on i
+nput line 140.
+Package pdftex.def Info: Requested size: 273.14923pt x 68.22742pt on input line
+ 140.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 159.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 159.
  [33 <./figuras/datanormal_0.png> <./figuras/datanormal_25.png> <./figuras/data
 lognormal_0.png> <./figuras/algoritmo1.png>]
 Package acronym Info: Label `acro:IAE' newly defined as it shall be overridden
-although it is yet undefined on input line 170.
-<./figuras/Linspace_normal_15.png, id=246, 859.2903pt x 570.933pt>
+although it is yet undefined on input line 161.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 168.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 172.
+<./figuras/Linspace_normal_15.png, id=768, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_normal_15.png Graphic file (type png)
 <use ./figuras/Linspace_normal_15.png>
 Package pdftex.def Info: ./figuras/Linspace_normal_15.png  used on input line 1
-90. on input line 190.
+81. on input line 181.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 190.
-<./figuras/Linspace_normal_25.png, id=247, 859.2903pt x 570.933pt>
+e 181.
+<./figuras/Linspace_normal_25.png, id=769, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_normal_25.png Graphic file (type png)
 <use ./figuras/Linspace_normal_25.png>
 Package pdftex.def Info: ./figuras/Linspace_normal_25.png  used on input line 1
-97. on input line 197.
+88. on input line 188.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 197.
-<./figuras/Linspace_lognormal_15.png, id=248, 859.2903pt x 570.933pt>
+e 188.
+<./figuras/Linspace_lognormal_15.png, id=770, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_lognormal_15.png Graphic file (type png)
 <use ./figuras/Linspace_lognormal_15.png>
 Package pdftex.def Info: ./figuras/Linspace_lognormal_15.png  used on input lin
-e 204. on input line 204.
+e 195. on input line 195.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 204.
-<./figuras/Linspace_lognormal_25.png, id=249, 859.2903pt x 570.933pt>
+e 195.
+<./figuras/Linspace_lognormal_25.png, id=771, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_lognormal_25.png Graphic file (type png)
 <use ./figuras/Linspace_lognormal_25.png>
 Package pdftex.def Info: ./figuras/Linspace_lognormal_25.png  used on input lin
-e 211. on input line 211.
+e 202. on input line 202.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 211.
-<./figuras/Linspace_normal_15_1000_0.png, id=250, 859.2903pt x 570.933pt>
+e 202.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 210.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 210.
+ [34]
+<./figuras/Linspace_normal_15_1000_0.png, id=778, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_normal_15_1000_0.png Graphic file (type png)
 <use ./figuras/Linspace_normal_15_1000_0.png>
 Package pdftex.def Info: ./figuras/Linspace_normal_15_1000_0.png  used on input
- line 224. on input line 224.
+ line 219. on input line 219.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 224.
-<./figuras/Linspace_normal_25_1000_0.png, id=251, 859.2903pt x 570.933pt>
+e 219.
+<./figuras/Linspace_normal_25_1000_0.png, id=779, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_normal_25_1000_0.png Graphic file (type png)
 <use ./figuras/Linspace_normal_25_1000_0.png>
 Package pdftex.def Info: ./figuras/Linspace_normal_25_1000_0.png  used on input
- line 231. on input line 231.
+ line 226. on input line 226.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 231.
-<./figuras/Linspace_normal_15_1000_25.png, id=252, 859.2903pt x 570.933pt>
+e 226.
+<./figuras/Linspace_normal_15_1000_25.png, id=780, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_normal_15_1000_25.png Graphic file (type png)
 <use ./figuras/Linspace_normal_15_1000_25.png>
 Package pdftex.def Info: ./figuras/Linspace_normal_15_1000_25.png  used on inpu
-t line 238. on input line 238.
+t line 233. on input line 233.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 238.
-<./figuras/Linspace_normal_25_1000_25.png, id=253, 859.2903pt x 570.933pt>
+e 233.
+<./figuras/Linspace_normal_25_1000_25.png, id=781, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_normal_25_1000_25.png Graphic file (type png)
 <use ./figuras/Linspace_normal_25_1000_25.png>
 Package pdftex.def Info: ./figuras/Linspace_normal_25_1000_25.png  used on inpu
-t line 245. on input line 245.
+t line 240. on input line 240.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 245.
-<./figuras/Linspace_lognormal_15_1000.png, id=254, 859.2903pt x 570.933pt>
+e 240.
+<./figuras/Linspace_lognormal_15_1000.png, id=782, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_lognormal_15_1000.png Graphic file (type png)
 <use ./figuras/Linspace_lognormal_15_1000.png>
 Package pdftex.def Info: ./figuras/Linspace_lognormal_15_1000.png  used on inpu
-t line 252. on input line 252.
+t line 247. on input line 247.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 252.
-<./figuras/Linspace_lognormal_25_1000.png, id=255, 859.2903pt x 570.933pt>
+e 247.
+<./figuras/Linspace_lognormal_25_1000.png, id=783, 859.2903pt x 570.933pt>
 File: ./figuras/Linspace_lognormal_25_1000.png Graphic file (type png)
 <use ./figuras/Linspace_lognormal_25_1000.png>
 Package pdftex.def Info: ./figuras/Linspace_lognormal_25_1000.png  used on inpu
-t line 259. on input line 259.
+t line 254. on input line 254.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 259.
- [34]
-Overfull \vbox (201.77676pt too high) has occurred while \output is active []
-
+e 254.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 261.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 261.
 
 [35 <./figuras/Linspace_normal_15.png> <./figuras/Linspace_normal_25.png> <./fi
-guras/Linspace_lognormal_15.png> <./figuras/Linspace_lognormal_25.png> <./figur
-as/Linspace_normal_15_1000_0.png> <./figuras/Linspace_normal_25_1000_0.png> <./
-figuras/Linspace_normal_15_1000_25.png> <./figuras/Linspace_normal_25_1000_25.p
-ng> <./figuras/Linspace_lognormal_15_1000.png> <./figuras/Linspace_lognormal_25
-_1000.png>]
-<./figuras/CDFm_normal_15.png, id=272, 768.9528pt x 518.8986pt>
+guras/Linspace_lognormal_15.png> <./figuras/Linspace_lognormal_25.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 262.
+<./figuras/CDFm_normal_15.png, id=800, 768.9528pt x 518.8986pt>
 File: ./figuras/CDFm_normal_15.png Graphic file (type png)
 <use ./figuras/CDFm_normal_15.png>
-Package pdftex.def Info: ./figuras/CDFm_normal_15.png  used on input line 277. 
+Package pdftex.def Info: ./figuras/CDFm_normal_15.png  used on input line 270. 
+on input line 270.
+Package pdftex.def Info: Requested size: 204.85846pt x 138.2359pt on input line
+ 270.
+<./figuras/CDFm_normal_25.png, id=801, 768.9528pt x 518.8986pt>
+File: ./figuras/CDFm_normal_25.png Graphic file (type png)
+<use ./figuras/CDFm_normal_25.png>
+Package pdftex.def Info: ./figuras/CDFm_normal_25.png  used on input line 277. 
 on input line 277.
 Package pdftex.def Info: Requested size: 204.85846pt x 138.2359pt on input line
  277.
-<./figuras/CDFm_normal_25.png, id=273, 768.9528pt x 518.8986pt>
-File: ./figuras/CDFm_normal_25.png Graphic file (type png)
-<use ./figuras/CDFm_normal_25.png>
-Package pdftex.def Info: ./figuras/CDFm_normal_25.png  used on input line 284. 
-on input line 284.
-Package pdftex.def Info: Requested size: 204.85846pt x 138.2359pt on input line
- 284.
-<./figuras/CDFm_lognormal_15.png, id=274, 757.3896pt x 518.8986pt>
+<./figuras/CDFm_lognormal_15.png, id=802, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_lognormal_15.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_15.png>
-Package pdftex.def Info: ./figuras/CDFm_lognormal_15.png  used on input line 29
-2. on input line 292.
+Package pdftex.def Info: ./figuras/CDFm_lognormal_15.png  used on input line 28
+5. on input line 285.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 292.
-<./figuras/CDFm_lognormal_25.png, id=275, 757.3896pt x 518.8986pt>
+e 285.
+<./figuras/CDFm_lognormal_25.png, id=803, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_lognormal_25.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_25.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_25.png  used on input line 29
-9. on input line 299.
+2. on input line 292.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 299.
- [36]
-<./figuras/CDFm_normal_15_1000_0.png, id=279, 757.3896pt x 518.8986pt>
+e 292.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 299.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 299.
+
+[36 <./figuras/Linspace_normal_15_1000_0.png> <./figuras/Linspace_normal_25_100
+0_0.png> <./figuras/Linspace_normal_15_1000_25.png> <./figuras/Linspace_normal_
+25_1000_25.png> <./figuras/Linspace_lognormal_15_1000.png> <./figuras/Linspace_
+lognormal_25_1000.png>]
+<./figuras/CDFm_normal_15_1000_0.png, id=814, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_normal_15_1000_0.png Graphic file (type png)
 <use ./figuras/CDFm_normal_15_1000_0.png>
 Package pdftex.def Info: ./figuras/CDFm_normal_15_1000_0.png  used on input lin
-e 311. on input line 311.
+e 304. on input line 304.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 311.
-<./figuras/CDFm_normal_25_1000_0.png, id=280, 757.3896pt x 518.8986pt>
+e 304.
+<./figuras/CDFm_normal_25_1000_0.png, id=815, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_normal_25_1000_0.png Graphic file (type png)
 <use ./figuras/CDFm_normal_25_1000_0.png>
 Package pdftex.def Info: ./figuras/CDFm_normal_25_1000_0.png  used on input lin
-e 318. on input line 318.
+e 311. on input line 311.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 318.
-<./figuras/CDFm_normal_15_1000_25.png, id=281, 757.3896pt x 518.8986pt>
+e 311.
+<./figuras/CDFm_normal_15_1000_25.png, id=816, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_normal_15_1000_25.png Graphic file (type png)
 <use ./figuras/CDFm_normal_15_1000_25.png>
 Package pdftex.def Info: ./figuras/CDFm_normal_15_1000_25.png  used on input li
-ne 325. on input line 325.
+ne 318. on input line 318.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 325.
-<./figuras/CDFm_normal_25_1000_25.png, id=282, 757.3896pt x 518.8986pt>
+e 318.
+<./figuras/CDFm_normal_25_1000_25.png, id=817, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_normal_25_1000_25.png Graphic file (type png)
 <use ./figuras/CDFm_normal_25_1000_25.png>
 Package pdftex.def Info: ./figuras/CDFm_normal_25_1000_25.png  used on input li
-ne 332. on input line 332.
+ne 325. on input line 325.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 332.
-<./figuras/CDFm_lognormal_15_1000_0.png, id=283, 757.3896pt x 518.8986pt>
+e 325.
+<./figuras/CDFm_lognormal_15_1000_0.png, id=818, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_lognormal_15_1000_0.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_15_1000_0.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_15_1000_0.png  used on input 
-line 339. on input line 339.
+line 332. on input line 332.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 339.
-<./figuras/CDFm_lognormal_25_1000_0.png, id=284, 757.3896pt x 518.8986pt>
+e 332.
+<./figuras/CDFm_lognormal_25_1000_0.png, id=819, 757.3896pt x 518.8986pt>
 File: ./figuras/CDFm_lognormal_25_1000_0.png Graphic file (type png)
 <use ./figuras/CDFm_lognormal_25_1000_0.png>
 Package pdftex.def Info: ./figuras/CDFm_lognormal_25_1000_0.png  used on input 
-line 346. on input line 346.
+line 339. on input line 339.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.34993pt on input lin
-e 346.
+e 339.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 346.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 346.
  [37 <./figuras/CDFm_normal_15.png> <./figuras/CDFm_normal_25.png> <./figuras/C
 DFm_lognormal_15.png> <./figuras/CDFm_lognormal_25.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 350.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 354.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 354.
 [38 <./figuras/CDFm_normal_15_1000_0.png> <./figuras/CDFm_normal_25_1000_0.png>
  <./figuras/CDFm_normal_15_1000_25.png> <./figuras/CDFm_normal_25_1000_25.png> 
 <./figuras/CDFm_lognormal_15_1000_0.png> <./figuras/CDFm_lognormal_25_1000_0.pn
 g>]
-<./figuras/PDFm_normal_15.png, id=302, 859.2903pt x 570.933pt>
+<./figuras/PDFm_normal_15.png, id=852, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_normal_15.png Graphic file (type png)
 <use ./figuras/PDFm_normal_15.png>
-Package pdftex.def Info: ./figuras/PDFm_normal_15.png  used on input line 366. 
+Package pdftex.def Info: ./figuras/PDFm_normal_15.png  used on input line 359. 
+on input line 359.
+Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
+e 359.
+<./figuras/PDFm_normal_25.png, id=853, 859.2903pt x 570.933pt>
+File: ./figuras/PDFm_normal_25.png Graphic file (type png)
+<use ./figuras/PDFm_normal_25.png>
+Package pdftex.def Info: ./figuras/PDFm_normal_25.png  used on input line 366. 
 on input line 366.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
 e 366.
-<./figuras/PDFm_normal_25.png, id=303, 859.2903pt x 570.933pt>
-File: ./figuras/PDFm_normal_25.png Graphic file (type png)
-<use ./figuras/PDFm_normal_25.png>
-Package pdftex.def Info: ./figuras/PDFm_normal_25.png  used on input line 373. 
-on input line 373.
-Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 373.
-<./figuras/PDFm_lognormal_15_1.png, id=304, 859.2903pt x 570.933pt>
+<./figuras/PDFm_lognormal_15_1.png, id=854, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_15_1.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_15_1.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_15_1.png  used on input line 
-380. on input line 380.
+373. on input line 373.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 380.
-<./figuras/PDFm_lognormal_25_1.png, id=305, 859.2903pt x 570.933pt>
+e 373.
+<./figuras/PDFm_lognormal_25_1.png, id=855, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_25_1.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_25_1.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_25_1.png  used on input line 
-387. on input line 387.
+380. on input line 380.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 387.
-<./figuras/PDFm_normal_15_1000_0.png, id=306, 859.2903pt x 570.933pt>
+e 380.
+<./figuras/PDFm_normal_15_1000_0.png, id=857, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_normal_15_1000_0.png Graphic file (type png)
 <use ./figuras/PDFm_normal_15_1000_0.png>
 Package pdftex.def Info: ./figuras/PDFm_normal_15_1000_0.png  used on input lin
-e 402. on input line 402.
+e 395. on input line 395.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 402.
-<./figuras/PDFm_normal_25_1000_0.png, id=307, 859.2903pt x 570.933pt>
+e 395.
+<./figuras/PDFm_normal_25_1000_0.png, id=858, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_normal_25_1000_0.png Graphic file (type png)
 <use ./figuras/PDFm_normal_25_1000_0.png>
 Package pdftex.def Info: ./figuras/PDFm_normal_25_1000_0.png  used on input lin
-e 409. on input line 409.
+e 402. on input line 402.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 409.
-<./figuras/PDFm_normal_15_1000_25.png, id=308, 859.2903pt x 570.933pt>
+e 402.
+<./figuras/PDFm_normal_15_1000_25.png, id=859, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_normal_15_1000_25.png Graphic file (type png)
 <use ./figuras/PDFm_normal_15_1000_25.png>
 Package pdftex.def Info: ./figuras/PDFm_normal_15_1000_25.png  used on input li
-ne 416. on input line 416.
+ne 409. on input line 409.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 416.
-<./figuras/PDFm_normal_25_1000_25.png, id=309, 859.2903pt x 570.933pt>
+e 409.
+<./figuras/PDFm_normal_25_1000_25.png, id=860, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_normal_25_1000_25.png Graphic file (type png)
 <use ./figuras/PDFm_normal_25_1000_25.png>
 Package pdftex.def Info: ./figuras/PDFm_normal_25_1000_25.png  used on input li
-ne 423. on input line 423.
+ne 416. on input line 416.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 423.
-<./figuras/PDFm_lognormal_15_1000_0.png, id=310, 859.2903pt x 570.933pt>
+e 416.
+<./figuras/PDFm_lognormal_15_1000_0.png, id=861, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_15_1000_0.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_15_1000_0.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_15_1000_0.png  used on input 
-line 430. on input line 430.
+line 423. on input line 423.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 430.
-<./figuras/PDFm_lognormal_25_1000_0.png, id=311, 859.2903pt x 570.933pt>
+e 423.
+<./figuras/PDFm_lognormal_25_1000_0.png, id=862, 859.2903pt x 570.933pt>
 File: ./figuras/PDFm_lognormal_25_1000_0.png Graphic file (type png)
 <use ./figuras/PDFm_lognormal_25_1000_0.png>
 Package pdftex.def Info: ./figuras/PDFm_lognormal_25_1000_0.png  used on input 
-line 437. on input line 437.
+line 430. on input line 430.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 437.
+e 430.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 437.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 437.
  [39 <./figuras/PDFm_normal_15.png> <./figuras/PDFm_normal_25.png> <./figuras/P
 DFm_lognormal_15_1.png> <./figuras/PDFm_lognormal_25_1.png>]
-<./figuras/iPDF1_normal_15_1_0_0.png, id=319, 859.2903pt x 570.933pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 439.
+<./figuras/iPDF1_normal_15_1_0_0.png, id=874, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_normal_15_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF1_normal_15_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_normal_15_1_0_0.png  used on input lin
-e 454. on input line 454.
+e 447. on input line 447.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 454.
-<./figuras/iPDF1_normal_25_1_0_0.png, id=320, 859.2903pt x 570.933pt>
+e 447.
+<./figuras/iPDF1_normal_25_1_0_0.png, id=875, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_normal_25_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF1_normal_25_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_normal_25_1_0_0.png  used on input lin
-e 461. on input line 461.
+e 454. on input line 454.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 461.
-<./figuras/iPDF1_lognormal_15_1_0_0.png, id=321, 859.2903pt x 570.933pt>
+e 454.
+<./figuras/iPDF1_lognormal_15_1_0_0.png, id=876, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_lognormal_15_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF1_lognormal_15_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_lognormal_15_1_0_0.png  used on input 
-line 468. on input line 468.
+line 461. on input line 461.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 468.
-<./figuras/iPDF1_lognormal_25_1_0_0.png, id=322, 859.2903pt x 570.933pt>
+e 461.
+<./figuras/iPDF1_lognormal_25_1_0_0.png, id=877, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_lognormal_25_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF1_lognormal_25_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_lognormal_25_1_0_0.png  used on input 
-line 475. on input line 475.
+line 468. on input line 468.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 475.
+e 468.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 476.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 476.
  [40 <./figuras/PDFm_normal_15_1000_0.png> <./figuras/PDFm_normal_25_1000_0.png
 > <./figuras/PDFm_normal_15_1000_25.png> <./figuras/PDFm_normal_25_1000_25.png>
  <./figuras/PDFm_lognormal_15_1000_0.png> <./figuras/PDFm_lognormal_25_1000_0.p
 ng>]
-<./figuras/iPDF1_normal_15_1_1000_0.png, id=332, 859.2903pt x 570.933pt>
+<./figuras/iPDF1_normal_15_1_1000_0.png, id=891, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_normal_15_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF1_normal_15_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_normal_15_1_1000_0.png  used on input 
-line 489. on input line 489.
+line 482. on input line 482.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 489.
-<./figuras/iPDF1_normal_25_1_1000_0.png, id=333, 859.2903pt x 570.933pt>
+e 482.
+<./figuras/iPDF1_normal_25_1_1000_0.png, id=892, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_normal_25_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF1_normal_25_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_normal_25_1_1000_0.png  used on input 
-line 496. on input line 496.
+line 489. on input line 489.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 496.
-<./figuras/iPDF1_normal_15_1_1000_25.png, id=334, 859.2903pt x 570.933pt>
+e 489.
+<./figuras/iPDF1_normal_15_1_1000_25.png, id=893, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_normal_15_1_1000_25.png Graphic file (type png)
 <use ./figuras/iPDF1_normal_15_1_1000_25.png>
 Package pdftex.def Info: ./figuras/iPDF1_normal_15_1_1000_25.png  used on input
- line 503. on input line 503.
+ line 496. on input line 496.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 503.
-<./figuras/iPDF1_normal_25_1_1000_25.png, id=335, 859.2903pt x 570.933pt>
+e 496.
+<./figuras/iPDF1_normal_25_1_1000_25.png, id=894, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_normal_25_1_1000_25.png Graphic file (type png)
 <use ./figuras/iPDF1_normal_25_1_1000_25.png>
 Package pdftex.def Info: ./figuras/iPDF1_normal_25_1_1000_25.png  used on input
- line 510. on input line 510.
+ line 503. on input line 503.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 510.
-<./figuras/iPDF1_lognormal_15_1_1000_0.png, id=336, 859.2903pt x 570.933pt>
+e 503.
+<./figuras/iPDF1_lognormal_15_1_1000_0.png, id=895, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_lognormal_15_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF1_lognormal_15_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_lognormal_15_1_1000_0.png  used on inp
-ut line 517. on input line 517.
+ut line 510. on input line 510.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 517.
-<./figuras/iPDF1_lognormal_25_1_1000_0.png, id=337, 859.2903pt x 570.933pt>
+e 510.
+<./figuras/iPDF1_lognormal_25_1_1000_0.png, id=896, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF1_lognormal_25_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF1_lognormal_25_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF1_lognormal_25_1_1000_0.png  used on inp
-ut line 524. on input line 524.
+ut line 517. on input line 517.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 524.
+e 517.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 524.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 524.
  [41 <./figuras/iPDF1_normal_15_1_0_0.png> <./figuras/iPDF1_normal_25_1_0_0.png
 > <./figuras/iPDF1_lognormal_15_1_0_0.png> <./figuras/iPDF1_lognormal_25_1_0_0.
 png>]
-<./figuras/iPDF2_normal_15_1_0_0.png, id=345, 859.2903pt x 570.933pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 526.
+<./figuras/iPDF2_normal_15_1_0_0.png, id=912, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_normal_15_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF2_normal_15_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_normal_15_1_0_0.png  used on input lin
-e 541. on input line 541.
+e 534. on input line 534.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 541.
-<./figuras/iPDF2_normal_25_1_0_0.png, id=346, 859.2903pt x 570.933pt>
+e 534.
+<./figuras/iPDF2_normal_25_1_0_0.png, id=913, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_normal_25_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF2_normal_25_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_normal_25_1_0_0.png  used on input lin
-e 548. on input line 548.
+e 541. on input line 541.
+Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
+e 541.
+<./figuras/iPDF2_lognormal_25_1_0_0.png, id=914, 859.2903pt x 570.933pt>
+File: ./figuras/iPDF2_lognormal_25_1_0_0.png Graphic file (type png)
+<use ./figuras/iPDF2_lognormal_25_1_0_0.png>
+Package pdftex.def Info: ./figuras/iPDF2_lognormal_25_1_0_0.png  used on input 
+line 548. on input line 548.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
 e 548.
-<./figuras/iPDF2_lognormal_25_1_0_0.png, id=347, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_lognormal_25_1_0_0.png Graphic file (type png)
 <use ./figuras/iPDF2_lognormal_25_1_0_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_lognormal_25_1_0_0.png  used on input 
 line 555. on input line 555.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
 e 555.
-File: ./figuras/iPDF2_lognormal_25_1_0_0.png Graphic file (type png)
-<use ./figuras/iPDF2_lognormal_25_1_0_0.png>
-Package pdftex.def Info: ./figuras/iPDF2_lognormal_25_1_0_0.png  used on input 
-line 562. on input line 562.
-Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 562.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 563.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 563.
 
 [42 <./figuras/iPDF1_normal_15_1_1000_0.png> <./figuras/iPDF1_normal_25_1_1000_
 0.png> <./figuras/iPDF1_normal_15_1_1000_25.png> <./figuras/iPDF1_normal_25_1_1
 000_25.png> <./figuras/iPDF1_lognormal_15_1_1000_0.png> <./figuras/iPDF1_lognor
 mal_25_1_1000_0.png>]
-<./figuras/iPDF2_normal_15_1_1000_0.png, id=357, 859.2903pt x 570.933pt>
+<./figuras/iPDF2_normal_15_1_1000_0.png, id=927, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_normal_15_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF2_normal_15_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_normal_15_1_1000_0.png  used on input 
-line 576. on input line 576.
+line 569. on input line 569.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 576.
-<./figuras/iPDF2_normal_25_1_1000_0.png, id=358, 859.2903pt x 570.933pt>
+e 569.
+<./figuras/iPDF2_normal_25_1_1000_0.png, id=928, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_normal_25_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF2_normal_25_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_normal_25_1_1000_0.png  used on input 
-line 583. on input line 583.
+line 576. on input line 576.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 583.
-<./figuras/iPDF2_normal_15_1_1000_25.png, id=359, 859.2903pt x 570.933pt>
+e 576.
+<./figuras/iPDF2_normal_15_1_1000_25.png, id=929, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_normal_15_1_1000_25.png Graphic file (type png)
 <use ./figuras/iPDF2_normal_15_1_1000_25.png>
 Package pdftex.def Info: ./figuras/iPDF2_normal_15_1_1000_25.png  used on input
- line 590. on input line 590.
+ line 583. on input line 583.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 590.
-<./figuras/iPDF2_normal_25_1_1000_25.png, id=360, 859.2903pt x 570.933pt>
+e 583.
+<./figuras/iPDF2_normal_25_1_1000_25.png, id=930, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_normal_25_1_1000_25.png Graphic file (type png)
 <use ./figuras/iPDF2_normal_25_1_1000_25.png>
 Package pdftex.def Info: ./figuras/iPDF2_normal_25_1_1000_25.png  used on input
- line 597. on input line 597.
+ line 590. on input line 590.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 597.
-<./figuras/iPDF2_lognormal_15_1_1000_0.png, id=361, 859.2903pt x 570.933pt>
+e 590.
+<./figuras/iPDF2_lognormal_15_1_1000_0.png, id=931, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_lognormal_15_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF2_lognormal_15_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_lognormal_15_1_1000_0.png  used on inp
-ut line 604. on input line 604.
+ut line 597. on input line 597.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 604.
-<./figuras/iPDF2_lognormal_25_1_1000_0.png, id=362, 859.2903pt x 570.933pt>
+e 597.
+<./figuras/iPDF2_lognormal_25_1_1000_0.png, id=932, 859.2903pt x 570.933pt>
 File: ./figuras/iPDF2_lognormal_25_1_1000_0.png Graphic file (type png)
 <use ./figuras/iPDF2_lognormal_25_1_1000_0.png>
 Package pdftex.def Info: ./figuras/iPDF2_lognormal_25_1_1000_0.png  used on inp
-ut line 611. on input line 611.
+ut line 604. on input line 604.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 611.
+e 604.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 611.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 611.
  [43 <./figuras/iPDF2_normal_15_1_0_0.png> <./figuras/iPDF2_normal_25_1_0_0.png
-> <./figuras/iPDF2_lognormal_25_1_0_0.png>] [44 <./figuras/iPDF2_normal_15_1_10
-00_0.png> <./figuras/iPDF2_normal_25_1_1000_0.png> <./figuras/iPDF2_normal_15_1
-_1000_25.png> <./figuras/iPDF2_normal_25_1_1000_25.png> <./figuras/iPDF2_lognor
-mal_15_1_1000_0.png> <./figuras/iPDF2_lognormal_25_1_1000_0.png>]
-<./figuras/custocomp.png, id=379, 529.98pt x 384.6872pt>
+> <./figuras/iPDF2_lognormal_25_1_0_0.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 616.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 619.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 619.
+ [44 <./figuras/iPDF2_normal_15_1_1000_0.png> <./figuras/iPDF2_normal_25_1_1000
+_0.png> <./figuras/iPDF2_normal_15_1_1000_25.png> <./figuras/iPDF2_normal_25_1_
+1000_25.png> <./figuras/iPDF2_lognormal_15_1_1000_0.png> <./figuras/iPDF2_logno
+rmal_25_1_1000_0.png>]
+<./figuras/custocomp.png, id=954, 529.98pt x 384.6872pt>
 File: ./figuras/custocomp.png Graphic file (type png)
 <use ./figuras/custocomp.png>
-Package pdftex.def Info: ./figuras/custocomp.png  used on input line 631. on in
-put line 631.
+Package pdftex.def Info: ./figuras/custocomp.png  used on input line 624. on in
+put line 624.
 Package pdftex.def Info: Requested size: 364.19667pt x 264.35439pt on input lin
-e 631.
+e 624.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 632.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 632.
  [45 <./figuras/custocomp.png (PNG copy)>]
-<./figuras/error1.pdf, id=383, pagebox=cropbox, 867.24pt x 578.16pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 632.
+Package acronym Info: Label `acro:RoI' newly defined as it shall be overridden
+although it is yet undefined on input line 634.
+<./figuras/error1.pdf, id=965, pagebox=cropbox, 867.24pt x 578.16pt>
 File: ./figuras/error1.pdf Graphic file (type pdf)
 <use ./figuras/error1.pdf>
-Package pdftex.def Info: ./figuras/error1.pdf  used on input line 646. on input
- line 646.
+Package pdftex.def Info: ./figuras/error1.pdf  used on input line 639. on input
+ line 639.
 Package pdftex.def Info: Requested size: 273.14923pt x 182.0949pt on input line
- 646.
-) [46 <./figuras/error1.pdf>]
+ 639.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 141.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 141.
+ [46 <./figuras/error1.pdf>]
 \openout2 = `./textuais/resultados/resultados.aux'.
 
 
 (textuais/resultados/resultados.tex
 Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1.
 
 Overfull \hbox (11.37468pt too wide) in paragraph at lines 5--5
 []\T1/aer/bx/sl/12 ESTIMAÇÃO DE ERRO PELA IN-TER-PO-LA-ÇÃO DO VI-ZI-NHO MAIS
  []
 
-<./figuras/error_normal_nearest_Probabilidade_1.png, id=426, 790.6338pt x 544.9
-158pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 5.
+<./figuras/error_normal_nearest_Probabilidade_1.png, id=1021, 790.6338pt x 544.
+9158pt>
 File: ./figuras/error_normal_nearest_Probabilidade_1.png Graphic file (type png
 )
 <use ./figuras/error_normal_nearest_Probabilidade_1.png>
@@ -1671,15 +2064,15 @@ Package pdftex.def Info: ./figuras/error_normal_nearest_Probabilidade_1.png  us
 ed on input line 12. on input line 12.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
  12.
-<./figuras/error_normal_nearest_X_1.png, id=427, 790.6338pt x 542.025pt>
+<./figuras/error_normal_nearest_X_1.png, id=1022, 790.6338pt x 542.025pt>
 File: ./figuras/error_normal_nearest_X_1.png Graphic file (type png)
 <use ./figuras/error_normal_nearest_X_1.png>
 Package pdftex.def Info: ./figuras/error_normal_nearest_X_1.png  used on input 
 line 21. on input line 21.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.44347pt on input lin
 e 21.
-<./figuras/error_normal_nearest_Primeira_Derivada_1.png, id=428, 790.6338pt x 5
-44.9158pt>
+<./figuras/error_normal_nearest_Primeira_Derivada_1.png, id=1023, 790.6338pt x 
+544.9158pt>
 File: ./figuras/error_normal_nearest_Primeira_Derivada_1.png Graphic file (type
  png)
 <use ./figuras/error_normal_nearest_Primeira_Derivada_1.png>
@@ -1687,8 +2080,8 @@ Package pdftex.def Info: ./figuras/error_normal_nearest_Primeira_Derivada_1.png
   used on input line 30. on input line 30.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
  30.
-<./figuras/error_normal_nearest_Segunda_Derivada_1.png, id=429, 790.6338pt x 54
-4.9158pt>
+<./figuras/error_normal_nearest_Segunda_Derivada_1.png, id=1024, 790.6338pt x 5
+44.9158pt>
 File: ./figuras/error_normal_nearest_Segunda_Derivada_1.png Graphic file (type 
 png)
 <use ./figuras/error_normal_nearest_Segunda_Derivada_1.png>
@@ -1696,310 +2089,405 @@ Package pdftex.def Info: ./figuras/error_normal_nearest_Segunda_Derivada_1.png
  used on input line 37. on input line 37.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
  37.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 44.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 44.
 [47
 
 
 
 ]
-<./figuras/error_lognormal_nearest_Probabilidade_1.png, id=433, 790.6338pt x 54
-4.9158pt>
+<./figuras/error_lognormal_nearest_Probabilidade_1.png, id=1035, 790.6338pt x 5
+44.9158pt>
 File: ./figuras/error_lognormal_nearest_Probabilidade_1.png Graphic file (type 
 png)
 <use ./figuras/error_lognormal_nearest_Probabilidade_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_nearest_Probabilidade_1.png 
- used on input line 49. on input line 49.
+ used on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
- 49.
-<./figuras/error_lognormal_nearest_X_1.png, id=434, 790.6338pt x 542.025pt>
+ 58.
+<./figuras/error_lognormal_nearest_X_1.png, id=1036, 790.6338pt x 542.025pt>
 File: ./figuras/error_lognormal_nearest_X_1.png Graphic file (type png)
 <use ./figuras/error_lognormal_nearest_X_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_nearest_X_1.png  used on inp
-ut line 58. on input line 58.
+ut line 67. on input line 67.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.44347pt on input lin
-e 58.
-<./figuras/error_lognormal_nearest_Primeira_Derivada_1.png, id=435, 790.6338pt 
-x 544.9158pt>
+e 67.
+<./figuras/error_lognormal_nearest_Primeira_Derivada_1.png, id=1037, 790.6338pt
+ x 544.9158pt>
 File: ./figuras/error_lognormal_nearest_Primeira_Derivada_1.png Graphic file (t
 ype png)
 <use ./figuras/error_lognormal_nearest_Primeira_Derivada_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_nearest_Primeira_Derivada_1.
-png  used on input line 67. on input line 67.
+png  used on input line 76. on input line 76.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
- 67.
-<./figuras/error_lognormal_nearest_Segunda_Derivada_1.png, id=436, 790.6338pt x
- 544.9158pt>
+ 76.
+<./figuras/error_lognormal_nearest_Segunda_Derivada_1.png, id=1038, 790.6338pt 
+x 544.9158pt>
 File: ./figuras/error_lognormal_nearest_Segunda_Derivada_1.png Graphic file (ty
 pe png)
 <use ./figuras/error_lognormal_nearest_Segunda_Derivada_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_nearest_Segunda_Derivada_1.p
-ng  used on input line 74. on input line 74.
+ng  used on input line 83. on input line 83.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
- 74.
+ 83.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 90.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 90.
  [48 <./figuras/error_normal_nearest_Probabilidade_1.png> <./figuras/error_norm
 al_nearest_X_1.png> <./figuras/error_normal_nearest_Primeira_Derivada_1.png> <.
-/figuras/error_normal_nearest_Segunda_Derivada_1.png>] [49 <./figuras/error_log
-normal_nearest_Probabilidade_1.png> <./figuras/error_lognormal_nearest_X_1.png>
- <./figuras/error_lognormal_nearest_Primeira_Derivada_1.png> <./figuras/error_l
-ognormal_nearest_Segunda_Derivada_1.png>]
-<./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png, id=452, 859.2903pt x 570.93
-3pt>
+/figuras/error_normal_nearest_Segunda_Derivada_1.png>]
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png, id=1051, 859.2903pt x 570.9
+33pt>
 File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png Graphic file (type png)
 
 <use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png  use
-d on input line 111. on input line 111.
+d on input line 116. on input line 116.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 111.
-<./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png, id=453, 859.2903pt x 570
-.933pt>
+e 116.
+<./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png, id=1052, 859.2903pt x 57
+0.933pt>
 File: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png Graphic file (type p
 ng)
 <use ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_NEAREST_00.png  
-used on input line 120. on input line 120.
+used on input line 125. on input line 125.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 120.
-<./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_10000.png, id=454, 859.2903pt x 57
-0.933pt>
+e 125.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 133.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 133.
+ [49 <./figuras/error_lognormal_nearest_Probabilidade_1.png> <./figuras/error_l
+ognormal_nearest_X_1.png> <./figuras/error_lognormal_nearest_Primeira_Derivada_
+1.png> <./figuras/error_lognormal_nearest_Segunda_Derivada_1.png>]
+<./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_10000.png, id=1062, 859.2903pt x 5
+70.933pt>
 File: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_10000.png Graphic file (type 
 png)
 <use ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_10000.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_10000.png 
- used on input line 134. on input line 134.
+ used on input line 139. on input line 139.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 134.
-<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_10000.png, id=455, 859.2903pt x
- 570.933pt>
+e 139.
+<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_10000.png, id=1063, 859.2903pt 
+x 570.933pt>
 File: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_10000.png Graphic file (ty
 pe png)
 <use ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_10000.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_10000.p
-ng  used on input line 143. on input line 143.
+ng  used on input line 148. on input line 148.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 143.
+e 148.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 161.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 164.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 164.
  [50 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_00.png> <./figuras/ERRORPLOT_L
-1_TRUE_LOGNORMAL_NEAREST_00.png>]
-[51 <./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_10000.png> <./figuras/ERRORPLO
-T_L1_FALSE_LOGNORMAL_NEAREST_10000.png>]
-<./figuras/error_normal_linear_Probabilidade_1.png, id=466, 790.6338pt x 544.91
-58pt>
+1_TRUE_LOGNORMAL_NEAREST_00.png> <./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_1
+0000.png> <./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_10000.png>]
+<./figuras/error_normal_linear_Probabilidade_1.png, id=1088, 790.6338pt x 544.9
+158pt>
 File: ./figuras/error_normal_linear_Probabilidade_1.png Graphic file (type png)
 
 <use ./figuras/error_normal_linear_Probabilidade_1.png>
 Package pdftex.def Info: ./figuras/error_normal_linear_Probabilidade_1.png  use
-d on input line 170. on input line 170.
+d on input line 176. on input line 176.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
- 170.
-<./figuras/error_normal_linear_X_1.png, id=467, 790.6338pt x 542.025pt>
+ 176.
+<./figuras/error_normal_linear_X_1.png, id=1089, 790.6338pt x 542.025pt>
 File: ./figuras/error_normal_linear_X_1.png Graphic file (type png)
 <use ./figuras/error_normal_linear_X_1.png>
 Package pdftex.def Info: ./figuras/error_normal_linear_X_1.png  used on input l
-ine 179. on input line 179.
+ine 185. on input line 185.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.44347pt on input lin
-e 179.
-<./figuras/error_normal_linear_Primeira_Derivada_1.png, id=468, 790.6338pt x 54
-4.9158pt>
+e 185.
+<./figuras/error_normal_linear_Primeira_Derivada_1.png, id=1090, 790.6338pt x 5
+44.9158pt>
 File: ./figuras/error_normal_linear_Primeira_Derivada_1.png Graphic file (type 
 png)
 <use ./figuras/error_normal_linear_Primeira_Derivada_1.png>
 Package pdftex.def Info: ./figuras/error_normal_linear_Primeira_Derivada_1.png 
- used on input line 188. on input line 188.
+ used on input line 194. on input line 194.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
- 188.
-<./figuras/error_normal_linear_Segunda_Derivada_1.png, id=469, 790.6338pt x 544
-.9158pt>
+ 194.
+<./figuras/error_normal_linear_Segunda_Derivada_1.png, id=1091, 790.6338pt x 54
+4.9158pt>
 File: ./figuras/error_normal_linear_Segunda_Derivada_1.png Graphic file (type p
 ng)
 <use ./figuras/error_normal_linear_Segunda_Derivada_1.png>
 Package pdftex.def Info: ./figuras/error_normal_linear_Segunda_Derivada_1.png  
-used on input line 195. on input line 195.
+used on input line 201. on input line 201.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.1925pt on input line
- 195.
-<./figuras/error_lognormal_linear_Probabilidade_1.png, id=470, 789.9111pt x 544
-.9158pt>
+ 201.
+<./figuras/error_lognormal_linear_Probabilidade_1.png, id=1092, 789.9111pt x 54
+4.9158pt>
 File: ./figuras/error_lognormal_linear_Probabilidade_1.png Graphic file (type p
 ng)
 <use ./figuras/error_lognormal_linear_Probabilidade_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_linear_Probabilidade_1.png  
-used on input line 206. on input line 206.
+used on input line 212. on input line 212.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.31723pt on input lin
-e 206.
-<./figuras/error_lognormal_linear_X_1.png, id=471, 789.9111pt x 542.025pt>
+e 212.
+<./figuras/error_lognormal_linear_X_1.png, id=1093, 789.9111pt x 542.025pt>
 File: ./figuras/error_lognormal_linear_X_1.png Graphic file (type png)
 <use ./figuras/error_lognormal_linear_X_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_linear_X_1.png  used on inpu
-t line 215. on input line 215.
+t line 221. on input line 221.
 Package pdftex.def Info: Requested size: 204.85846pt x 140.56754pt on input lin
-e 215.
-<./figuras/error_lognormal_linear_Primeira_Derivada_1.png, id=472, 789.9111pt x
- 544.9158pt>
+e 221.
+<./figuras/error_lognormal_linear_Primeira_Derivada_1.png, id=1094, 789.9111pt 
+x 544.9158pt>
 File: ./figuras/error_lognormal_linear_Primeira_Derivada_1.png Graphic file (ty
 pe png)
 <use ./figuras/error_lognormal_linear_Primeira_Derivada_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_linear_Primeira_Derivada_1.p
-ng  used on input line 224. on input line 224.
+ng  used on input line 230. on input line 230.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.31723pt on input lin
-e 224.
-<./figuras/error_lognormal_linear_Segunda_Derivada_1.png, id=473, 789.9111pt x 
-544.9158pt>
+e 230.
+<./figuras/error_lognormal_linear_Segunda_Derivada_1.png, id=1095, 789.9111pt x
+ 544.9158pt>
 File: ./figuras/error_lognormal_linear_Segunda_Derivada_1.png Graphic file (typ
 e png)
 <use ./figuras/error_lognormal_linear_Segunda_Derivada_1.png>
 Package pdftex.def Info: ./figuras/error_lognormal_linear_Segunda_Derivada_1.pn
-g  used on input line 231. on input line 231.
+g  used on input line 237. on input line 237.
 Package pdftex.def Info: Requested size: 204.85846pt x 141.31723pt on input lin
-e 231.
- [52 <./figuras/error_normal_linear_Probabilidade_1.png> <./figuras/error_norma
+e 237.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 244.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 244.
+ [51 <./figuras/error_normal_linear_Probabilidade_1.png> <./figuras/error_norma
 l_linear_X_1.png> <./figuras/error_normal_linear_Primeira_Derivada_1.png> <./fi
-guras/error_normal_linear_Segunda_Derivada_1.png>] [53 <./figuras/error_lognorm
-al_linear_Probabilidade_1.png> <./figuras/error_lognormal_linear_X_1.png> <./fi
-guras/error_lognormal_linear_Primeira_Derivada_1.png> <./figuras/error_lognorma
-l_linear_Segunda_Derivada_1.png>]
-<./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png, id=488, 859.2903pt x 570.933
-pt>
+guras/error_normal_linear_Segunda_Derivada_1.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 251.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 251.
+ [52 <./figuras/error_lognormal_linear_Probabilidade_1.png> <./figuras/error_lo
+gnormal_linear_X_1.png> <./figuras/error_lognormal_linear_Primeira_Derivada_1.p
+ng> <./figuras/error_lognormal_linear_Segunda_Derivada_1.png>]
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png, id=1132, 859.2903pt x 570.93
+3pt>
 File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png Graphic file (type png)
 <use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png  used
- on input line 250. on input line 250.
+ on input line 256. on input line 256.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 250.
-<./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png, id=489, 859.2903pt x 570.
-2103pt>
+e 256.
+<./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png, id=1133, 859.2903pt x 570
+.2103pt>
 File: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png Graphic file (type pn
 g)
 <use ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_LOGNORMAL_LINEAR_00.png  u
-sed on input line 259. on input line 259.
+sed on input line 265. on input line 265.
 Package pdftex.def Info: Requested size: 204.85846pt x 135.93968pt on input lin
-e 259.
-<./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_10000.png, id=490, 859.2903pt x 570
-.933pt>
+e 265.
+<./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_10000.png, id=1134, 859.2903pt x 57
+0.933pt>
 File: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_10000.png Graphic file (type p
 ng)
 <use ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_10000.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_10000.png  
-used on input line 272. on input line 272.
+used on input line 278. on input line 278.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 272.
-<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.png, id=491, 859.2903pt x 
-570.933pt>
+e 278.
+<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.png, id=1135, 859.2903pt x
+ 570.933pt>
 File: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.png Graphic file (typ
 e png)
 <use ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.pn
-g  used on input line 281. on input line 281.
+g  used on input line 287. on input line 287.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 281.
-<./figuras/erro3d_linspace.png, id=492, 859.2903pt x 565.1514pt>
+e 287.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 296.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 301.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 301.
+ [53 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png> <./figuras/ERRORPLOT_L1
+_TRUE_LOGNORMAL_LINEAR_00.png> <./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_1000
+0.png> <./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.png>]
+<./figuras/erro3d_linspace.png, id=1146, 859.2903pt x 565.1514pt>
 File: ./figuras/erro3d_linspace.png Graphic file (type png)
 <use ./figuras/erro3d_linspace.png>
-Package pdftex.def Info: ./figuras/erro3d_linspace.png  used on input line 300.
- on input line 300.
+Package pdftex.def Info: ./figuras/erro3d_linspace.png  used on input line 306.
+ on input line 306.
 Package pdftex.def Info: Requested size: 204.85846pt x 134.73363pt on input lin
-e 300.
-<./figuras/figure13b.pdf, id=493, pagebox=cropbox, 659.10242pt x 443.01509pt>
+e 306.
+<./figuras/figure13b.pdf, id=1147, pagebox=cropbox, 659.10242pt x 443.01509pt>
 File: ./figuras/figure13b.pdf Graphic file (type pdf)
 <use ./figuras/figure13b.pdf>
-Package pdftex.def Info: ./figuras/figure13b.pdf  used on input line 307. on in
-put line 307.
+Package pdftex.def Info: ./figuras/figure13b.pdf  used on input line 313. on in
+put line 313.
 Package pdftex.def Info: Requested size: 204.85846pt x 137.69153pt on input lin
-e 307.
-
-[54 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_00.png> <./figuras/ERRORPLOT_L1_
-TRUE_LOGNORMAL_LINEAR_00.png> <./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_10000
-.png> <./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_10000.png>] [55 <./figuras
-/erro3d_linspace.png> <./figuras/figure13b.pdf>]
-<./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png, id=517, 859.2903pt x 570.9
-33pt>
+e 313.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 356.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 356.
+ [54 <./figuras/erro3d_linspace.png> <./figuras/figure13b.pdf>]
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png, id=1184, 859.2903pt x 570.
+933pt>
 File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png Graphic file (type png
 )
 <use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png  us
-ed on input line 358. on input line 358.
+ed on input line 364. on input line 364.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 358.
-<./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_025.png, id=518, 859.2903pt x 570.93
-3pt>
+e 364.
+<./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_025.png, id=1185, 859.2903pt x 570.9
+33pt>
 File: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_025.png Graphic file (type png)
 
 <use ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_025.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_TRUE_NORMAL_LINEAR_025.png  use
-d on input line 367. on input line 367.
+d on input line 373. on input line 373.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 367.
-<./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025.png, id=519, 859.2903pt x 5
-70.933pt>
-File: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025.png Graphic file (type
+e 373.
+<./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025_.png, id=1186, 859.2903pt x
+ 570.933pt>
+File: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025_.png Graphic file (typ
+e png)
+<use ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025_.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025_.pn
+g  used on input line 385. on input line 385.
+Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
+e 385.
+<./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025_.png, id=1187, 859.2903pt x 
+570.933pt>
+File: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025_.png Graphic file (type
  png)
-<use ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025.png>
-Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025.png
-  used on input line 379. on input line 379.
+<use ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025_.png>
+Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025_.png
+  used on input line 394. on input line 394.
 Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 379.
-<./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025.png, id=520, 859.2903pt x 57
-0.933pt>
-File: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025.png Graphic file (type 
-png)
-<use ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025.png>
-Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_NORMAL_LINEAR_100025.png 
- used on input line 388. on input line 388.
-Package pdftex.def Info: Requested size: 204.85846pt x 136.11198pt on input lin
-e 388.
- [56 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png> <./figuras/ERRORPLOT_
+e 394.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 401.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 401.
+ [55 <./figuras/ERRORPLOT_L1_TRUE_NORMAL_NEAREST_025.png> <./figuras/ERRORPLOT_
 L1_TRUE_NORMAL_LINEAR_025.png>]
-<./figuras/datalognormal_0_2_2.png, id=526, 736.55174pt x 472.164pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 402.
+<./figuras/datalognormal_0_2_2.png, id=1196, 736.55174pt x 472.164pt>
 File: ./figuras/datalognormal_0_2_2.png Graphic file (type png)
 <use ./figuras/datalognormal_0_2_2.png>
 Package pdftex.def Info: ./figuras/datalognormal_0_2_2.png  used on input line 
-401. on input line 401.
+407. on input line 407.
 Package pdftex.def Info: Requested size: 273.14923pt x 175.1014pt on input line
- 401.
-<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2.png, id=527, 867.24pt 
-x 572.3784pt>
+ 407.
+<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2.png, id=1197, 867.24pt
+ x 572.3784pt>
 File: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2.png Graphic file 
 (type png)
 <use ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_
-2.png  used on input line 412. on input line 412.
+2.png  used on input line 418. on input line 418.
 Package pdftex.def Info: Requested size: 204.85846pt x 135.1989pt on input line
- 412.
-<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2.png, id=528, 867.24pt x
- 572.3784pt>
+ 418.
+<./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2.png, id=1198, 867.24pt 
+x 572.3784pt>
 File: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2.png Graphic file (
 type png)
 <use ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2.png>
 Package pdftex.def Info: ./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2
-.png  used on input line 421. on input line 421.
+.png  used on input line 427. on input line 427.
 Package pdftex.def Info: Requested size: 204.85846pt x 135.1989pt on input line
- 421.
-[57 <./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025.png> <./figuras/ERRORPL
-OT_L1_FALSE_NORMAL_LINEAR_100025.png> <./figuras/datalognormal_0_2_2.png>]
-[58 <./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2.png> <./figuras/ER
-RORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2.png>]) [59]
+ 427.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 434.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 434.
+ [56 <./figuras/ERRORPLOT_L1_FALSE_NORMAL_NEAREST_100025_.png> <./figuras/ERROR
+PLOT_L1_FALSE_NORMAL_LINEAR_100025_.png> <./figuras/datalognormal_0_2_2.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 467.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 467.
+ [57 <./figuras/ERRORPLOT_L1_FALSE_LOGNORMAL_NEAREST_100000_2.png> <./figuras/E
+RRORPLOT_L1_FALSE_LOGNORMAL_LINEAR_100000_2.png>])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 142.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 142.
+ [58]
 \openout2 = `./textuais/conclusao/conclusao.aux'.
 
-
-(textuais/conclusao/conclusao.tex
+ (textuais/conclusao/conclusao.tex
 Cap\'{\i }tulo 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1.
 
 Overfull \hbox (17.17671pt too wide) in paragraph at lines 3--4
 []\T1/aer/m/n/12 A dis-cre-ti-za-ção con-tí-nua de da-dos re-pre-senta uma im-p
 or-tante ta-refa de pré-processamento
  []
 
-) [60
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 9.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 143.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 143.
+ [59
 
 
 
-] (dissertacao.bbl [61
+] (dissertacao.bbl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 96.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 96.
+ [60
 
 
-]) [62]
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 158.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 158.
+ [61]
 \openout2 = `./postextuais/apendice/apendicePubli.aux'.
 
  (postextuais/apendice/apendicePubli.tex
 Apendice A.
-) [63
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 7.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95839pt
+(hyperref)                removed on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 10.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 158.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 158.
+ [62
 
 
 ]
@@ -2007,6 +2495,8 @@ Apendice A.
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
 (dissertacao.aux (pretextuais/capa.aux) (pretextuais/folha_de_rosto.aux)
 (pretextuais/ficha_catalografica.aux) (pretextuais/folha_de_aprovacao.aux)
 (pretextuais/dedicatoria.aux) (pretextuais/agradecimentos.aux)
@@ -2016,36 +2506,140 @@ Apendice A.
 (textuais/desenvolvimento/desenvolvimento.aux)
 (textuais/resultados/resultados.aux) (textuais/conclusao/conclusao.aux)
 (postextuais/apendice/apendicePubli.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package rerunfilecheck Info: File `dissertacao.out' has not changed.
+(rerunfilecheck)             Checksum: 0C0BBF27F1AF39C9DA57AA4D2CCE5F8C;2225.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 8126 strings out of 493312
- 134235 string characters out of 3138898
- 185344 words of memory out of 3000000
- 11194 multiletter control sequences out of 15000+200000
+ 11722 strings out of 493312
+ 189147 string characters out of 3138898
+ 286078 words of memory out of 3000000
+ 14585 multiletter control sequences out of 15000+200000
  31278 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,46p,1433b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmti12.pfb>
-Output written on dissertacao.pdf (63 pages, 7111168 bytes).
+ 42i,10n,46p,1436b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{cite.gurevich1966integral++YEAR} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.gurevich1966integral++IMPL} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ron1999art++YEAR} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ron1999art++IMPL} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.zhang2007discretization++YEAR} has been refere
+nced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.zhang2007discretization++IMPL} has been refere
+nced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.schmidberger2005unsupervised++YEAR} has been r
+eferenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.schmidberger2005unsupervised++IMPL} has been r
+eferenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.biba2007unsupervised++YEAR} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.biba2007unsupervised++IMPL} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.friedman1996discretizing++YEAR} has been refer
+enced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.friedman1996discretizing++IMPL} has been refer
+enced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.fayyad1993multi++YEAR} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.fayyad1993multi++IMPL} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.jones1989discretized++YEAR} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.jones1989discretized++IMPL} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.gramacki2017nonparametric++YEAR} has been refe
+renced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.gramacki2017nonparametric++IMPL} has been refe
+renced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.schindler2012bandwidth++YEAR} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.schindler2012bandwidth++IMPL} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.modelopadrao++YEAR} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.modelopadrao++IMPL} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.superk++YEAR} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.superk++IMPL} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.hanagaki2002electron++YEAR} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.hanagaki2002electron++IMPL} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.cernwebabout++YEAR} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.cernwebabout++IMPL} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.vicini2005analise++YEAR} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.vicini2005analise++IMPL} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.alison2014road++YEAR} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.alison2014road++IMPL} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.cms2015performance++YEAR} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.cms2015performance++IMPL} has been referenced 
+but does not exist, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb>
+Output written on dissertacao.pdf (62 pages, 7217989 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 531 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1338 PDF objects out of 1440 (max. 8388607)
+ 200 named destinations out of 1000 (max. 500000)
+ 787 words of extra memory for PDF output out of 10000 (max. 10000000)
 

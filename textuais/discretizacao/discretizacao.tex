@@ -1,10 +1,10 @@
 \chapter{DISCRETIZAÇÃO} \label{cap:disc}
 \vspace{-2cm}
-A estimação de densidade via \ac{KDE} de uma série de medidas contínuas, por razões computacionais, é geralmente representado na forma discreta. Consequentemente, estimações diretas acontecem apenas para valores discretizados \cite{jones1989discretized} e interpolação é usado para solucionar qualquer outro valor que possa vir fora durante as mediações. Este processo insere erros de estimação os quais podem ser minimizados incrementando o número de pontos a serem estimados, buscando um equilíbrio entre otimização computacional e performance de estimação.
+A estimação de densidade via \ac{KDE} de uma série de medidas contínuas, por razões computacionais, é geralmente representado na forma discreta. Consequentemente, estimações diretas acontecem apenas para valores discretizados \cite{jones1989discretized} e a interpolação é usada para solucionar essa descontinuidade. Este processo insere erros de estimação os quais podem ser minimizados incrementando o número de pontos a serem estimados, buscando um equilíbrio entre otimização computacional e performance de estimação.
 
-Vários autores seguem a mesma abordagem, como em \cite{jones1989discretized}, explorando os diferentes aspectos do processo de discretização e propondo novos métodos no intuito de minimizar as adversidades relatadas. Por exemplo, em \cite{fayyad1993multi} o método bem conhecido Ent-MDLP é proposto; em \cite{friedman1996discretizing} é sugerido um algoritmo de discretização baseado em Redes Bayesianas; em \cite{biba2007unsupervised} os autores propõem um método não supervisionado para discretização utilizando-se o \ac{KDE}; também usando o método não supervisionado, os autores de \cite{schmidberger2005unsupervised} apresentam um estudo de discretização aplicado à estimação de densidade baseado em árvore; e em \cite{zhang2007discretization} um algoritmo de aprendizagem de máquina baseado-se no critério de \textit{Gini} foi estudado. 
+Vários autores seguem a mesma abordagem, como em \cite{jones1989discretized}, explorando os diferentes aspectos do processo de discretização e propondo novos métodos no intuito de minimizar as adversidades relatadas. Por exemplo, em \cite{fayyad1993multi} o método bem conhecido Ent-MDLP é proposto; em \cite{friedman1996discretizing} é sugerido um algoritmo de discretização baseado em Redes Bayesianas; em \cite{biba2007unsupervised} os autores propõem um método não supervisionado para discretização utilizando-se o \ac{KDE}; também usando o método não supervisionado, os autores de \cite{schmidberger2005unsupervised} apresentam um estudo de discretização aplicado à estimação de densidade baseado em árvore; e em \cite{zhang2007discretization} um algoritmo de aprendizagem de máquina baseando-se no critério de \textit{Gini} foi estudado. 
 
-Estes trabalhos geralmente possuem foco em algoritmos de aprendizagem de máquina ou minimização dos critérios selecionados a fim de otimizar os vários atributos existentes, que como consequência, tendem a ter um alto custo computacional quando submetidos a uma grande quantidade de dados. Além do mais, tais estudos abordam a performance da discretização através do prisma da classificação e alguns como forma de preprocessamento do conjunto de dados.
+Estes trabalhos geralmente possuem foco em algoritmos de aprendizagem de máquina ou minimização dos critérios selecionados a fim de otimizar os vários atributos existentes, que, como consequência, tendem a ter um alto custo computacional quando submetidos a uma grande quantidade de dados. Além do mais, tais estudos abordam a performance da discretização através do prisma da classificação, e alguns como forma de preprocessamento do conjunto de dados.
 
 O método de discretização mais aplicado atualmente é o baseado em espaçamento uniforme entre os pontos estimados. Isso trata de maneira igualitária todas as densidades de região (e. g. a função de densidade nas regiões de baixa probabilidade é discretizada com a mesma resolução das regiões de alta probabilidade) levando a um erro de estimação que tende a não ser uniforme ao longo de todas as regiões de função de densidade de probabilidade.
 A figura~\ref{fig:figura1} mostra um exemplo de quando a região de baixa probabilidade é grande devido a eventos fora da curva, neste caso, uma discretização baseada em um espaçamento uniforme  pode colocar um grande número de pontos desnecessários nessa região, fazendo com que, para minimizar o erro de estimação, o número de pontos a ser estimado seja maior a fim de representar bem a região de alta probabilidade. %enquanto regiões de alta probabilidade terão que usar mais pontos a fim de minimizar o erro de estimação.
@@ -27,7 +27,7 @@ Para se estudar os efeitos da discretização no processo de estimação de \ac{
 	\item \textit{iPDF2}.
 \end{itemize}
 
-Estes cinco métodos serão demostrados a priori  utilizando-se uma distribuição Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$, representado por N(0,1), cuja \ac{PDF} pode ser descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana} com o numero de pontos $N = 25$ para uma melhor visualização.
+Estes cinco métodos serão demostrados a priori com o número de pontos $ N = 25 $,  utilizando-se uma distribuição Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$, representado por N(0,1), cuja \ac{PDF} pode ser descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana}.
 
 \begin{equation}
 {\displaystyle f_{X}(x;\mu,\sigma) = \frac{1}{\sigma\sqrt{2\pi}}\cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}}
@@ -49,13 +49,13 @@ O método \textit{Linspace} é caracterizado por amostrar de maneira uniforme a 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{./figuras/normal_1}
-	\caption{Ilustração do método \textit{Linspace} aplicado à uma distribuição normal.}
+	\caption{Ilustração do método \textit{Linspace} aplicado a uma distribuição normal.}
 	\label{fig:linspace_curve}
 \end{figure}
 
 
 \subsection{\textit{CDFm}}
-O método denominado nesse trabalho de \ac{CDFm} representa a discretização baseada na \ac{CDF} descrita pela Equação~\eqref{equ:CDF} para uma variável contínua e \eqref{equ:CDF_disc} para o caso de uma variável discreta possuindo valores em $ b $. Para este método, no caso de se ter a função geradora, primeiramente calcula-se a \ac{CDF} da distribuição e então faz-se uma distribuição linear de pontos no eixo $ y $ e encontra-se os seus respectivos valores para o eixo $ x $ fazendo sua função inversa, conforme mostra a Equação~\eqref{equ:cdf_inv} e é ilustado pela Figura~\ref{fig:CDFm_curve}.
+O método denominado nesse trabalho de \ac{CDFm} representa a discretização baseada na \ac{CDF} descrita pela Equação~\eqref{equ:CDF} para uma variável contínua e \eqref{equ:CDF_disc} para o caso de uma variável discreta possuindo valores em $ b $. Para este método, no caso de se ter a função geradora, primeiramente calcula-se a \ac{CDF} da distribuição e então faz-se uma distribuição linear de pontos no eixo $ y $ para se encontrar os seus respectivos valores no eixo $ x $ fazendo sua função inversa, conforme mostra a Equação~\eqref{equ:cdf_inv} e ilustado pela Figura~\ref{fig:CDFm_curve}.
 
 
 %a discretização baseada no espaçamento uniforme é aplicada ao eixo vertical e então os relativos valores horizontais são encontrados refletindo todos os valores, como mostra a Figura~\ref{fig:CDFm_curve} para a distribuição Normal. Note que, quanto maior a probabilidade da \ac{PDF}, maior o número de pontos na sua região.
@@ -85,7 +85,7 @@ CDFm(y) = F^{-1}_X(x)
 É possível notar que, quanto maior a probabilidade da \ac{CDF}, maior o número de pontos em sua região.
 
 \subsection{\textit{PDFm}}
-Este método, denominado de \ac{PDFm} também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas a função de referência é a própria \ac{PDF}, ao invés da sua \ac{CDF}, com isso, os pontos de intercessão da curva com os valores em $ y $ são calculados. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona. 
+Este método, denominado de \ac{PDFm} também usa a técnica de reflexão aplicada ao método da \textit{CDFm}, mas a função de referência é a própria \ac{PDF}, ao invés da sua \ac{CDF}. Com isso, os pontos de intercessão da curva com os valores em $ y $ são calculados. A Figura~\ref{fig:PDFm_curve} mostra como este método funciona. 
 
 \begin{figure}[H]
 	\centering

@@ -1,12 +1,12 @@
 \chapter{DESENVOLVIMENTO} \label{cap:desenvolvimento}
 \vspace{-2cm}
-Neste capítulo, serão descritos alguns detalhes da construção dos métodos e do algoritmo para avaliação de sua performance, além disso, serão mostradas as dificuldades encontradas na aplicação prática desses métodos. A discretização da estimação de densidades de variáveis discriminantes pode influenciar de forma direta na tarefa de classificação, entretanto, este trabalho se concentrou somente no impacto desses métodos na estimação, entendendo que um menor erro de estimação pode levar a uma melhor classificação.
+Neste capítulo serão descritos alguns detalhes da construção dos métodos e do algoritmo para avaliação de sua performance, além disso, serão mostradas as dificuldades encontradas na aplicação prática desses métodos. A discretização da estimação de densidades de variáveis discriminantes pode influenciar de forma direta na tarefa de classificação, entretanto, este trabalho se concentrou somente no impacto desses métodos na estimação, entendendo que um menor erro de estimação pode levar a uma melhor classificação.
 
 \section{Conjunto de dados}
 
 Um dos objetivos desse trabalho é otimizar o desempenho dos algoritmos de estimação de densidade via KDE que fazem uso de métodos de discretização e posteriormente essas estimações serão usadas para a identificação e classificação de eventos. Portanto o conjunto de dados aqui escolhido tem por base as estimações que podem ser encontradas em alguns dos experimentos de física de partículas mais importantes atualmente, como o ATLAS e CMS.
 
-Nas Figuras \ref{fig:15} e \ref{fig:16} são mostrados casos representativos de variáveis usadas para a identificação de elétrons nos experimentos CMS e ATLAS, respectivamente. Para o CMS, pode-se ver o perfil dos elétrons e do ruído de fundo, bem como a diferença entre dados reais e simulados. Já na Figura \ref{fig:16} é mostrado também as varias formas de ruído de fundo para elétrons no ATLAS.
+Nas Figuras \ref{fig:15} e \ref{fig:16} são mostrados casos representativos de variáveis usadas para a identificação de elétrons nos experimentos CMS e ATLAS, respectivamente. Para o CMS, pode-se ver o perfil dos elétrons e do ruído de fundo, bem como a diferença entre dados reais e simulados. Já na Figura \ref{fig:16}, além do perfil dos elétrons, é mostrado também as várias formas de ruído de fundo para elétrons no ATLAS.
 
 
 \begin{figure}[H]
@@ -25,13 +25,10 @@ Pode-se considerar que a identificação de elétrons em experimentos de física
 	\end{center}
 \end{figure}
 
-Pode-se observar que as variáveis discriminantes destes experimentos apresentam distribuições que muitas vezes se assemelham à algumas distribuições conhecidas na literatura, como a distribuição \textit{Gaussiana} e a \textit{Lognormal}. Sendo assim, com o intuito de realizar as análises em um ambiente controlado foram escolhidas as distribuições análiticas \textit{Gaussiana} e \textit{Lognormal}, sendo que a última parametrizada de 6 maneiras diferentes e três \textit{datasets} discretos diferentes cuja \textit{binagem} foi feita usando o método \ac{FD}.
+Pode-se observar que as variáveis discriminantes destes experimentos apresentam distribuições que muitas vezes se assemelham a algumas distribuições conhecidas na literatura, como a distribuição \textit{Gaussiana} e a \textit{Lognormal}. Sendo assim, com o intuito de realizar as análises em um ambiente controlado foram escolhidas as distribuições análiticas \textit{Gaussiana} e \textit{Lognormal}, sendo que a última parametrizada de 6 maneiras diferentes e três \textit{datasets} discretos diferentes cuja \textit{binagem} foi feita usando o método \ac{FD}.
 
-A distribuição normal foi definida com média $ \mu =0 $ e desvio padrão $ \sigma = 1 $, ilustrada na Figura~\ref{fig:Gaussiana}, devido ao fato de tais parâmetros não interferirem na forma desta distribuição.
-\begin{equation}
-{\displaystyle f_{N_X}(x;\mu,\sigma) = \frac{1}{\sigma\sqrt{2\pi}}\cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}}
-\label{equ:Normal}
-\end{equation}
+A distribuição normal foi definida com média $ \mu =0 $ e desvio padrão $ \sigma = 1 $, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana}, devido ao fato de tais parâmetros não interferirem na forma desta distribuição.
+
 
 Já a distribuição \textit{Lognormal} com média $ \mu = 0 $ e desvio padrão $\sigma$ com valores $ 0.01 $, $ 0.25 $, $ 0.5 $, $ 1 $, $ 1.25 $ e $ 1.5 $, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal}, representada por L($ \mu $,$ \sigma $).
 
@@ -51,12 +48,6 @@ Já a distribuição \textit{Lognormal} com média $ \mu = 0 $ e desvio padrão 
 %Estes cinco métodos serão mostrados utilizando \ac{PDF}s analíticas Gaussiana, com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana}, Lognormal, com $\mu = 0$  Todos os \textit{data sets} possuem mil eventos e foram gerados utilizando a biblioteca \textit{numpy} do \textit{software} \textit{Python} e com o número de \textit{binagem} definido pelo \ac{FD} que é um estimador robusto que leva em conta a variabilidade dos dados e o tamanho dos mesmos. Todos os métodos testados terão o número de estimação $N = 25$ para uma melhor visualização.
 
 %Estes cinco métodos serão demostrados utilizando-se a \ac{PDF} Gaussiana com média $\mu = 0$ e desvio padrão $\sigma = 1$, descrita pela Equação~\eqref{equ:Normal} e ilustrada na Figura~\ref{fig:Gaussiana},  e a \ac{PDF} Lognormal com $\mu = 0$ e desvio padrão $\sigma$ com valores $0.01, 0.25, 0.5, 1, 1.25$ e $1.5$, descrita pela Equação~\eqref{eq:Lognormal} e ilustrada na Figura~\ref{fig:Lognormal}, além disso, estes métodos também s ambas com o numero de pontos $N = 25$.
-
-
-
-
-
-
 
 
 \begin{figure}[H]
@@ -107,7 +98,7 @@ Já a distribuição \textit{Lognormal} com média $ \mu = 0 $ e desvio padrão 
 	\label{fig:Lognormal}
 \end{figure}
 
-
+Os \textit{datasets} escolhidos possuem mil eventos, média $ \mu = 0 $ e são baseados na distribuição Gaussiana com desvio padrão $ \sigma = 1 $ representado por randN($ \mu,\sigma $) sem \textit{outliers} ilustrado na Figura~\ref{fig:randn} e com \textit{outliers} em $ \pm 25 $ ilustrado  na Figura~\ref{fig:randn_out} e, por fim, baseado na distribuição Lognormal com desvio padrão $ \sigma = 1 $ representado por randL($ \mu,\sigma $) ilustrado na Figura~\ref{fig:randlog}.
 
 \begin{figure}[H]
 	\centering
@@ -136,7 +127,7 @@ Já a distribuição \textit{Lognormal} com média $ \mu = 0 $ e desvio padrão 
 	\label{fig:data}
 \end{figure}
 
-Os \textit{datasets} escolhidos possuem mil eventos, média $ \mu = 0 $ e são baseados na distribuição Gaussiana com desvio padrão $ \sigma = 1 $ representado por randN($ \mu,\sigma $) sem \textit{outliers} ilustrado na Figura~\ref{fig:randn} e com \textit{outliers} em $ \pm 25 $ ilustrado  na Figura~\ref{fig:randn_out} e, por fim, baseado na distribuição Lognormal com desvio padrão $ \sigma = 1 $ representado por randL($ \mu,\sigma $) ilustrado na Figura~\ref{fig:randlog}.
+
 
 
 
@@ -153,7 +144,7 @@ O algoritmo para comparação e validação dos métodos de discretização de e
 
 
 \begin{description}
-	\item[Função Analítica] Inicialmente uma função geradora é escolhida, sua discretização é feita utilizando os métodos apresentados, essa discretização é utilizada para calcular todos os pontos da curva original (utilizando interpolação) e por fim faz-se o cálculo da distância entre as duas curvas (analítica e discretizada) utilizando a métrica de distancia chamada L1, que é um caso particular da Equação \eqref{eq:4T06}.
+	\item[Função Analítica] Inicialmente uma função geradora é escolhida, sua discretização é feita utilizando os métodos apresentados. Essa discretização é utilizada para calcular todos os pontos da curva original (utilizando interpolação) e por fim faz-se o cálculo da distância entre as duas curvas (analítica e discretizada) utilizando a métrica de distancia chamada L1, que é um caso particular da Equação \eqref{eq:4T06}.
 	
 	\begin{equation}\label{eq:4T06}
 	{L_p} = {\left( {\int {{{\left| {f(x) - g(x)} \right|}^p}}\cdot dx } \right)^{{\raise0.7ex\hbox{$1$} \!\mathord{\left/
@@ -169,21 +160,21 @@ O algoritmo para comparação e validação dos métodos de discretização de e
 	
 	A equação~\eqref{eq:4T15} é chamado de \ac{IAE} ou distância L1.
 	
-	\item[Dados gerados] Nesse caso, única diferença é que o calculo da discretização é feito usando como base a distribuição de eventos aleatórios geradas pela função geradora escolhida.
+	\item[Dados gerados] Nesse caso, a única diferença é que o cálculo da discretização é feito usando como base a distribuição de eventos aleatórios geradas pela função geradora escolhida.
 \end{description}
 
 %\color{red} PAREI AQUI \color{black}
 
 \section{Demostração dos métodos de discretização}
 
-Com o intuito de validar os algoritmo e os métodos de discretização serão apresentados nessa seção o funcionamento desses métodos para a função gaussiana, função \textit{lognormal} e com dados gerados, representados pelas Figuras~\ref{fig:Gaussiana}, \ref{fig:Lognormal} e \ref{fig:data} respectivamente. E, com o objetivo de demostrar de forma mais clara o efeito desses métodos e sua dependência ao número de pontos de estimação escolhidos, os métodos serão avaliados variando o número de estimação para $ N = 15 $ e $ N = 25 $.
+Com o intuito de validar os algoritmo e os métodos de discretização serão apresentados nessa seção o funcionamento desses métodos para a função gaussiana, função \textit{lognormal} e com dados gerados computacionalmente. E, com o objetivo de demostrar de forma mais clara o efeito desses métodos e sua dependência ao número de pontos de estimação escolhidos, os métodos serão avaliados variando o número de estimação entre $ N = 15 $ e $ N = 25 $.
 
 \subsection{Método \textit{Linspace}}
 
 De acordo com o princípio de funcionamento do método de discretização \textit{Linspace} espera-se que este entregue resultados satisfatórios em distribuições com variações mais lentas, como mostrado nas Figuras~\ref{fig:lin_norm15}, \ref{fig:lin_norm25}, \ref{fig:lin_norm15_data} e \ref{fig:lin_norm25_data}. Já para conjunto de dados que apresenta variações mais rápidas ou \textit{outliers}, como mostrado nas Figuras~\ref{fig:lin_log15}, \ref{fig:lin_log25}, \ref{fig:lin_norm15_data_out} e \ref{fig:lin_norm25_data_out}, este método não alcança uma boa representação da PDF.
 
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering 
@@ -217,6 +208,10 @@ De acordo com o princípio de funcionamento do método de discretização \texti
 	\label{fig:normlin}
 \end{figure}
 
+
+
+
+Entretanto, pode-se perceber que com o aumento do número de pontos de estimação (de $N = 15$ para $N = 25$) o desempenho deste método apresenta uma melhora significativa. Portanto, fica claro que é possível alcançar uma boa performance com o método de \textit{Linspace}. Mas, há de se comentar que o aumento do número de pontos de estimação é um fator decisivo no custo computacional desses algoritmos, e, além disso, aumenta a quantidade de informação a ser armazenada ou transmitida. Apesar da distribuição randL(0,1) ser baseada na L(0,1), está apresenta uma melhor discretização devido ao fato da sua extensão no eixo $ x $ ser menor. As distribuições L(0,0.01), L(0,0.25) e L(0,0.5) possuem um comportamento semelhante à N(0,1), enquanto as distribuições L(0,1.25) e L(0,1.5) semelhantes à L(0,1).% como pode ser visto no Apêndice~\ref{cap:anexoLin}
 
 \begin{figure}[H]
 	\centering\begin{subfigure}[b]{0.45\textwidth}
@@ -264,11 +259,9 @@ De acordo com o princípio de funcionamento do método de discretização \texti
 	\label{fig:lin_data}
 \end{figure}
 
-Entretanto, pode-se perceber que com o aumento do número de pontos de estimação ($N = 15$ para $N = 25$) o desempenho deste método apresenta uma melhora significativa, portanto, fica claro que é possível alcançar uma boa performance com o método de \textit{Linspace}. Mas, há de se comentar que o aumento do número de pontos de estimação é um fator decisivo no custo computacional desses algoritmos, além disso, aumenta a quantidade de informação a ser armazenada ou transmitida. Apesar da distribuição randL(0,1) ser baseada na L(0,1), está apresenta uma melhor discretização devido ao fato da sua extensão no eixo $ x $ ser menor. As distribuições L(0,0.01), L(0,0.25) e L(0,0.5) possuem um comportamento semelhante à N(0,1), enquanto as distribuições L(0,1.25) e L(0,1.5) semelhantes à L(0,1).% como pode ser visto no Apêndice~\ref{cap:anexoLin}
-
 \subsection{Método \textit{CDFm}}
 
-Pelo método \ac{CDFm} é esperado um acumulo maior de pontos nas regiões em que a probabilidade é maior, como é ilustrado nas Figuras~\ref{fig:cdfnorm} e \ref{fig:cdf_data}, porem, é possível perceber que quanto mais rápida é a variação, melhor a sua discretização como é notado comparando as Figuras~\ref{fig:cdfnorm15} e \ref{fig:cdf_log15} e que a adição de \textit{outliers} não impactam tanto na discretização, mostrado nas Figuras~\ref{fig:cdf_norm15_data_out} e \ref{fig:cdf_lognorm25_data}. Esse mesmo padrão se repete tando com os dados gerados mostrado na Figura~\ref{fig:cdf_data} quanto nas outras distribuições baseadas na função \textit{Lognormal}.%, como pode ser visto no Apêndice~\ref{cap:anexoCDFm}.
+Pelo método \ac{CDFm} é esperado um acúmulo maior de pontos nas regiões em que a probabilidade é maior, como é ilustrado nas Figuras~\ref{fig:cdfnorm} e \ref{fig:cdf_data}, porém, é possível perceber que quanto mais rápida é a variação, melhor a sua discretização como é notado comparando as Figuras~\ref{fig:cdfnorm15} e \ref{fig:cdf_log15} e que a adição de \textit{outliers} não impacta tanto na discretização, mostrado nas Figuras~\ref{fig:cdf_norm15_data_out} e \ref{fig:cdf_lognorm25_data}. Esse mesmo padrão se repete tanto com os dados gerados mostrado na Figura~\ref{fig:cdf_data} quanto nas outras distribuições baseadas na função \textit{Lognormal}.%, como pode ser visto no Apêndice~\ref{cap:anexoCDFm}.
 
 \begin{figure}[H]
 	\centering
@@ -351,7 +344,7 @@ Pelo método \ac{CDFm} é esperado um acumulo maior de pontos nas regiões em qu
 	\label{fig:cdf_data}
 \end{figure}
 
-Este método, se comparado ao \textit{Linspace} apresenta um erro muito menor nas regiões de alta probabilidade, em contrapartida, ele não deve ser indicado quando o objeto de estudo é a análise de eventos em regiões de baixa probabilidade, pois o mesmo teria que ter um número de pontos superior para o estudo dessas regiões.
+Este método, se comparado ao \textit{Linspace}, apresenta um erro muito menor nas regiões de alta probabilidade. Em contrapartida, ele não deve ser indicado quando o objeto de estudo é a análise de eventos em regiões de baixa probabilidade, pois o mesmo teria que ter um número de pontos superior para o estudo dessas regiões.
 %Vemos que a região de alta probabilidade é representada com um menor erro do que no método \textit{Linspace} mas, em contrapartida, a região de baixa probabilidade necessitaria de um número muito maior de pontos para possuir o mesmo erro do método anterior.
 
 \subsection{Método \textit{PDFm}}
@@ -445,7 +438,7 @@ Deste modo, este método relaciona os pontos positivos da \ac{CDFm} para regiõe
 %Para a distribuição Normal, este método apresenta um maior erro na região de alta probabilidade do que o método \ac{CDFm} mas nas regiões de baixa probabilidade o erro de estimação é menor do que o visto anteriormente, fazendo assim uma combinação dos métodos \textit{Linspace} e \textit{CDFm}.
 \subsection{Método \textit{iPDF1}}
 
-Este método tem como base fazer a discretização baseada na primeira derivada, com isso é esperado uma melhor resolução nos pontos em que a variação da distribuição é maior, como pode ser verificado na Figura~\ref{fig:ipdfmnorm}.% e no Apêndice~\ref{cap:anexoiPDF1} em que este padrão também se repete. 
+Este método faz a discretização baseada na primeira derivada, com isso é esperado uma melhor resolução nos pontos em que a variação da distribuição é maior, como pode ser verificado na Figura~\ref{fig:ipdfmnorm}.% e no Apêndice~\ref{cap:anexoiPDF1} em que este padrão também se repete. 
 
 \begin{figure}[H]
 	\centering
@@ -481,7 +474,7 @@ Este método tem como base fazer a discretização baseada na primeira derivada,
 	\label{fig:ipdfmnorm}
 \end{figure}
 
-Já para os dados gerados, devido ao fato de sua derivada discreta inserir ruído, sua CDF acaba sendo suavizada, fazendo com que este coloque mais pontos na região de baixa probabilidade, como pode ser visto na Figura~\ref{fig:ipdf1_data} e, em especial nas Figuras~\ref{fig:ipdf1_norm15_data_out} e \ref{fig:ipdf1_norm25_data_out} em que o erro na calda é baixo.
+Já para os dados gerados, devido ao fato de sua derivada discreta ser ruidosa, sua CDF acaba sendo suavizada, fazendo com que este coloque mais pontos na região de baixa probabilidade, como pode ser visto na Figura~\ref{fig:ipdf1_data} e, em especial nas Figuras~\ref{fig:ipdf1_norm15_data_out} e \ref{fig:ipdf1_norm25_data_out} em que o erro na calda é baixo.
 
 \begin{figure}[H]
 	\centering\begin{subfigure}[b]{0.45\textwidth}
@@ -532,7 +525,7 @@ Já para os dados gerados, devido ao fato de sua derivada discreta inserir ruíd
 
 \subsection{Método \textit{iPDF2}}
 
-A \ac{iPDF2} se baseia na segunda derivada, com isso, é esperado que o número de pontos seja maior onde haja uma variação de sua derivada e menor nos pontos de inflexão, como é mostrado na Figura~\ref{fig:ipdf2norm15} e \ref{fig:ipdf2norm25}. O mesmo acontece para as Figuras~\ref{fig:ipdf2_lognorm15_data} e \ref{fig:ipdf2_lognorm25_data}, mas, como a taxa de variação é muito maior na porção esquerda da distribuição, a quantidade de pontos do lado direito fica reduzido, fazendo com que o erro de estimação aumente.
+A \ac{iPDF2} se baseia na segunda derivada, com isso, é esperado que o número de pontos seja maior onde haja uma variação de sua derivada e menor nos pontos de inflexão, como é mostrado nas Figuras~\ref{fig:ipdf2norm15} e \ref{fig:ipdf2norm25}. O mesmo acontece para as Figuras~\ref{fig:ipdf2_lognorm15_data} e \ref{fig:ipdf2_lognorm25_data}, mas, como a taxa de variação é muito maior na porção esquerda da distribuição, a quantidade de pontos do lado direito fica reduzido, fazendo com que o erro de estimação aumente.
 
 \begin{figure}[H]
 	\centering
@@ -617,14 +610,14 @@ Para os dados gerados, o mesmo problema ocorre no método \ac{iPDF1} só que com
 \end{figure}
 
 
-Podemos ver que cada método se comporta melhor em uma determinada região, botando mais ou menos pontos nas regiões de interesse, deste modo podemos analisar o custo computacional envolvido para cada método que será explicado na seção seguinte.
+Podemos ver que cada método se comporta melhor em uma determinada região, botando mais ou menos pontos nas regiões de interesse. Na seção seguinte será analisado o custo computacional de cada método proposto.% deste modo podemos analisar o custo computacional envolvido para cada método que será explicado na seção seguinte.
 %Deste modo, esse estudo pode perceber as peculiaridades de cada método para um exemplo mais específico, e notar as regiões em que cada discretização se sai melhor, para assim poder ter um menor erro com número reduzido de pontos de estimação diminuindo o custo computacional da análise.
 
 \section{Custo Computacional}
 
-Os algoritmo de \textit{Kernel} são muito utilizados na literatura no contexto de análise de dados ou modelagem de dados, entretanto é sabido que esse método é computacionalmente mais lento em comparação com outros. Por isso muitos pesquisadores fazem uso de algoritmos que efetuam aproximações matemáticas no intuito de ganhar em custo computacional, chamados de \textit{FastKDE}, ou seja, existe um \textit{trade-off} entre estabilidade numérica e economia computacional. Entretanto, como já mencionado, o tempo de processamento esta diretamente ligado ao número de eventos da distribuição e ao número de pontos a serem estimados.
+Os algoritmos de \textit{Kernel} são muito utilizados na literatura no contexto de análise de dados ou modelagem de dados, entretanto é sabido que esse método é computacionalmente mais lento em comparação com outros. Por isso muitos pesquisadores fazem uso de algoritmos que efetuam aproximações matemáticas no intuito de ganhar em custo computacional, chamados de \textit{FastKDE}, ou seja, existe um \textit{trade-off} entre estabilidade numérica e economia computacional. Entretanto, como já mencionado, o tempo de processamento esta diretamente ligado ao número de eventos da distribuição e ao número de pontos a serem estimados.
 
-Portanto, no intuito de ilustrar a consequência de se aumentar o número de pontos de estimação a Figura \ref{fig:compKDE} apresentada o tempo de processamento de um algoritmo matricial de \textit{FastKDE} utilizado para a estimação de uma distribuição gaussiana $N(0,1)$ ao se variar o número de eventos e número de pontos de estimação.
+Portanto, no intuito de ilustrar a consequência de se aumentar o número de pontos de estimação a Figura \ref{fig:compKDE} apresenta o tempo de processamento de um algoritmo matricial de \textit{FastKDE} utilizado para a estimação de uma distribuição gaussiana $N(0,1)$ ao se variar o número de eventos e número de pontos de estimação.
 
 \begin{figure}[!ht]
 	\centering
@@ -633,12 +626,12 @@ Portanto, no intuito de ilustrar a consequência de se aumentar o número de pon
 	\label{fig:compKDE}
 \end{figure}
 
-Pode-se observar que o tempo de processamento para $N = 1024$ é aproximadamente $75\%$ maior que para $N = 128$ quando o número de eventos é igual a $10^5$ e aproximadamente $67\%$ maior para número de eventos igual a $10^4$. Ou seja, um método de discretização capaz de apresentar o mesmo erro de estimação mesmo com menos pontos de estimação pode trazer benefícios importantes em ambientes de alta exigência.
+Pode-se observar que o tempo de processamento para $N = 1024$ é aproximadamente $75\%$ maior que para $N = 128$ quando o número de eventos é igual a $10^5$ e aproximadamente $67\%$ maior para número de eventos igual a $10^4$. Ou seja, um método de discretização capaz de apresentar o mesmo erro de estimação com menos pontos de estimação pode trazer benefícios importantes em ambientes de alta exigência.
 
 
 \section{Ambiente de Análise}
 
-Para analisar as diferenças entre a \ac{PDF} real e estimada ao longo de toda a extensão do eixo das abscissas, a área entre as duas \ac{PDF}s será usada como medida da estimação de erro. Além do mais, o eixo das abscissas foi dividida em $N$ regiões de mesmo tamanho, chamado \ac{RoI} \cite{ron1999art}. Essas regiões são compreendidas entre valores máximos e mínimos predefinidos do eixo horizontal. A Figura~\ref{fig:error} mostra este processo quando a abscissa é dividida em 20 regiões, todas compreendidas entre os valores $-4$ e $4$ do eixo $ x $.
+Para analisar as diferenças entre a \ac{PDF} real e estimada ao longo de toda a extensão do eixo das abscissas, a área entre as duas \ac{PDF}s será usada como medida da estimação de erro. Além do mais, o eixo das abscissas foi dividida em várias regiões de mesmo tamanho, chamado \ac{RoI} \cite{ron1999art}. Essas regiões são compreendidas entre valores máximos e mínimos predefinidos do eixo horizontal. A Figura~\ref{fig:error} mostra este processo quando a abscissa é dividida em 20 regiões, todas compreendidas entre os valores $-4$ e $4$ do eixo $ x $.
 
 
 \begin{figure}[!ht]
@@ -649,4 +642,4 @@ Para analisar as diferenças entre a \ac{PDF} real e estimada ao longo de toda a
 \end{figure}
 
 
-A maneira que a \ac{RoI} é usada neste trabalho permitirá avaliar o erro de estimação em função de quatro diferentes parâmetros: Probabilidade; Eixo das abscissas; Primeira e Segunda Derivada. Para estimar os valores entre os pontos discretos, dois métodos de interpolação serão usados: interpolação pelo Vizinho Mais Próximo e Linear. 200 amostras serão usadas no processo de discretização. O erro de estimação tende a melhoras conforme o número de amostras aumenta mas sua característica geral não muda. Este último é a principal preocupação deste trabalho. 
+A maneira que a \ac{RoI} é usada neste trabalho permitirá avaliar o erro de estimação em função de quatro diferentes parâmetros: Probabilidade; Eixo das abscissas; Primeira e Segunda Derivada. Para estimar os valores entre os pontos discretos, dois métodos de interpolação serão usados: interpolação pelo Vizinho Mais Próximo e Linear. 200 amostras serão usadas no processo de discretização. O erro de estimação tende a melhorar conforme o número de amostras aumenta mas sua característica geral não muda. Este último é a principal preocupação deste trabalho. 
